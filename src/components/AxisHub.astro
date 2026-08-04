@@ -1,0 +1,102 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Icon from './Icon.astro';
+import AdSlot from './AdSlot.astro';
+import PopularSearches from './PopularSearches.astro';
+import popular from '@data/popular.json';
+import hubCopy from '@data/hub-copy.json';
+
+/**
+ * Индекс оси: /placement/, /subject/, /style/, /size/, /for/.
+ * Задача страницы - раздать вес детям оси и дать Google полный список
+ * комбинаций. Порядок ссылок - по объёму (PROJECT.md §3).
+ */
+interface Child {
+  slug: string;
+  label: string;
+  volume?: number | null;
+  hint?: string;
+}
+
+interface Props {
+  title: string;
+  h1: string;
+  description: string;
+  base: string;
+  answer: string[];
+  children_: Child[];
+}
+
+const { title, h1, description, base, answer, children_ } = Astro.props;
+const hubKey = base.replaceAll('/', '') as keyof typeof hubCopy;
+const guide = hubCopy[hubKey];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  path={base}
+  crumbs={[
+    { label: 'Home', href: '/' },
+    { label: h1, href: base },
+  ]}
+>
+  <section class="container top">
+    <h1>{h1}</h1>
+    <div class="lead">{answer.map((line) => <p>{line}</p>)}</div>
+  </section>
+
+  <section class="section container" aria-label={h1}>
+    <div class="grid list">
+      {
+        children_.map((c) => (
+          <a class="row panel" href={`${base}${c.slug}/`}>
+            <span class="label">{c.label}</span>
+            {c.hint && <span class="small muted">{c.hint}</span>}
+            <Icon name="chevron" size={16} class="chev" />
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <div class="container"><AdSlot id={`${base.replaceAll('/', '')}-hub`} height={100} /></div>
+
+  <section class="section container guide">
+    <h2>{guide.title}</h2>
+    {guide.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+  </section>
+
+  <PopularSearches items={popular.searches} title="Popular searches" />
+</BaseLayout>
+
+<style>
+  .top { padding-top: 24px; }
+  .top .lead { margin-top: 10px; }
+
+  .list { grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 8px; }
+
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 56px;
+    padding: 0 16px;
+  }
+
+  .row:hover { border-color: var(--accent); color: inherit; }
+
+  .guide { max-width: 76ch; display: grid; gap: 10px; }
+  .guide p { color: var(--text-muted); }
+
+  .label { font-weight: 600; }
+  .chev { color: var(--accent); margin-left: auto; }
+
+  @media (min-width: 640px) {
+    .list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+
+  @media (min-width: 960px) {
+    .list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+</style>

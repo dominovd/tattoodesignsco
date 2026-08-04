@@ -1,0 +1,762 @@
+{
+  "_note": "Страницы комбинаций. Все слаги проверены по tattoo_pagemap.csv на recommendation=BUILD. Добавляя новую, сначала убедись, что строка есть в pagemap и не помечена SKIP-high-AIO. Слаг читается как запрос, год - только в title/H1 (PROJECT.md §5).",
+
+  "_details_note": "Ключи details фиксированы: таблица рендерит первые пять в этом порядке. Work visibility в таблицу не выводится - он уходит в блок «Before your session». Формулировки Healing и Pain level намеренно мягче, чем в макете: DESIGN.md §11 запрещает утверждения про здоровье, поэтому вместо «Usually 2-4 weeks» и «4-6/10» стоит отсылка к мастеру.",
+
+  "_faq_note": "Поля faq / considerations / questions / searches необязательные. Если их нет, блок генерируется из details и placementLabel (см. src/lib/pageContent.ts). Флагманским страницам текст пишется руками.",
+
+  "items": [
+    {
+      "slug": "forearm-tattoo-ideas-for-men",
+      "h1": "Forearm tattoo ideas for men",
+      "volume": 4400, "kd": 26,
+      "placementLabel": "Forearm", "sizeRange": "3-18 cm",
+      "answer": [
+        "Forearm tattoos suit designs that need clear detail and can be shown or covered easily.",
+        "A medium piece often takes 2-4 hours - confirm size, price and timing with your artist."
+      ],
+      "images": 16,
+      "gallery": {
+        "placement": "Inner forearm", "size": "12 cm", "style": "Fine line", "color": "Black",
+        "altPattern": "Forearm tattoo idea for men, reference {n}",
+        "items": [
+          { "slug": "fine-line-mountain", "name": "Fine line mountain", "placement": "Inner forearm", "size": "12 cm", "style": "Fine line", "color": "Black", "shading": "Soft", "session": "About 2-3 hours", "summary": "A vertical landscape designed to follow the inner forearm without crowding the wrist.", "index": true },
+          { "slug": "blackwork-botanical", "name": "Blackwork botanical", "placement": "Outer forearm", "size": "14 cm", "style": "Blackwork", "color": "Black", "shading": "Solid fill", "session": "About 3 hours", "summary": "A long stem that runs with the length of the outer forearm." },
+          { "slug": "compass-fine-line", "name": "Fine line compass", "placement": "Inner forearm", "size": "10 cm", "style": "Fine line", "color": "Black", "shading": "Minimal", "session": "About 2 hours", "summary": "A symmetrical piece that sits well centred on the inner forearm." },
+          { "slug": "wolf-realism", "name": "Wolf portrait", "placement": "Outer forearm", "size": "15 cm", "style": "Realism", "color": "Black & grey", "shading": "Heavy", "session": "About 4-5 hours", "summary": "A portrait that needs the full width of the outer forearm to hold its detail." },
+          { "slug": "ornamental-band", "name": "Ornamental band", "placement": "Inner forearm", "size": "9 cm", "style": "Geometric", "color": "Black", "shading": "None", "session": "About 2 hours", "summary": "A wrap-around band that reads the same from every angle." },
+          { "slug": "traditional-eagle", "name": "Traditional eagle", "placement": "Outer forearm", "size": "13 cm", "style": "Traditional", "color": "Black & colour", "shading": "Solid", "session": "About 3-4 hours", "summary": "Bold outlines and flat colour, built to stay readable for decades." },
+          { "slug": "minimal-sun", "name": "Minimal sun", "placement": "Inner forearm", "size": "3 cm", "style": "Minimal", "color": "Black", "shading": "None", "session": "Under an hour", "summary": "A small first piece that works as a standalone or as filler later." },
+          { "slug": "lion-realism", "name": "Lion portrait", "placement": "Outer forearm", "size": "16 cm", "style": "Realism", "color": "Black & grey", "shading": "Heavy", "session": "About 5 hours", "summary": "The largest single piece that fits a forearm without wrapping." },
+          { "slug": "forest-landscape", "name": "Forest landscape", "placement": "Inner forearm", "size": "15 cm", "style": "Black & grey", "color": "Black", "shading": "Soft", "session": "About 4 hours", "summary": "A depth-heavy scene that uses the length of the arm as perspective." },
+          { "slug": "abstract-brush", "name": "Abstract brush stroke", "placement": "Outer forearm", "size": "12 cm", "style": "Abstract", "color": "Black", "shading": "Blackwork", "session": "About 2-3 hours", "summary": "A single gesture that suits people who want movement over subject." },
+          { "slug": "coordinates", "name": "Coordinates", "placement": "Inner forearm", "size": "5 cm", "style": "Minimal", "color": "Black", "shading": "None", "session": "Under an hour", "summary": "Small type that needs generous spacing to stay legible as it ages." },
+          { "slug": "skull-and-flowers", "name": "Skull and flowers", "placement": "Outer forearm", "size": "14 cm", "style": "Black & grey", "color": "Black", "shading": "Medium", "session": "About 4 hours", "summary": "A contrast piece pairing a hard subject with soft botanical framing." },
+          { "slug": "ornamental-pattern", "name": "Ornamental pattern", "placement": "Inner forearm", "size": "13 cm", "style": "Ornamental", "color": "Black", "shading": "None", "session": "About 3 hours", "summary": "Repeating geometry that follows the taper of the forearm." },
+          { "slug": "snake-black-grey", "name": "Snake", "placement": "Outer forearm", "size": "15 cm", "style": "Black & grey", "color": "Black", "shading": "Medium", "session": "About 4 hours", "summary": "A subject built for a long narrow area - it wraps naturally." },
+          { "slug": "tree-of-life", "name": "Tree line", "placement": "Inner forearm", "size": "14 cm", "style": "Fine line", "color": "Black", "shading": "Soft", "session": "About 3 hours", "summary": "Fine roots and canopy that need room, so keep it above 12 cm." },
+          { "slug": "moon-and-stars", "name": "Moon and stars", "placement": "Outer forearm", "size": "8 cm", "style": "Fine line", "color": "Black", "shading": "Minimal", "session": "About 90 minutes", "summary": "A compact piece that pairs easily with a second tattoo later." }
+        ]
+      },
+      "details": {
+        "Pain level": "Commonly described as moderate",
+        "Typical size": "5-18 cm",
+        "Session time": "1-5 hours",
+        "Typical price": "$150-$900",
+        "Healing": "Ask your artist",
+        "Work visibility": "Inner forearm is easier to cover than outer"
+      },
+      "faq": [
+        { "q": "How painful is a forearm tattoo?", "a": "Most people describe the forearm as moderate compared with ribs or hands, but reports vary widely and depend on session length. Ask your artist what to expect for the exact position you have in mind." },
+        { "q": "What size works best on the forearm?", "a": "Most forearm pieces sit between 5 and 18 cm. Fine line work needs room to stay readable as it ages, so give detailed designs the upper half of that range." },
+        { "q": "Can a forearm tattoo be covered for work?", "a": "The inner forearm is easier to cover than the outer, and a long sleeve hides both. If your workplace has a policy, check it before you book rather than after." },
+        { "q": "How long does a forearm tattoo take?", "a": "A small piece can be under an hour; a detailed medium piece is usually 2-4 hours. Heavily shaded or wrap-around work is normally split across sessions." },
+        { "q": "Should I choose the inner or outer forearm?", "a": "The outer forearm is flatter and easier to read from the outside, the inner is more private and the skin is softer. Bring both options to your artist and ask which suits the design." }
+      ],
+      "questions": [
+        "Can this level of detail work at my chosen size?",
+        "How should the design follow my forearm?",
+        "Would inner or outer placement suit it better?",
+        "How many sessions should I expect?",
+        "What aftercare do you recommend for me?"
+      ],
+      "searches": [
+        { "label": "forearm tattoo ideas for men", "href": "/ideas/forearm-tattoo-ideas/" },
+        { "label": "small forearm tattoos for men", "href": "/ideas/small-tattoos-for-men/" },
+        { "label": "male arm tattoo ideas", "href": "/ideas/tattoo-ideas-male-arm/" },
+        { "label": "simple tattoo ideas for men", "href": "/ideas/tattoo-ideas-for-men/" },
+        { "label": "blackwork forearm tattoos", "href": "/style/blackwork/" },
+        { "label": "fine line forearm tattoos", "href": "/ideas/fine-line-tattoo-ideas/" },
+        { "label": "sleeve tattoo ideas for men", "href": "/ideas/sleeve-tattoo-ideas-for-men/" },
+        { "label": "hand tattoo ideas", "href": "/ideas/hand-tattoo-ideas/" }
+      ],
+      "related": ["small-tattoos-for-men", "tattoo-ideas-male-arm", "sleeve-tattoo-ideas-for-men", "hand-tattoo-ideas", "chest-tattoo-ideas-for-guys", "fine-line-tattoo-ideas", "tattoo-ideas-for-men", "forearm-tattoo-ideas"]
+    },
+    {
+      "slug": "tattoo-ideas-for-men",
+      "h1": "Tattoo ideas for men",
+      "volume": 33100, "kd": 25,
+      "placementLabel": "Arm", "sizeRange": "5-20 cm",
+      "answer": [
+        "Ideas for men across arms, chest, hands and neck, from small first pieces to full sleeves.",
+        "Most designs here run 5-20 cm and take one to four hours - confirm with your artist."
+      ],
+      "images": 24,
+      "gallery": {
+        "placement": "Upper arm", "size": "12 cm", "style": "Black & grey", "color": "Black", "altPattern": "Tattoo idea for men, reference {n}",
+        "items": [
+          { "slug": "geometric-bear-arm", "name": "Geometric bear tattoo", "placement": "Outer upper arm", "size": "17 cm", "style": "Geometric blackwork", "color": "Black", "summary": "A bear head built from dark facets and narrow skin breaks." },
+          { "slug": "japanese-tiger-forearm", "name": "Japanese tiger tattoo", "placement": "Outer forearm", "size": "18 cm", "style": "Japanese", "color": "Black and muted orange", "summary": "A moving tiger threaded through wind bars and one maple leaf." },
+          { "slug": "compass-pine-calf", "name": "Compass forest tattoo", "placement": "Outer calf", "size": "16 cm", "style": "Illustrative", "color": "Black and grey", "summary": "A compass rose rising above layered pines and a mountain valley." },
+          { "slug": "raven-eclipse-chest", "name": "Raven chest tattoo", "placement": "Upper chest", "size": "19 cm", "style": "Blackwork", "color": "Black", "summary": "A flying raven whose wings frame a small negative-space sun." },
+          { "slug": "traditional-snake-dagger", "name": "Snake and dagger tattoo", "placement": "Outer upper arm", "size": "15 cm", "style": "Traditional", "color": "Green, red and black", "summary": "A green snake wrapped tightly around a broken red-handled dagger." },
+          { "slug": "realistic-owl-shoulder", "name": "Realistic owl tattoo", "placement": "Outer shoulder", "size": "18 cm", "style": "Realism", "color": "Black, grey and amber", "summary": "A great horned owl portrait shaped to wrap the shoulder cap." },
+          { "slug": "brutalist-building-forearm", "name": "Brutalist architecture tattoo", "placement": "Inner forearm", "size": "14 cm", "style": "Fine line", "color": "Black", "summary": "A precise concrete facade cut by one diagonal sunbeam." },
+          { "slug": "abstract-brush-shoulder", "name": "Abstract brush tattoo", "placement": "Shoulder and upper arm", "size": "20 cm", "style": "Abstract", "color": "Black and cobalt", "summary": "Two bold brush gestures following the curve of the shoulder." },
+          { "slug": "bear-oak-chest", "name": "Bear and oak tattoo", "placement": "Upper chest", "size": "18 cm", "style": "Neo-traditional", "color": "Brown, red and black", "summary": "A brown bear portrait framed by a cluster of red oak leaves." },
+          { "slug": "biomechanical-forearm", "name": "Biomechanical forearm tattoo", "placement": "Outer forearm", "size": "17 cm", "style": "Biomechanical", "color": "Black and grey", "summary": "Interlocking steel plates and cable forms following the forearm." },
+          { "slug": "archangel-upper-arm", "name": "Archangel tattoo", "placement": "Outer upper arm", "size": "20 cm", "style": "Black and grey realism", "color": "Black and grey", "summary": "A winged figure holding a lowered sword in a calm vertical pose." },
+          { "slug": "skull-compass-calf", "name": "Skull compass tattoo", "placement": "Outer calf", "size": "19 cm", "style": "Black and grey realism", "color": "Black and grey", "summary": "A non-graphic skull fused with a compass and fractured stone." },
+          { "slug": "minimal-wave-wrist", "name": "Minimal wave tattoo", "placement": "Inner wrist", "size": "6 cm", "style": "Minimalist", "color": "Black", "summary": "Two parallel wave lines beneath one small solid sun." },
+          { "slug": "samurai-thigh-engraving", "name": "Samurai helmet tattoo", "placement": "Outer thigh", "size": "23 cm", "style": "Engraving", "color": "Black and grey", "summary": "A detailed samurai helmet surrounded by controlled smoke curls." },
+          { "slug": "golden-eagle-arm", "name": "Golden eagle tattoo", "placement": "Outer upper arm", "size": "18 cm", "style": "Color realism", "color": "Brown, gold and black", "summary": "A realistic golden eagle profile with an intense amber eye." },
+          { "slug": "ornamental-shoulder", "name": "Ornamental shoulder tattoo", "placement": "Outer shoulder", "size": "20 cm", "style": "Ornamental", "color": "Black", "summary": "Spear-shaped geometry and dot shading fitted to the shoulder cap." },
+          { "slug": "forest-forearm-panel", "name": "Forest forearm tattoo", "placement": "Outer forearm", "size": "21 cm", "style": "Black and grey", "color": "Black and grey", "summary": "Tall pine trees receding into a narrow band of mountain mist." },
+          { "slug": "clipper-ship-arm", "name": "Traditional ship tattoo", "placement": "Outer upper arm", "size": "17 cm", "style": "Traditional", "color": "Navy, rust and cream", "summary": "A clipper ship sailing beneath a flat red sun." },
+          { "slug": "geometric-lion-calf", "name": "Geometric lion tattoo", "placement": "Outer calf", "size": "16 cm", "style": "Geometric dotwork", "color": "Black", "summary": "A lion face divided between angular facets and dotted arcs." },
+          { "slug": "octopus-shoulder-blackwork", "name": "Blackwork octopus tattoo", "placement": "Outer shoulder", "size": "19 cm", "style": "Blackwork", "color": "Black", "summary": "An octopus wrapping the shoulder through bold negative-space channels." },
+          { "slug": "pocket-watch-stone", "name": "Pocket watch tattoo", "placement": "Inner upper arm", "size": "16 cm", "style": "Realism", "color": "Black and grey", "summary": "An antique watch emerging from fractured stone without readable numerals." },
+          { "slug": "watercolor-compass-calf", "name": "Watercolor compass tattoo", "placement": "Outer calf", "size": "17 cm", "style": "Watercolor", "color": "Teal, ochre and black", "summary": "A compass crossing a teal cloud and restrained ochre brush marks." },
+          { "slug": "neo-traditional-fox-forearm", "name": "Neo-traditional fox tattoo", "placement": "Outer forearm", "size": "15 cm", "style": "Neo-traditional", "color": "Red, blue and black", "summary": "A red fox head balanced by a fan of deep blue leaves." },
+          { "slug": "tree-eclipse-chest", "name": "Tree and eclipse tattoo", "placement": "Upper chest", "size": "20 cm", "style": "Blackwork", "color": "Black", "summary": "A rooted tree standing beneath a small negative-space eclipse." }
+        ]
+      },
+      "details": {
+        "Pain level": "Varies by area",
+        "Typical size": "5-20 cm",
+        "Session time": "1-4 hours",
+        "Typical price": "$150-$1000",
+        "Healing": "Ask your artist",
+        "Work visibility": "Arm and chest cover easily, hands and neck do not"
+      },
+      "related": ["small-tattoos-for-men", "tattoo-ideas-male-arm", "chest-tattoo-ideas-for-guys", "sleeve-tattoo-ideas-for-men", "hand-tattoo-ideas", "forearm-tattoo-ideas-for-men", "forearm-tattoo-ideas", "couple-tattoo-ideas"]
+    },
+    {
+      "slug": "tattoo-ideas-for-women",
+      "h1": "Tattoo ideas for women",
+      "volume": 22200, "kd": 29,
+      "placementLabel": "Forearm", "sizeRange": "3-12 cm",
+      "answer": [
+        "Ideas for women across forearm, thigh, wrist and behind the ear, from fine line to bold traditional.",
+        "Most designs here run 3-12 cm and take one to three hours - confirm with your artist."
+      ],
+      "images": 24,
+      "gallery": {
+        "placement": "Inner forearm", "size": "8 cm", "style": "Fine line", "color": "Black", "altPattern": "Tattoo idea for women, reference {n}",
+        "items": [
+          { "slug": "peony-crescent-forearm", "name": "Peony crescent tattoo", "placement": "Inner forearm", "size": "10 cm", "style": "Fine line", "color": "Black", "summary": "A slim crescent moon softened by an airy peony and leaf stem." },
+          { "slug": "watercolor-kingfisher-arm", "name": "Watercolor kingfisher tattoo", "placement": "Outer upper arm", "size": "12 cm", "style": "Watercolor", "color": "Teal, rust and black", "summary": "A small kingfisher perched on reeds with restrained pigment washes." },
+          { "slug": "ornamental-fan-shoulder", "name": "Ornamental fan tattoo", "placement": "Upper shoulder", "size": "15 cm", "style": "Ornamental", "color": "Black and muted gold", "summary": "A folding fan filled with dense filigree and a delicate hanging detail." },
+          { "slug": "traditional-cherries-ankle", "name": "Traditional cherry tattoo", "placement": "Outer ankle", "size": "6 cm", "style": "Traditional", "color": "Red, green and black", "summary": "Two bright cherries drawn with bold outlines and compact leaves." },
+          { "slug": "blackwork-fern-thigh", "name": "Blackwork fern tattoo", "placement": "Outer thigh", "size": "22 cm", "style": "Blackwork", "color": "Black", "summary": "A long fern frond shaped to follow the natural line of the thigh." },
+          { "slug": "realistic-shell-forearm", "name": "Realistic seashell tattoo", "placement": "Inner forearm", "size": "7 cm", "style": "Microrealism", "color": "Black and grey", "summary": "A small scallop shell with soft depth and precise ribbed texture." },
+          { "slug": "single-line-dancer-wrist", "name": "Single-line dancer tattoo", "placement": "Inner wrist", "size": "7 cm", "style": "Minimalist", "color": "Black", "summary": "One continuous line captures a dancer in a loose, expressive pose." },
+          { "slug": "celestial-moth-spine", "name": "Celestial moth tattoo", "placement": "Upper spine", "size": "16 cm", "style": "Fine line", "color": "Black", "summary": "A centered moth extended by small stars and a vertical moon phase trail." },
+          { "slug": "neo-traditional-rabbit-arm", "name": "Neo-traditional rabbit tattoo", "placement": "Outer upper arm", "size": "16 cm", "style": "Neo-traditional", "color": "Green, ochre and black", "summary": "A watchful rabbit portrait framed by layered wildflowers and leaves." },
+          { "slug": "botanical-snake-collarbone", "name": "Botanical snake tattoo", "placement": "Collarbone", "size": "15 cm", "style": "Fine line", "color": "Black", "summary": "A slender snake moves beneath a light jasmine branch across the collarbone." },
+          { "slug": "geometric-lotus-calf", "name": "Geometric lotus tattoo", "placement": "Outer calf", "size": "16 cm", "style": "Geometric dotwork", "color": "Black", "summary": "A symmetrical lotus anchored by pointed geometry and gentle dot shading." },
+          { "slug": "window-landscape-forearm", "name": "Architectural window tattoo", "placement": "Inner forearm", "size": "11 cm", "style": "Fine line", "color": "Black", "summary": "An arched window contains a tiny landscape rendered in precise micro lines." },
+          { "slug": "watercolor-iris-shoulder", "name": "Watercolor iris tattoo", "placement": "Outer shoulder", "size": "18 cm", "style": "Watercolor", "color": "Violet, indigo and black", "summary": "A tall iris crosses the shoulder through loose violet and indigo washes." },
+          { "slug": "realistic-fox-thigh", "name": "Realistic fox tattoo", "placement": "Outer thigh", "size": "18 cm", "style": "Realism", "color": "Black, grey and rust", "summary": "A calm fox portrait uses soft fur shading and one warm rust accent." },
+          { "slug": "ornamental-bracelet-forearm", "name": "Ornamental bracelet tattoo", "placement": "Mid forearm", "size": "5 cm band", "style": "Ornamental", "color": "Black", "summary": "A lace-inspired band wraps the forearm with even rhythm and clean edges." },
+          { "slug": "traditional-swallow-wrist", "name": "Traditional swallow tattoo", "placement": "Inner wrist", "size": "6 cm", "style": "Traditional", "color": "Navy, red and black", "summary": "A compact flying swallow keeps classic color and bold readability." },
+          { "slug": "crane-reeds-calf", "name": "Crane and reeds tattoo", "placement": "Outer calf", "size": "19 cm", "style": "Japanese black and grey", "color": "Black and grey", "summary": "A standing crane rises through sparse reeds in a quiet vertical composition." },
+          { "slug": "red-brush-shoulder", "name": "Red brush shoulder tattoo", "placement": "Outer shoulder", "size": "14 cm", "style": "Abstract", "color": "Red and black", "summary": "A red brush gesture crosses a thin black circle with broad negative space." },
+          { "slug": "birth-flower-bouquet-arm", "name": "Birth flower bouquet tattoo", "placement": "Outer upper arm", "size": "15 cm", "style": "Fine line", "color": "Black", "summary": "Three distinct birth flowers gather into a light bouquet tied by a ribbon." },
+          { "slug": "moon-rabbit-thigh", "name": "Moon rabbit tattoo", "placement": "Outer thigh", "size": "17 cm", "style": "Blackwork", "color": "Black", "summary": "A rabbit silhouette sits inside a dark crescent cut with tiny stars." },
+          { "slug": "hummingbird-fuchsia-ankle", "name": "Hummingbird and fuchsia tattoo", "placement": "Lower calf", "size": "12 cm", "style": "Color realism", "color": "Green, magenta and black", "summary": "A jewel-toned hummingbird hovers beside one hanging fuchsia blossom." },
+          { "slug": "minimal-nautilus-behind-ear", "name": "Minimal shell tattoo", "placement": "Behind the ear", "size": "3 cm", "style": "Minimalist", "color": "Black", "summary": "A tiny nautilus contour fits neatly behind the ear without crowding." },
+          { "slug": "ornate-seahorse-forearm", "name": "Neo-traditional seahorse tattoo", "placement": "Inner forearm", "size": "14 cm", "style": "Neo-traditional", "color": "Teal, coral and mustard", "summary": "An ornate seahorse combines saturated marine color with a strong outline." },
+          { "slug": "ornamental-sun-spine", "name": "Ornamental sun tattoo", "placement": "Upper spine", "size": "17 cm", "style": "Ornamental dotwork", "color": "Black", "summary": "A radiant sun extends into balanced filigree rays and a soft dotted halo." }
+        ]
+      },
+      "details": {
+        "Pain level": "Varies by area",
+        "Typical size": "3-12 cm",
+        "Session time": "1-3 hours",
+        "Typical price": "$120-$600",
+        "Healing": "Ask your artist",
+        "Work visibility": "Forearm and wrist show, thigh and ribs cover easily"
+      },
+      "related": ["flower-tattoo-ideas", "butterfly-tattoo-ideas", "fine-line-tattoo-ideas", "forearm-tattoo-ideas", "couple-tattoo-ideas", "hand-tattoo-ideas", "small-tattoos-for-men", "tattoo-ideas-for-men"]
+    },
+    {
+      "slug": "small-tattoos-for-men",
+      "h1": "Small tattoos for men",
+      "volume": 12100, "kd": 28,
+      "placementLabel": "Forearm", "sizeRange": "3-6 cm",
+      "answer": [
+        "Compact designs for men that stay readable at 3-6 cm - inner forearm, wrist, chest and behind the ear.",
+        "Most take under an hour and suit a first tattoo."
+      ],
+      "images": 24,
+      "gallery": {
+        "placement": "Inner forearm", "size": "5 cm", "style": "Fine line", "color": "Black", "altPattern": "Small tattoo for men, reference {n}",
+        "items": [
+          { "slug": "smoking-match-forearm", "name": "Smoking match tattoo", "placement": "Inner forearm", "size": "5 cm", "style": "Minimalist", "color": "Black and grey", "summary": "A burned match and one smoke curl make a narrow, readable first tattoo." },
+          { "slug": "chess-knight-wrist", "name": "Chess knight tattoo", "placement": "Inner wrist", "size": "4 cm", "style": "Blackwork", "color": "Black", "summary": "A compact knight silhouette uses one skin break to separate the mane." },
+          { "slug": "paper-airplane-forearm", "name": "Paper airplane tattoo", "placement": "Outer forearm", "size": "4 cm", "style": "Fine line", "color": "Black", "summary": "A tiny paper plane follows a short broken flight path across the forearm." },
+          { "slug": "tiny-astronaut-ankle", "name": "Tiny astronaut tattoo", "placement": "Outer ankle", "size": "5 cm", "style": "Illustrative", "color": "Black, grey and gold", "summary": "A floating astronaut stays simple enough to read at ankle scale." },
+          { "slug": "lightning-bolt-arm", "name": "Lightning bolt tattoo", "placement": "Back of upper arm", "size": "4 cm", "style": "Geometric blackwork", "color": "Black", "summary": "A single sharp bolt creates a high-contrast mark above the elbow." },
+          { "slug": "roman-arch-forearm", "name": "Roman arch tattoo", "placement": "Inner forearm", "size": "6 cm", "style": "Fine line", "color": "Black and grey", "summary": "A miniature stone arch frames a distant sun without tiny lettering." },
+          { "slug": "realistic-oak-leaf-wrist", "name": "Oak leaf tattoo", "placement": "Outer wrist", "size": "5 cm", "style": "Microrealism", "color": "Black and grey", "summary": "A single oak leaf keeps natural veins and a clear tapered silhouette." },
+          { "slug": "loop-koi-calf", "name": "Minimal koi tattoo", "placement": "Lower calf", "size": "6 cm", "style": "Minimalist", "color": "Black", "summary": "A koi fish bends into one open loop drawn with spare continuous lines." },
+          { "slug": "tiny-campfire-chest", "name": "Tiny campfire tattoo", "placement": "Upper chest", "size": "5 cm", "style": "Traditional", "color": "Orange, ochre and black", "summary": "Three logs and one simple flame form a warm compact chest piece." },
+          { "slug": "vintage-camera-forearm", "name": "Vintage camera tattoo", "placement": "Inner forearm", "size": "6 cm", "style": "Microrealism", "color": "Black and grey", "summary": "A tiny rangefinder camera keeps recognizable controls without brand text." },
+          { "slug": "origami-fox-calf", "name": "Origami fox tattoo", "placement": "Outer calf", "size": "6 cm", "style": "Geometric", "color": "Black and rust", "summary": "Angular folds build a fox face with one restrained rust-colored plane." },
+          { "slug": "traditional-dagger-ankle", "name": "Small dagger tattoo", "placement": "Inner ankle", "size": "7 cm", "style": "Traditional", "color": "Red and black", "summary": "A short dagger uses a bold outline and a muted red handle for clarity." },
+          { "slug": "circle-wave-wrist", "name": "Circle wave tattoo", "placement": "Inner wrist", "size": "5 cm", "style": "Illustrative", "color": "Black and cobalt", "summary": "A cobalt wave turns inside a clean black ring without crowding the wrist." },
+          { "slug": "raven-silhouette-behind-ear", "name": "Raven silhouette tattoo", "placement": "Behind the ear", "size": "4 cm", "style": "Blackwork", "color": "Black", "summary": "A flying raven reduces to a crisp winged silhouette behind the ear." },
+          { "slug": "orbiting-satellite-arm", "name": "Satellite tattoo", "placement": "Outer upper arm", "size": "6 cm", "style": "Fine line", "color": "Black and rust", "summary": "A miniature satellite floats beside two stars in an open composition." },
+          { "slug": "engraved-scarab-forearm", "name": "Scarab tattoo", "placement": "Inner forearm", "size": "6 cm", "style": "Engraving", "color": "Black", "summary": "An engraved scarab uses controlled hatching and a strong outer shape." },
+          { "slug": "tiny-lighthouse-forearm", "name": "Lighthouse tattoo", "placement": "Outer forearm", "size": "7 cm", "style": "Fine line", "color": "Black and grey", "summary": "A narrow lighthouse projects two simple beams with no lettering." },
+          { "slug": "black-bat-chest", "name": "Black bat tattoo", "placement": "Upper chest", "size": "6 cm", "style": "Blackwork", "color": "Black", "summary": "A small flying bat uses narrow skin breaks to define both wings." },
+          { "slug": "traditional-horseshoe-arm", "name": "Horseshoe tattoo", "placement": "Outer upper arm", "size": "6 cm", "style": "Traditional", "color": "Gold and black", "summary": "A bold horseshoe keeps its classic form without banners or lettering." },
+          { "slug": "minimal-anchor-ankle", "name": "Minimal anchor tattoo", "placement": "Inner ankle", "size": "5 cm", "style": "Minimalist", "color": "Black", "summary": "A spare anchor and short rope loop fit neatly above the ankle." },
+          { "slug": "mountain-sunrise-arm", "name": "Mountain sunrise tattoo", "placement": "Back of upper arm", "size": "7 cm", "style": "Illustrative", "color": "Black and ochre", "summary": "A ridge and ochre sun sit inside a softly rounded rectangular frame." },
+          { "slug": "tiny-phoenix-forearm", "name": "Tiny phoenix tattoo", "placement": "Inner forearm", "size": "7 cm", "style": "Fine line", "color": "Black and red", "summary": "A rising phoenix becomes a clear flame-shaped outline with one red accent." },
+          { "slug": "pine-cone-calf", "name": "Pine cone tattoo", "placement": "Outer calf", "size": "6 cm", "style": "Microrealism", "color": "Black and grey", "summary": "A realistic pine cone preserves layered scales in a compact oval shape." },
+          { "slug": "broken-chain-wrist", "name": "Broken chain tattoo", "placement": "Inner wrist", "size": "6 cm", "style": "Black and grey realism", "color": "Black and grey", "summary": "Two separated link ends communicate a broken chain without extra detail." }
+        ]
+      },
+      "details": {
+        "Pain level": "Commonly described as mild to moderate",
+        "Typical size": "3-6 cm",
+        "Session time": "30-60 minutes",
+        "Typical price": "Usually a shop minimum",
+        "Healing": "Ask your artist",
+        "Work visibility": "Easy to cover on the inner forearm or chest"
+      },
+      "related": ["forearm-tattoo-ideas-for-men", "tattoo-ideas-for-men", "hand-tattoo-ideas", "fine-line-tattoo-ideas", "tattoo-ideas-male-arm", "couple-tattoo-ideas", "forearm-tattoo-ideas", "chest-tattoo-ideas-for-guys"]
+    },
+    {
+      "slug": "flower-tattoo-ideas",
+      "h1": "Flower tattoo ideas",
+      "volume": 9900, "kd": 32,
+      "placementLabel": "Shoulder", "sizeRange": "5-15 cm",
+      "answer": [
+        "Peonies, roses, wildflowers and botanical linework across shoulder, forearm, ribs and thigh.",
+        "Fine line versions start around 5 cm; shaded pieces need 10 cm or more to hold their detail."
+      ],
+      "images": 24,
+      "gallery": {
+        "placement": "Shoulder", "size": "12 cm", "style": "Fine line", "color": "Black", "altPattern": "Flower tattoo idea, reference {n}",
+        "items": [
+          { "slug": "blackwork-peony-shoulder", "name": "Blackwork peony tattoo", "placement": "Shoulder cap", "size": "20 cm", "style": "Blackwork", "color": "Black", "summary": "A layered peony uses broad leaves and clean skin breaks to fit the shoulder." },
+          { "slug": "traditional-rose-forearm", "name": "Traditional rose tattoo", "placement": "Outer forearm", "size": "12 cm", "style": "Traditional", "color": "Red, green and black", "summary": "A classic red rose stays compact through bold outlines and two dark leaves." },
+          { "slug": "wildflower-spine", "name": "Wildflower spine tattoo", "placement": "Upper spine", "size": "22 cm", "style": "Fine line", "color": "Black", "summary": "Cornflower, yarrow and grasses form a light vertical meadow along the spine." },
+          { "slug": "ornamental-lotus-upper-back", "name": "Ornamental lotus tattoo", "placement": "Upper back", "size": "16 cm", "style": "Ornamental dotwork", "color": "Black", "summary": "A symmetrical lotus expands into filigree and soft dotted shading." },
+          { "slug": "watercolor-sunflower-calf", "name": "Watercolor sunflower tattoo", "placement": "Outer calf", "size": "16 cm", "style": "Watercolor", "color": "Ochre, brown and green", "summary": "A warm sunflower combines a defined center with restrained pigment washes." },
+          { "slug": "japanese-chrysanthemum-thigh", "name": "Japanese chrysanthemum tattoo", "placement": "Outer thigh", "size": "25 cm", "style": "Japanese", "color": "Black, grey and muted red", "summary": "Layered chrysanthemum petals wrap the thigh through wind bars and one red accent." },
+          { "slug": "minimal-lavender-wrist", "name": "Minimal lavender tattoo", "placement": "Inner wrist", "size": "6 cm", "style": "Minimalist", "color": "Black and violet", "summary": "A slim lavender sprig keeps three quiet violet buds and ample spacing." },
+          { "slug": "realistic-magnolia-arm", "name": "Realistic magnolia tattoo", "placement": "Outer upper arm", "size": "18 cm", "style": "Black and grey realism", "color": "Black and grey", "summary": "Two open magnolias sit on a softly shaded branch shaped to the upper arm." },
+          { "slug": "red-poppy-upper-arm", "name": "Red poppy upper-arm tattoo", "placement": "Outer upper arm", "size": "13 cm", "style": "Fine line", "color": "Red and black", "summary": "A translucent red poppy rises from a narrow black stem without heavy detail." },
+          { "slug": "micro-orchid-forearm", "name": "Microrealist orchid tattoo", "placement": "Inner forearm", "size": "12 cm", "style": "Microrealism", "color": "Black, grey and yellow", "summary": "A white orchid relies on soft grey shading and one muted yellow center." },
+          { "slug": "geometric-dahlia-calf", "name": "Geometric dahlia tattoo", "placement": "Outer calf", "size": "17 cm", "style": "Geometric dotwork", "color": "Black", "summary": "Radial dahlia petals create a precise circular pattern with dotted depth." },
+          { "slug": "single-line-tulip-ankle", "name": "Single-line tulip tattoo", "placement": "Outer ankle", "size": "9 cm", "style": "Minimalist", "color": "Black", "summary": "One continuous contour draws a tulip with generous negative space." },
+          { "slug": "neo-traditional-marigold-chest", "name": "Marigold tattoo", "placement": "Upper chest", "size": "13 cm", "style": "Neo-traditional", "color": "Orange, ochre and green", "summary": "A saturated marigold balances layered petals with two dark green leaves." },
+          { "slug": "cherry-blossom-shoulder", "name": "Cherry blossom tattoo", "placement": "Shoulder cap", "size": "20 cm", "style": "Japanese", "color": "Pink, black and grey", "summary": "A flowering branch sweeps over the shoulder through soft wind bars." },
+          { "slug": "black-grey-lily-thigh", "name": "Black and grey lily tattoo", "placement": "Outer thigh", "size": "22 cm", "style": "Black and grey", "color": "Black and grey", "summary": "Long lily petals and leaves follow the vertical line of the thigh." },
+          { "slug": "engraved-camellia-forearm", "name": "Engraved camellia tattoo", "placement": "Inner forearm", "size": "14 cm", "style": "Engraving", "color": "Black", "summary": "Dense botanical hatching gives a round camellia the feel of an antique study." },
+          { "slug": "traditional-carnation-hand", "name": "Traditional carnation tattoo", "placement": "Back of hand", "size": "10 cm", "style": "Traditional", "color": "Red, green and black", "summary": "A red carnation uses bold edges and a compact stem suited to the hand." },
+          { "slug": "watercolor-hibiscus-calf", "name": "Watercolor hibiscus tattoo", "placement": "Outer calf", "size": "15 cm", "style": "Watercolor", "color": "Coral, magenta and black", "summary": "Loose coral and magenta washes surround a few precise black stamens." },
+          { "slug": "blackwork-iris-arm", "name": "Blackwork iris tattoo", "placement": "Outer upper arm", "size": "18 cm", "style": "Blackwork", "color": "Black", "summary": "Broad black petals are separated by crisp negative-space veins." },
+          { "slug": "tiny-daisy-behind-ear", "name": "Tiny daisy tattoo", "placement": "Behind the ear", "size": "3 cm", "style": "Minimalist", "color": "Black and ochre", "summary": "A tiny outlined daisy fits behind the ear with one ochre center." },
+          { "slug": "engraved-protea-shoulder", "name": "Protea shoulder tattoo", "placement": "Shoulder cap", "size": "19 cm", "style": "Engraving", "color": "Black", "summary": "Sculptural protea petals use botanical hatching to wrap the shoulder." },
+          { "slug": "bluebell-ankle", "name": "Fine-line bluebell tattoo", "placement": "Outer ankle", "size": "10 cm", "style": "Fine line", "color": "Blue and black", "summary": "Four muted blue bells hang from a slim stem above the ankle." },
+          { "slug": "forget-me-not-collarbone", "name": "Forget-me-not tattoo", "placement": "Outer collarbone", "size": "8 cm", "style": "Fine line", "color": "Blue, yellow and black", "summary": "A small cluster of blue flowers sits lightly near the shoulder." },
+          { "slug": "ranunculus-vase-arm", "name": "Flower vase tattoo", "placement": "Outer upper arm", "size": "18 cm", "style": "Illustrative", "color": "Terracotta, green and coral", "summary": "Ranunculus and eucalyptus rise from a patterned terracotta vase." }
+        ]
+      },
+      "details": {
+        "Pain level": "Commonly described as mild on the shoulder",
+        "Typical size": "5-15 cm",
+        "Session time": "1-3 hours",
+        "Typical price": "$150-$700",
+        "Healing": "Ask your artist",
+        "Work visibility": "Shoulder and ribs cover easily"
+      },
+      "related": ["butterfly-tattoo-ideas", "fine-line-tattoo-ideas", "tattoo-ideas-for-women", "forearm-tattoo-ideas", "hand-tattoo-ideas", "couple-tattoo-ideas", "small-tattoos-for-men", "tattoo-ideas-male-arm"]
+    },
+    {
+      "slug": "couple-tattoo-ideas",
+      "h1": "Couple tattoo ideas",
+      "volume": 9900, "kd": 16,
+      "placementLabel": "Forearm", "sizeRange": "3-8 cm",
+      "answer": [
+        "Matching and complementary designs for two people - paired symbols, split motifs and small companion pieces.",
+        "Most run 3-8 cm each on forearm, wrist or finger."
+      ],
+      "images": 24,
+      "gallery": {
+        "placement": "Inner forearm", "size": "6 cm", "style": "Fine line", "color": "Black", "altPattern": "Couple tattoo idea, reference {n}",
+        "items": [
+          { "slug": "sun-moon-wrists", "name": "Sun and moon couple tattoos", "placement": "Inner wrists", "size": "4 cm each", "style": "Fine line", "color": "Black", "summary": "A small sun and crescent moon share the same line weight without matching exactly." },
+          { "slug": "mountain-wave-forearms", "name": "Mountain and wave tattoos", "placement": "Outer forearms", "size": "7 cm each", "style": "Minimalist", "color": "Black and cobalt", "summary": "A mountain ridge and curling wave balance land and water in two simple marks." },
+          { "slug": "key-lock-forearms", "name": "Key and lock tattoos", "placement": "Inner forearms", "size": "6 cm each", "style": "Traditional", "color": "Black, brass and red", "summary": "A compact key and padlock use the same bold outline and restrained palette." },
+          { "slug": "complementary-koi-calves", "name": "Complementary koi tattoos", "placement": "Lower calves", "size": "13 cm each", "style": "Blackwork", "color": "Black", "summary": "Two koi curve toward each other with opposite eye and scale details." },
+          { "slug": "mirrored-paper-planes", "name": "Matching paper airplane tattoos", "placement": "Inner wrists", "size": "4 cm each", "style": "Fine line", "color": "Black", "summary": "Mirrored paper planes travel toward the center on short dotted paths." },
+          { "slug": "meeting-botanical-branches", "name": "Botanical couple tattoos", "placement": "Outer forearms", "size": "10 cm each", "style": "Fine line", "color": "Black", "summary": "Separate leaf branches visually join only when both forearms meet." },
+          { "slug": "compass-north-star", "name": "Compass and star tattoos", "placement": "Inner forearms", "size": "7 cm each", "style": "Engraving", "color": "Black and grey", "summary": "A compact compass rose pairs with a bright four-point north star." },
+          { "slug": "coffee-pot-cup", "name": "Coffee couple tattoos", "placement": "Inner wrists", "size": "4 cm each", "style": "Minimalist", "color": "Black", "summary": "A tiny moka pot and steaming cup make a playful everyday pair." },
+          { "slug": "fox-rabbit-upper-arms", "name": "Fox and rabbit tattoos", "placement": "Outer upper arms", "size": "15 cm each", "style": "Neo-traditional", "color": "Rust, green and black", "summary": "A fox and rabbit portrait share a botanical frame and autumn palette." },
+          { "slug": "cloud-lightning-wrists", "name": "Cloud and lightning tattoos", "placement": "Inner wrists", "size": "4 cm each", "style": "Blackwork", "color": "Black", "summary": "A rain cloud and sharp bolt form a compact weather pairing." },
+          { "slug": "abstract-circle-forearms", "name": "Abstract circle couple tattoos", "placement": "Outer forearms", "size": "8 cm each", "style": "Geometric dotwork", "color": "Black", "summary": "Two patterned semicircles become one complete circle when aligned." },
+          { "slug": "tide-shoreline-ankles", "name": "Tide and shoreline tattoos", "placement": "Outer ankles", "size": "7 cm each", "style": "Fine line", "color": "Black and blue", "summary": "An incoming tide meets a quiet shoreline and a tiny sun." },
+          { "slug": "rook-bishop-wrists", "name": "Chess couple tattoos", "placement": "Inner wrists", "size": "5 cm each", "style": "Engraving", "color": "Black and grey", "summary": "A rook and bishop use matching hatching without relying on labels." },
+          { "slug": "mirrored-origami-cranes", "name": "Origami crane couple tattoos", "placement": "Outer forearms", "size": "8 cm each", "style": "Geometric", "color": "Black and red", "summary": "Mirrored paper cranes face each other with one red fold apiece." },
+          { "slug": "cat-dog-calves", "name": "Cat and dog couple tattoos", "placement": "Lower calves", "size": "6 cm each", "style": "Minimalist", "color": "Black", "summary": "A sitting cat and standing dog become clear silhouettes with spare lines." },
+          { "slug": "book-comet-forearms", "name": "Book and comet tattoos", "placement": "Inner forearms", "size": "6 cm each", "style": "Fine line", "color": "Black", "summary": "Dots leaving an open book continue into the path of a small comet." },
+          { "slug": "rocket-planet-wrists", "name": "Rocket and planet tattoos", "placement": "Inner wrists", "size": "5 cm each", "style": "Fine line", "color": "Black and rust", "summary": "A retro rocket travels toward a ringed planet and two tiny stars." },
+          { "slug": "avocado-halves-forearms", "name": "Avocado couple tattoos", "placement": "Outer forearms", "size": "7 cm each", "style": "Traditional", "color": "Green, brown and black", "summary": "Two avocado halves differ by the seed while sharing one bold style." },
+          { "slug": "bow-arrow-forearms", "name": "Bow and arrow tattoos", "placement": "Inner forearms", "size": "8 cm each", "style": "Minimalist", "color": "Black", "summary": "A spare bow and matching arrow point toward each other across two forearms." },
+          { "slug": "split-yin-yang-wrists", "name": "Split yin and yang tattoos", "placement": "Inner wrists", "size": "5 cm each", "style": "Blackwork", "color": "Black", "summary": "Separate yin and yang shapes remain readable alone and complete together." },
+          { "slug": "fingerprint-circles-forearms", "name": "Fingerprint circle tattoos", "placement": "Outer forearms", "size": "7 cm each", "style": "Linework", "color": "Black", "summary": "Two distinct circular ridge patterns match in scale while staying individual." },
+          { "slug": "fire-ice-wrists", "name": "Fire and ice tattoos", "placement": "Inner wrists", "size": "5 cm each", "style": "Traditional and geometric", "color": "Red, cobalt and black", "summary": "A warm flame contrasts with a crisp ice crystal under one shared outline weight." },
+          { "slug": "lighthouse-sailboat-ankles", "name": "Lighthouse and sailboat tattoos", "placement": "Outer ankles", "size": "8 cm each", "style": "Fine line", "color": "Black and grey", "summary": "A sailboat heads toward the narrow beam of a companion lighthouse." },
+          { "slug": "mirrored-swallows-arms", "name": "Matching swallow tattoos", "placement": "Outer upper arms", "size": "11 cm each", "style": "Traditional", "color": "Navy, rust and black", "summary": "Two classic swallows mirror their flight toward the center." }
+        ]
+      },
+      "details": {
+        "Pain level": "Commonly described as mild",
+        "Typical size": "3-8 cm each",
+        "Session time": "30-90 minutes per person",
+        "Typical price": "Often two shop minimums",
+        "Healing": "Ask your artist",
+        "Work visibility": "Inner forearm and wrist are easy to cover"
+      },
+      "related": ["small-tattoos-for-men", "fine-line-tattoo-ideas", "tattoo-ideas-for-women", "flower-tattoo-ideas", "hand-tattoo-ideas", "forearm-tattoo-ideas", "butterfly-tattoo-ideas", "tattoo-ideas-for-men"]
+    },
+    {
+      "slug": "family-tattoo-ideas",
+      "h1": "Family tattoo ideas",
+      "volume": 8100, "kd": 24,
+      "placementLabel": "Forearm", "sizeRange": "5-15 cm",
+      "answer": [
+        "Family tattoo ideas built around silhouettes, trees, small symbols and connected motifs rather than names alone.",
+        "Most designs need 5-15 cm to keep each figure or detail readable - confirm the final scale with your artist."
+      ],
+      "images": 24,
+      "gallery": {
+        "placement": "Inner forearm", "size": "12 cm", "style": "Blackwork", "color": "Black", "altPattern": "Family tattoo idea, reference {n}",
+        "items": [
+          { "slug": "oak-family-tree-forearm", "name": "Oak family tree tattoo", "placement": "Inner forearm", "size": "14 cm", "style": "Blackwork", "color": "Black", "summary": "An oak with visible roots and three leaf clusters creates a strong family symbol." },
+          { "slug": "elephant-family-arm", "name": "Elephant family tattoo", "placement": "Outer upper arm", "size": "13 cm", "style": "Fine line", "color": "Black", "summary": "Three elephant silhouettes move together with gently linked trunks." },
+          { "slug": "three-swallows-chest", "name": "Three swallow family tattoo", "placement": "Upper chest", "size": "17 cm", "style": "Traditional", "color": "Navy, rust and black", "summary": "Three classic swallows rise in a loose arc near the shoulder." },
+          { "slug": "home-outline-forearm", "name": "Home outline tattoo", "placement": "Inner forearm", "size": "9 cm", "style": "Minimalist", "color": "Black and ochre", "summary": "A simple house, one lit window and a short path represent home without text." },
+          { "slug": "bear-family-mountain-calf", "name": "Bear family tattoo", "placement": "Outer calf", "size": "17 cm", "style": "Illustrative", "color": "Black and grey", "summary": "One large bear and two smaller silhouettes cross below a mountain ridge." },
+          { "slug": "interlocking-family-circles", "name": "Interlocking circle tattoo", "placement": "Inner wrist", "size": "7 cm", "style": "Geometric", "color": "Black", "summary": "Four circles overlap while retaining different subtle dot textures." },
+          { "slug": "linked-hands-forearm", "name": "Linked hands tattoo", "placement": "Outer forearm", "size": "11 cm", "style": "Fine line", "color": "Black", "summary": "Two stylized hands link by their little fingers in a light open drawing." },
+          { "slug": "penguin-family-arm", "name": "Penguin family tattoo", "placement": "Outer upper arm", "size": "15 cm", "style": "Neo-traditional", "color": "Black, cream, orange and blue", "summary": "Three penguins gather on a small ice-blue ground shape." },
+          { "slug": "four-birth-flowers-forearm", "name": "Four birth flower tattoo", "placement": "Inner forearm", "size": "15 cm", "style": "Fine line", "color": "Black", "summary": "Four different birth flowers gather into one bouquet tied by a simple cord." },
+          { "slug": "compass-home-arm", "name": "Home compass tattoo", "placement": "Outer upper arm", "size": "14 cm", "style": "Engraving", "color": "Black and grey", "summary": "A tiny house replaces the center of an engraved compass without labels." },
+          { "slug": "three-mountain-peaks-calf", "name": "Three peaks tattoo", "placement": "Outer calf", "size": "13 cm", "style": "Geometric blackwork", "color": "Black and ochre", "summary": "Three connected peaks of different heights sit beneath one ochre sun." },
+          { "slug": "wolf-pack-forearm", "name": "Wolf pack tattoo", "placement": "Outer forearm", "size": "18 cm", "style": "Black and grey", "color": "Black and grey", "summary": "Three wolf silhouettes move through a narrow stand of pine trees." },
+          { "slug": "nesting-dolls-arm", "name": "Nesting doll family tattoo", "placement": "Outer upper arm", "size": "15 cm", "style": "Traditional", "color": "Red, navy, cream and black", "summary": "Three nesting dolls step down in scale through one cohesive folk palette." },
+          { "slug": "four-connected-stars-wrist", "name": "Connected stars tattoo", "placement": "Inner wrist", "size": "8 cm", "style": "Fine line", "color": "Black", "summary": "Four distinct stars connect through one loose curved line." },
+          { "slug": "redwood-grove-forearm", "name": "Redwood family tattoo", "placement": "Inner forearm", "size": "18 cm", "style": "Blackwork", "color": "Black", "summary": "Four redwood trunks rise together through narrow negative-space branches." },
+          { "slug": "whale-pod-calf", "name": "Whale family tattoo", "placement": "Outer calf", "size": "17 cm", "style": "Watercolor", "color": "Navy, teal and black", "summary": "Three whale silhouettes swim upward through restrained teal water washes." },
+          { "slug": "three-sea-turtles-thigh", "name": "Sea turtle family tattoo", "placement": "Outer thigh", "size": "22 cm", "style": "Illustrative", "color": "Black, grey and teal", "summary": "Three turtles follow one vertical current with individually patterned shells." },
+          { "slug": "three-origami-cranes", "name": "Three origami cranes tattoo", "placement": "Outer forearm", "size": "15 cm", "style": "Geometric", "color": "Black and rust", "summary": "Three paper cranes show different stages of flight with one rust fold each." },
+          { "slug": "thread-three-rings-forearm", "name": "Family thread tattoo", "placement": "Inner forearm", "size": "14 cm", "style": "Illustrative", "color": "Brown, red and black", "summary": "Red thread from a wooden spool loops through three small rings." },
+          { "slug": "campfire-chairs-arm", "name": "Family campfire tattoo", "placement": "Outer upper arm", "size": "13 cm", "style": "Blackwork", "color": "Black and ochre", "summary": "Four simple chairs gather around a small ochre campfire." },
+          { "slug": "fingerprint-leaf-tree-calf", "name": "Fingerprint leaf tree tattoo", "placement": "Outer calf", "size": "16 cm", "style": "Fine line", "color": "Black", "summary": "Five leaves carry different ridge patterns on one slender tree." },
+          { "slug": "four-moon-phases-forearm", "name": "Four moon phases tattoo", "placement": "Inner forearm", "size": "15 cm", "style": "Blackwork dotwork", "color": "Black", "summary": "Four clearly different lunar phases create a calm vertical sequence." },
+          { "slug": "three-strand-rope-knot", "name": "Three-strand knot tattoo", "placement": "Inner wrist", "size": "7 cm", "style": "Microrealism", "color": "Black and grey", "summary": "Three textured rope strands braid into one compact sailor knot." },
+          { "slug": "sleeping-fox-family-arm", "name": "Fox family tattoo", "placement": "Outer upper arm", "size": "17 cm", "style": "Neo-traditional", "color": "Rust, cream and green", "summary": "Three foxes curl into a circular sleeping group framed by leaves." }
+        ]
+      },
+      "details": {
+        "Pain level": "Commonly described as moderate on the forearm",
+        "Typical size": "5-15 cm",
+        "Session time": "1-3 hours",
+        "Typical price": "$150-$700",
+        "Healing": "Ask your artist",
+        "Work visibility": "Inner forearm is easier to cover than outer"
+      },
+      "related": ["tattoo-ideas-for-men", "tattoo-ideas-for-women", "couple-tattoo-ideas", "small-tattoos-for-men", "forearm-tattoo-ideas", "fine-line-tattoo-ideas", "tattoo-ideas-male-arm", "flower-tattoo-ideas"]
+    },
+    {
+      "slug": "cover-up-tattoo-ideas",
+      "h1": "Cover up tattoo ideas",
+      "volume": 8100, "kd": 30,
+      "placementLabel": "Arm", "sizeRange": "Depends on the existing tattoo",
+      "answer": [
+        "Cover-up ideas use darker shapes, layered subjects and careful placement to work with the tattoo already on your skin.",
+        "Bring clear photos to an artist who specialises in cover-ups; the final size and palette depend on the existing ink."
+      ],
+      "images": 24,
+      "gallery": {
+        "placement": "Upper arm", "size": "18 cm", "style": "Blackwork", "color": "Black", "altPattern": "Cover up tattoo idea, reference {n}",
+        "items": [
+          { "slug": "blackwork-peony-cover-up", "name": "Peony cover-up tattoo", "placement": "Outer upper arm", "size": "22 cm", "style": "Blackwork", "color": "Black", "summary": "Broad petals and overlapping leaves can conceal a faded medium-size symbol." },
+          { "slug": "raven-fern-cover-up", "name": "Raven and fern cover-up", "placement": "Outer forearm", "size": "21 cm", "style": "Black and grey", "color": "Black and grey", "summary": "Dark wing feathers and layered fronds suit narrow lettering or uneven linework." },
+          { "slug": "koi-wave-cover-up", "name": "Koi wave cover-up tattoo", "placement": "Outer calf", "size": "25 cm", "style": "Japanese", "color": "Orange, blue and black", "summary": "Dense waves and scale patterns provide several places to absorb old color." },
+          { "slug": "mandala-shoulder-cover-up", "name": "Mandala shoulder cover-up", "placement": "Shoulder cap", "size": "21 cm", "style": "Geometric blackwork", "color": "Black", "summary": "Solid petals and dotwork rings work around a centered circular tattoo." },
+          { "slug": "panther-rose-cover-up", "name": "Panther cover-up tattoo", "placement": "Outer upper arm", "size": "23 cm", "style": "Neo-traditional", "color": "Black, red and green", "summary": "Deep fur, a red rose and dark leaves can cover a bold old motif." },
+          { "slug": "moth-thigh-cover-up", "name": "Moth cover-up tattoo", "placement": "Outer thigh", "size": "24 cm", "style": "Blackwork", "color": "Black", "summary": "Broad symmetrical wings offer dense coverage for a wide horizontal design." },
+          { "slug": "owl-forest-cover-up", "name": "Owl cover-up tattoo", "placement": "Outer forearm", "size": "22 cm", "style": "Black and grey realism", "color": "Black, grey and amber", "summary": "Feather shadows and pine needles can integrate irregular dark remnants." },
+          { "slug": "fern-ankle-cover-up", "name": "Fern ankle cover-up", "placement": "Lower leg", "size": "20 cm", "style": "Botanical blackwork", "color": "Black", "summary": "Overlapping fronds wrap around a small ankle band or scattered symbols." },
+          { "slug": "eagle-flower-cover-up", "name": "Eagle cover-up tattoo", "placement": "Outer upper arm", "size": "24 cm", "style": "Traditional", "color": "Navy, rust, cream and black", "summary": "Dark wings and a chrysanthemum create several strong blocks over old color." },
+          { "slug": "octopus-shoulder-cover-up", "name": "Octopus shoulder cover-up", "placement": "Shoulder cap", "size": "25 cm", "style": "Blackwork", "color": "Black", "summary": "Curving tentacles adapt to uneven edges and wrap a large shoulder piece." },
+          { "slug": "snake-chrysanthemum-cover-up", "name": "Snake flower cover-up", "placement": "Outer thigh", "size": "28 cm", "style": "Japanese", "color": "Black, grey and red", "summary": "Dark scales and layered petals can break up a dense vertical tattoo." },
+          { "slug": "stained-glass-rose-cover-up", "name": "Stained-glass rose cover-up", "placement": "Outer forearm", "size": "21 cm", "style": "Neo-traditional", "color": "Red, cobalt, amber and black", "summary": "Thick framework and saturated panels suit an older colored forearm piece." },
+          { "slug": "forest-calf-cover-up", "name": "Forest cover-up tattoo", "placement": "Outer calf", "size": "27 cm", "style": "Black and grey", "color": "Black and grey", "summary": "Layered pines and a dark mountain conceal a tall, uneven calf design." },
+          { "slug": "ornamental-cuff-cover-up", "name": "Ornamental cuff cover-up", "placement": "Mid forearm", "size": "9 cm band", "style": "Ornamental blackwork", "color": "Black", "summary": "Solid spear shapes can replace a faded tribal or lettering band." },
+          { "slug": "dragon-shoulder-cover-up", "name": "Dragon shoulder cover-up", "placement": "Shoulder cap", "size": "27 cm", "style": "Japanese", "color": "Black, grey, teal and red", "summary": "Scales, clouds and the dragon head provide dense coverage across the cap." },
+          { "slug": "abstract-brush-cover-up", "name": "Abstract brush cover-up", "placement": "Outer upper arm", "size": "22 cm", "style": "Abstract", "color": "Black, cobalt and ochre", "summary": "Layered brush gestures hide irregular shapes without forcing a figurative subject." },
+          { "slug": "stag-oak-cover-up", "name": "Stag cover-up tattoo", "placement": "Outer forearm", "size": "22 cm", "style": "Blackwork", "color": "Black", "summary": "Antlers and dense oak leaves can surround and absorb scattered old lines." },
+          { "slug": "lotus-back-cover-up", "name": "Lotus upper-back cover-up", "placement": "Upper back", "size": "24 cm", "style": "Ornamental blackwork", "color": "Black", "summary": "Layered solid petals suit a centered symbol between the shoulder blades." },
+          { "slug": "floral-half-sleeve-cover-up", "name": "Floral half-sleeve cover-up", "placement": "Upper arm", "size": "30 cm", "style": "Neo-traditional", "color": "Burgundy, navy and black", "summary": "Overlapping flowers and leaves cover several nearby tattoos as one panel." },
+          { "slug": "nautilus-thigh-cover-up", "name": "Nautilus cover-up tattoo", "placement": "Outer thigh", "size": "25 cm", "style": "Black and grey realism", "color": "Black and grey", "summary": "Deep shell chambers and seaweed suit a rounded dark thigh tattoo." },
+          { "slug": "skull-rose-cover-up", "name": "Skull and rose cover-up", "placement": "Outer upper arm", "size": "24 cm", "style": "Black and grey realism", "color": "Black and grey", "summary": "Cranial shadows and dark rose petals provide broad tonal coverage." },
+          { "slug": "phoenix-calf-cover-up", "name": "Phoenix cover-up tattoo", "placement": "Outer calf", "size": "28 cm", "style": "Neo-traditional", "color": "Rust, gold, red and black", "summary": "Layered flame feathers can cover a long old calf composition." },
+          { "slug": "storm-wave-shoulder-cover-up", "name": "Storm wave cover-up", "placement": "Shoulder cap", "size": "25 cm", "style": "Japanese", "color": "Blue, grey and black", "summary": "Dense water and cloud bars wrap an older shoulder tattoo from several angles." },
+          { "slug": "scarab-thigh-cover-up", "name": "Scarab cover-up tattoo", "placement": "Outer thigh", "size": "24 cm", "style": "Ornamental blackwork", "color": "Black and dark teal", "summary": "Solid wing cases and filigree can conceal a centered vertical motif." }
+        ]
+      },
+      "details": {
+        "Pain level": "Depends on placement and scar tissue",
+        "Typical size": "Usually larger than the original",
+        "Session time": "Often multiple sessions",
+        "Typical price": "Usually quoted after consultation",
+        "Healing": "Ask your artist or doctor",
+        "Work visibility": "Depends on the original placement"
+      },
+      "related": ["tattoo-ideas-for-men", "tattoo-ideas-male-arm", "sleeve-tattoo-ideas-for-men", "flower-tattoo-ideas", "forearm-tattoo-ideas", "hand-tattoo-ideas", "fine-line-tattoo-ideas", "chest-tattoo-ideas-for-guys"]
+    },
+    {
+      "slug": "tattoo-ideas-male-arm",
+      "h1": "Tattoo ideas for male arm",
+      "volume": 9900, "kd": 28,
+      "placementLabel": "Upper arm", "sizeRange": "10-20 cm",
+      "answer": [
+        "Upper arm and forearm designs for men - animals, ornamental linework and black and grey realism.",
+        "Most run 10-20 cm and take two to five hours."
+      ],
+      "images": 24,
+      "gallery": {
+        "placement": "Upper arm", "size": "15 cm", "style": "Realism", "color": "Black & grey", "altPattern": "Male arm tattoo idea, reference {n}",
+        "items": [
+          { "slug": "geometric-falcon-shoulder", "name": "Geometric falcon tattoo", "placement": "Shoulder and upper arm", "size": "22 cm", "style": "Geometric blackwork", "color": "Black and gold", "summary": "Angular falcon wings follow the deltoid and taper toward the bicep." },
+          { "slug": "hannya-maple-forearm", "name": "Hannya mask tattoo", "placement": "Outer forearm", "size": "20 cm", "style": "Japanese", "color": "Black, grey and red", "summary": "A hannya mask anchors a vertical layout with two red maple leaves." },
+          { "slug": "motorcycle-bicep", "name": "Motorcycle tattoo", "placement": "Outer bicep", "size": "16 cm", "style": "Black and grey realism", "color": "Black and grey", "summary": "A vintage cafe-racer keeps detailed metalwork without logos." },
+          { "slug": "blackwork-serpent-tricep", "name": "Serpent tricep tattoo", "placement": "Back of upper arm", "size": "24 cm", "style": "Blackwork", "color": "Black", "summary": "Bold coils run along the tricep through narrow skin-break scales." },
+          { "slug": "roman-bust-upper-arm", "name": "Roman bust tattoo", "placement": "Outer upper arm", "size": "21 cm", "style": "Engraving", "color": "Black and grey", "summary": "A cracked marble portrait sits against a dark laurel." },
+          { "slug": "ram-inner-bicep", "name": "Ram bicep tattoo", "placement": "Inner bicep", "size": "17 cm", "style": "Neo-traditional", "color": "Ochre, green and black", "summary": "Curved horns frame a ram portrait and green oak leaves." },
+          { "slug": "bauhaus-forearm", "name": "Bauhaus forearm tattoo", "placement": "Inner forearm", "size": "18 cm", "style": "Abstract geometric", "color": "Black, cobalt and rust", "summary": "Bars, a semicircle and one square create a vertical rhythm." },
+          { "slug": "frog-warrior-arm", "name": "Frog warrior tattoo", "placement": "Outer upper arm", "size": "20 cm", "style": "Japanese illustrative", "color": "Green, rust and black", "summary": "An armored frog holds a lowered spear in a compact scene." },
+          { "slug": "lion-eye-bicep", "name": "Lion eye tattoo", "placement": "Outer bicep", "size": "18 cm", "style": "Realism", "color": "Black, grey and amber", "summary": "A lion eye appears through torn-stone shading with one amber focus." },
+          { "slug": "traditional-lighthouse-arm", "name": "Traditional lighthouse tattoo", "placement": "Inner upper arm", "size": "18 cm", "style": "Traditional", "color": "Navy, red, cream and black", "summary": "A striped lighthouse rises beneath compact storm clouds." },
+          { "slug": "armor-shoulder-panel", "name": "Ornamental armor tattoo", "placement": "Shoulder cap", "size": "22 cm", "style": "Ornamental dotwork", "color": "Black", "summary": "Spear-shaped geometry forms a fitted deltoid panel." },
+          { "slug": "watercolor-phoenix-forearm", "name": "Watercolor phoenix tattoo", "placement": "Outer forearm", "size": "22 cm", "style": "Watercolor", "color": "Rust, gold, cobalt and black", "summary": "A black line structure carries loose color upward along the arm." },
+          { "slug": "circuit-board-forearm", "name": "Circuit board tattoo", "placement": "Inner forearm", "size": "20 cm", "style": "Geometric linework", "color": "Black and teal", "summary": "Precise paths and nodes create a technical pattern without text." },
+          { "slug": "astronaut-upper-arm", "name": "Astronaut arm tattoo", "placement": "Outer upper arm", "size": "19 cm", "style": "Black and grey realism", "color": "Black and grey", "summary": "An unbranded astronaut drifts above a crescent planet." },
+          { "slug": "botanical-dagger-tricep", "name": "Botanical dagger tattoo", "placement": "Back of upper arm", "size": "21 cm", "style": "Engraving", "color": "Black", "summary": "An engraved blade and olive leaves follow the tricep vertically." },
+          { "slug": "norse-longship-arm", "name": "Norse longship tattoo", "placement": "Outer upper arm", "size": "21 cm", "style": "Engraving", "color": "Black and grey", "summary": "A wind-filled longship crosses carved waves without runes." },
+          { "slug": "koi-forearm-band", "name": "Koi forearm band tattoo", "placement": "Lower forearm", "size": "12 cm band", "style": "Japanese", "color": "Blue, rust and black", "summary": "Two koi circle through water bars in a true wraparound band." },
+          { "slug": "mountain-climber-arm", "name": "Mountain climber tattoo", "placement": "Outer upper arm", "size": "23 cm", "style": "Black and grey", "color": "Black and grey", "summary": "A climber silhouette ascends a narrow rock face." },
+          { "slug": "neo-traditional-bull-forearm", "name": "Bull forearm tattoo", "placement": "Outer forearm", "size": "20 cm", "style": "Neo-traditional", "color": "Brown, red and black", "summary": "A bull head and desert flowers fill a strong forearm shape." },
+          { "slug": "solar-system-bicep", "name": "Solar system tattoo", "placement": "Inner bicep", "size": "17 cm", "style": "Fine line", "color": "Black and ochre", "summary": "Small planets follow clean curved orbits around one ochre sun." },
+          { "slug": "forest-bear-tricep", "name": "Forest bear tattoo", "placement": "Back of upper arm", "size": "15 cm", "style": "Blackwork", "color": "Black", "summary": "Pine-tree skin breaks cut through a compact bear silhouette." },
+          { "slug": "boxing-gloves-arm", "name": "Boxing gloves tattoo", "placement": "Outer upper arm", "size": "17 cm", "style": "Traditional", "color": "Red, tan and black", "summary": "Two tied gloves form a clear old-school emblem." },
+          { "slug": "surreal-eye-forearm", "name": "Surreal eye tattoo", "placement": "Inner forearm", "size": "18 cm", "style": "Surreal realism", "color": "Black, grey and cobalt", "summary": "A desert landscape sits inside an eye with a cobalt iris ring." },
+          { "slug": "kitsune-mask-arm", "name": "Kitsune mask tattoo", "placement": "Outer upper arm", "size": "21 cm", "style": "Japanese", "color": "Cream, rust, teal and black", "summary": "A kitsune mask is framed by dark teal leaves." }
+        ]
+      },
+      "details": {
+        "Pain level": "Commonly described as mild to moderate",
+        "Typical size": "10-20 cm",
+        "Session time": "2-5 hours",
+        "Typical price": "$250-$900",
+        "Healing": "Ask your artist",
+        "Work visibility": "Covered by a short sleeve on the upper arm"
+      },
+      "related": ["sleeve-tattoo-ideas-for-men", "forearm-tattoo-ideas-for-men", "chest-tattoo-ideas-for-guys", "tattoo-ideas-for-men", "small-tattoos-for-men", "hand-tattoo-ideas", "forearm-tattoo-ideas", "fine-line-tattoo-ideas"]
+    },
+    {
+      "slug": "butterfly-tattoo-ideas",
+      "h1": "Butterfly tattoo ideas",
+      "volume": 8100, "kd": 32,
+      "placementLabel": "Upper arm", "sizeRange": "3-15 cm",
+      "answer": [
+        "Butterflies from 3 cm fine line singles to shaded 15 cm pieces on shoulder, forearm and spine.",
+        "Wing detail is the deciding factor - below 5 cm fine shading tends to close up over time."
+      ],
+      "images": 24,
+      "gallery": {
+        "placement": "Upper arm", "size": "7 cm", "style": "Fine line", "color": "Black", "altPattern": "Butterfly tattoo idea, reference {n}",
+        "items": [
+          { "slug": "monarch-forearm", "name": "Fine-line monarch tattoo", "placement": "Inner forearm", "size": "9 cm", "style": "Fine line", "color": "Black and burnt orange", "summary": "An open monarch keeps restrained orange cells inside fine black veins." },
+          { "slug": "blue-morpho-shoulder", "name": "Blue morpho tattoo", "placement": "Shoulder cap", "size": "15 cm", "style": "Watercolor", "color": "Cobalt, turquoise and black", "summary": "A blue morpho angles into flight through loose pigment washes." },
+          { "slug": "blackwork-swallowtail-thigh", "name": "Blackwork swallowtail tattoo", "placement": "Outer thigh", "size": "18 cm", "style": "Blackwork", "color": "Black", "summary": "Broad swallowtail wings use botanical negative-space veins." },
+          { "slug": "glasswing-wrist", "name": "Glasswing butterfly tattoo", "placement": "Inner wrist", "size": "6 cm", "style": "Microrealism", "color": "Black and grey", "summary": "Fine shading suggests transparent wing cells at a small scale." },
+          { "slug": "traditional-butterfly-arm", "name": "Traditional butterfly tattoo", "placement": "Outer upper arm", "size": "12 cm", "style": "Traditional", "color": "Red, navy, cream and black", "summary": "Bold outlines divide the wings into classic color panels." },
+          { "slug": "ornamental-butterfly-spine", "name": "Ornamental butterfly tattoo", "placement": "Upper spine", "size": "17 cm", "style": "Ornamental dotwork", "color": "Black", "summary": "Symmetrical filigree wings extend into a vertical dotted tail." },
+          { "slug": "red-admiral-ankle", "name": "Red admiral tattoo", "placement": "Outer ankle", "size": "8 cm", "style": "Color realism", "color": "Black, red and white", "summary": "A red admiral rests with partly closed wings above the ankle." },
+          { "slug": "geometric-butterfly-calf", "name": "Geometric butterfly tattoo", "placement": "Outer calf", "size": "14 cm", "style": "Geometric", "color": "Black and grey", "summary": "One wing uses dark facets while the other uses concentric arcs." },
+          { "slug": "butterfly-peony-arm", "name": "Butterfly and peony tattoo", "placement": "Outer upper arm", "size": "19 cm", "style": "Neo-traditional", "color": "Teal, burgundy, cream and black", "summary": "A teal butterfly hovers above a deep burgundy peony." },
+          { "slug": "butterfly-broken-chain", "name": "Butterfly chain tattoo", "placement": "Inner forearm", "size": "13 cm", "style": "Fine line", "color": "Black and grey", "summary": "A butterfly lifts away from one separated chain link." },
+          { "slug": "three-butterflies-collarbone", "name": "Three butterfly tattoo", "placement": "Outer collarbone", "size": "10 cm", "style": "Minimalist", "color": "Black", "summary": "Three outlined butterflies follow the collarbone in different flight angles." },
+          { "slug": "half-flower-butterfly-thigh", "name": "Flower wing butterfly tattoo", "placement": "Outer thigh", "size": "19 cm", "style": "Surreal illustrative", "color": "Black and violet", "summary": "One butterfly wing transforms into layered flower petals." },
+          { "slug": "cyber-sigil-butterfly", "name": "Cyber-sigil butterfly tattoo", "placement": "Outer forearm", "size": "17 cm", "style": "Cyber-sigilism", "color": "Black", "summary": "Sharp symmetrical lines build narrow spiked wings." },
+          { "slug": "stained-glass-butterfly", "name": "Stained-glass butterfly tattoo", "placement": "Outer upper arm", "size": "15 cm", "style": "Neo-traditional", "color": "Cobalt, amber, ruby, teal and black", "summary": "A thick black framework contains saturated glass-like panels." },
+          { "slug": "xray-butterfly-calf", "name": "X-ray butterfly tattoo", "placement": "Outer calf", "size": "16 cm", "style": "Black and grey", "color": "Black and grey", "summary": "Translucent-looking wings reveal delicate internal structures." },
+          { "slug": "origami-butterfly-wrist", "name": "Origami butterfly tattoo", "placement": "Inner wrist", "size": "6 cm", "style": "Geometric", "color": "Black and rust", "summary": "Folded black planes meet one rust-colored triangular accent." },
+          { "slug": "celestial-butterfly-moon", "name": "Butterfly moon tattoo", "placement": "Upper back", "size": "12 cm", "style": "Fine line", "color": "Black and gold", "summary": "A butterfly crosses a slim crescent surrounded by tiny gold dots." },
+          { "slug": "embroidered-butterfly-thigh", "name": "Embroidered butterfly tattoo", "placement": "Outer thigh", "size": "15 cm", "style": "Illustrative", "color": "Red, blue, gold and black", "summary": "Thread-like color strokes sit inside a stitched black outline." },
+          { "slug": "tiny-butterfly-behind-ear", "name": "Tiny butterfly tattoo", "placement": "Behind the ear", "size": "3 cm", "style": "Minimalist", "color": "Black", "summary": "A side-view butterfly keeps its wings partly closed." },
+          { "slug": "dotwork-butterfly-hand", "name": "Dotwork hand butterfly tattoo", "placement": "Back of hand", "size": "9 cm", "style": "Dotwork", "color": "Black", "summary": "Stippled wings remain contained within a crisp hand-sized outline." },
+          { "slug": "circling-butterflies-calf", "name": "Two butterfly tattoo", "placement": "Outer calf", "size": "14 cm", "style": "Illustrative", "color": "Black, grey and amber", "summary": "Two butterflies circle each other at different flight angles." },
+          { "slug": "butterfly-fern-forearm", "name": "Butterfly fern tattoo", "placement": "Inner forearm", "size": "15 cm", "style": "Fine line", "color": "Black and grey", "summary": "A butterfly rests on a curved fern frond with botanical detail." },
+          { "slug": "abstract-brush-butterfly", "name": "Abstract butterfly tattoo", "placement": "Shoulder", "size": "16 cm", "style": "Abstract", "color": "Cobalt, black and rust", "summary": "Two brush gestures suggest wings around a small rust body mark." },
+          { "slug": "orange-tip-lavender-ankle", "name": "Butterfly lavender tattoo", "placement": "Outer ankle", "size": "11 cm", "style": "Color realism", "color": "White, orange, black and violet", "summary": "An orange-tip butterfly rests naturally on a lavender stem." }
+        ]
+      },
+      "details": {
+        "Pain level": "Commonly described as mild",
+        "Typical size": "3-15 cm",
+        "Session time": "45 minutes to 3 hours",
+        "Typical price": "$120-$600",
+        "Healing": "Ask your artist",
+        "Work visibility": "Upper arm and spine cover easily"
+      },
+      "related": ["flower-tattoo-ideas", "fine-line-tattoo-ideas", "tattoo-ideas-for-women", "couple-tattoo-ideas", "forearm-tattoo-ideas", "hand-tattoo-ideas", "small-tattoos-for-men", "tattoo-ideas-male-arm"]
+    },
+    {
+      "slug": "chest-tattoo-ideas-for-guys",
+      "h1": "Chest tattoo ideas for guys",
+      "volume": 8100, "kd": 21,
+      "placementLabel": "Chest", "sizeRange": "15 cm and up",
+      "answer": [
+        "Chest pieces for men - single-side panels, symmetrical spreads and designs that run into the shoulder.",
+        "Most are 15 cm and up and are planned across several sessions."
+      ],
+      "images": 24,
+      "gallery": {
+        "placement": "Chest", "size": "20 cm", "style": "Black and grey", "color": "Black and grey", "altPattern": "Chest tattoo idea for guys, reference {n}",
+        "items": [
+          { "slug": "spread-wing-eagle-chest", "name": "Spread wing eagle chest tattoo", "placement": "Upper chest", "size": "28 cm", "style": "Neo-traditional", "color": "Black, brown and red", "summary": "A broad bird and layered wings follow the upper pectoral line." },
+          { "slug": "compass-sternum-chest", "name": "Compass chest tattoo", "placement": "Center chest", "size": "15 cm", "style": "Fine line", "color": "Black and grey", "summary": "A clean compass rose sits centrally below the collarbones." },
+          { "slug": "raven-sun-chest", "name": "Raven sun chest tattoo", "placement": "Upper chest", "size": "30 cm", "style": "Blackwork", "color": "Black", "summary": "Dark wings spread from a small sun placed over the sternum." },
+          { "slug": "clipper-ship-pectoral", "name": "Clipper ship chest tattoo", "placement": "Left pectoral", "size": "19 cm", "style": "Black and grey realism", "color": "Black and grey", "summary": "An engraved sailing ship fills one pectoral without crossing the center line." },
+          { "slug": "bear-oak-right-pectoral", "name": "Bear chest tattoo", "placement": "Right pectoral", "size": "20 cm", "style": "Neo-traditional", "color": "Black, brown and red", "summary": "A framed bear portrait uses leaves to fit the rounded pectoral shape." },
+          { "slug": "realistic-lion-pectoral", "name": "Lion chest tattoo", "placement": "Left pectoral", "size": "21 cm", "style": "Black and grey realism", "color": "Black and grey", "summary": "A softly shaded lion portrait creates a strong single-side chest panel." },
+          { "slug": "tiger-peony-chest", "name": "Tiger and peony chest tattoo", "placement": "Chest to shoulder", "size": "24 cm", "style": "Japanese", "color": "Black, orange and red", "summary": "A tiger and peony sweep from one pectoral into the shoulder cap." },
+          { "slug": "ornamental-wings-chest", "name": "Ornamental wing chest tattoo", "placement": "Center chest", "size": "24 cm", "style": "Illustrative", "color": "Black and grey", "summary": "Two narrow feathered wings mirror each other around the sternum." },
+          { "slug": "geometric-wolf-chest", "name": "Geometric wolf chest tattoo", "placement": "Center chest", "size": "24 cm", "style": "Geometric", "color": "Black and grey", "summary": "Faceted lines and dot shading form a centered wolf portrait." },
+          { "slug": "roman-statue-pectoral", "name": "Roman statue chest tattoo", "placement": "Right pectoral", "size": "18 cm", "style": "Engraving", "color": "Black and grey", "summary": "A classical statue fragment reads like an etched museum study." },
+          { "slug": "phoenix-spread-chest", "name": "Phoenix chest tattoo", "placement": "Upper chest", "size": "31 cm", "style": "Illustrative", "color": "Black and muted red", "summary": "A phoenix spreads evenly over both pectorals with the body at center." },
+          { "slug": "dotwork-mandala-sternum", "name": "Mandala chest tattoo", "placement": "Center chest", "size": "15 cm", "style": "Dotwork", "color": "Black", "summary": "A radial mandala creates a compact symmetrical sternum piece." },
+          { "slug": "blackwork-octopus-chest", "name": "Octopus chest tattoo", "placement": "Left pectoral", "size": "20 cm", "style": "Blackwork", "color": "Black and grey", "summary": "Curving tentacles make an organic frame across one side of the chest." },
+          { "slug": "mirrored-koi-chest", "name": "Two koi chest tattoo", "placement": "Both pectorals", "size": "29 cm", "style": "Japanese", "color": "Black and grey", "summary": "Two koi mirror each other beneath the collarbones." },
+          { "slug": "mountain-forest-pectoral", "name": "Mountain forest chest tattoo", "placement": "Right pectoral", "size": "19 cm", "style": "Fine line engraving", "color": "Black and grey", "summary": "Layered pines and peaks form a quiet landscape panel." },
+          { "slug": "panther-rose-chest", "name": "Panther and rose chest tattoo", "placement": "Left pectoral", "size": "16 cm", "style": "Traditional", "color": "Black and red", "summary": "A compact crawling panther pairs with one bold red rose." },
+          { "slug": "samurai-mask-chest", "name": "Samurai mask chest tattoo", "placement": "Chest to shoulder", "size": "24 cm", "style": "Japanese black and grey", "color": "Black and grey", "summary": "A detailed warrior mask follows the outer pectoral toward the shoulder." },
+          { "slug": "abstract-brush-chest", "name": "Abstract brush chest tattoo", "placement": "Upper chest", "size": "27 cm", "style": "Abstract", "color": "Black", "summary": "Loose brush marks cross the chest while leaving deliberate open skin." },
+          { "slug": "technical-geometry-sternum", "name": "Geometric sternum tattoo", "placement": "Center chest", "size": "17 cm", "style": "Fine line geometric", "color": "Black and grey", "summary": "Hexagonal construction lines build a precise vertical center piece." },
+          { "slug": "snake-upper-chest-collarbone", "name": "Snake collarbone tattoo", "placement": "Upper chest", "size": "18 cm", "style": "Fine line", "color": "Black and grey", "summary": "A slender snake and leaves follow the natural collarbone curve." },
+          { "slug": "angelic-wings-upper-chest", "name": "Angelic wings chest tattoo", "placement": "Both pectorals", "size": "30 cm", "style": "Black and grey engraving", "color": "Black and grey", "summary": "Mirrored feathered wings span both sides with a clear center gap." },
+          { "slug": "skull-raven-pectoral", "name": "Skull and raven chest tattoo", "placement": "Left pectoral", "size": "21 cm", "style": "Black and grey realism", "color": "Black and grey", "summary": "A raven rises behind a non-graphic skull in a dark one-side panel." },
+          { "slug": "botanical-stag-chest", "name": "Botanical stag chest tattoo", "placement": "Right pectoral", "size": "20 cm", "style": "Illustrative", "color": "Black and brown", "summary": "Oak leaves and antlers frame a compact stag portrait." },
+          { "slug": "japanese-dragon-chest", "name": "Japanese dragon chest tattoo", "placement": "Chest to shoulder", "size": "26 cm", "style": "Japanese", "color": "Black, grey and gold", "summary": "A coiling dragon travels from the center chest toward one shoulder." }
+        ]
+      },
+      "details": {
+        "Pain level": "Commonly described as high near the sternum",
+        "Typical size": "15 cm and up",
+        "Session time": "3-6 hours, often multiple sessions",
+        "Typical price": "Usually hourly or day rate",
+        "Healing": "Ask your artist",
+        "Work visibility": "Fully covered by a shirt"
+      },
+      "related": ["tattoo-ideas-male-arm", "sleeve-tattoo-ideas-for-men", "tattoo-ideas-for-men", "forearm-tattoo-ideas-for-men", "small-tattoos-for-men", "hand-tattoo-ideas", "forearm-tattoo-ideas", "fine-line-tattoo-ideas"]
+    },
+    {
+      "slug": "hand-tattoo-ideas",
+      "h1": "Hand tattoo ideas",
+      "volume": 8100, "kd": 27,
+      "placementLabel": "Hand", "sizeRange": "3-10 cm",
+      "answer": [
+        "Back of hand, side of hand and finger designs - bold shapes hold up here better than fine detail.",
+        "Hands are highly visible and are widely reported to need touch-ups sooner than covered areas."
+      ],
+      "images": 24,
+      "gallery": {
+        "placement": "Back of hand", "size": "7 cm", "style": "Blackwork", "color": "Black", "altPattern": "Hand tattoo idea, reference {n}",
+        "items": [
+          { "slug": "blackwork-rose-hand", "name": "Blackwork rose hand tattoo", "placement": "Back of hand", "size": "10 cm", "style": "Blackwork", "color": "Black and grey", "summary": "A large rose opens over the hand with leaves tapering toward the wrist." },
+          { "slug": "dotwork-mandala-hand", "name": "Mandala hand tattoo", "placement": "Back of hand", "size": "8 cm", "style": "Dotwork", "color": "Black", "summary": "A radial mandala uses the center of the hand for balanced symmetry." },
+          { "slug": "traditional-snake-hand", "name": "Snake hand tattoo", "placement": "Back of hand", "size": "10 cm", "style": "Traditional", "color": "Black, red and gold", "summary": "A coiled snake creates a bold readable shape above the knuckles." },
+          { "slug": "realistic-eye-hand", "name": "Realistic eye hand tattoo", "placement": "Back of hand", "size": "7 cm", "style": "Black and grey realism", "color": "Black and grey", "summary": "A softly shaded eye sits centrally between the wrist and knuckles." },
+          { "slug": "geometric-wolf-hand", "name": "Geometric wolf hand tattoo", "placement": "Back of hand", "size": "9 cm", "style": "Geometric", "color": "Black and rust", "summary": "Faceted linework fits a wolf portrait to the tapered hand shape." },
+          { "slug": "olive-branch-side-hand", "name": "Olive branch hand tattoo", "placement": "Side of hand", "size": "9 cm", "style": "Fine line", "color": "Black", "summary": "A slim botanical branch follows the outer edge below the little finger." },
+          { "slug": "hannya-mask-hand", "name": "Hannya mask hand tattoo", "placement": "Back of hand", "size": "10 cm", "style": "Japanese", "color": "Black, grey and red", "summary": "A detailed mask fills the hand while leaving the fingers clear." },
+          { "slug": "lightning-finger-hand", "name": "Lightning hand tattoo", "placement": "Hand to middle finger", "size": "9 cm", "style": "Minimalist", "color": "Black", "summary": "A single angular bolt continues from the hand onto one finger." },
+          { "slug": "luna-moth-hand", "name": "Luna moth hand tattoo", "placement": "Back of hand", "size": "8 cm", "style": "Ornamental", "color": "Black and grey", "summary": "A moth spreads across the hand with a small celestial accent." },
+          { "slug": "dagger-rose-hand", "name": "Dagger and rose hand tattoo", "placement": "Back of hand", "size": "10 cm", "style": "Traditional", "color": "Black, red and green", "summary": "A short dagger passes through a compact rose toward the middle finger." },
+          { "slug": "blackwork-spider-hand", "name": "Spider hand tattoo", "placement": "Back of hand", "size": "9 cm", "style": "Blackwork", "color": "Black", "summary": "Long legs use the width of the hand without covering the fingers." },
+          { "slug": "sun-moon-hand", "name": "Sun and moon hand tattoo", "placement": "Back of hand", "size": "7 cm", "style": "Fine line ornamental", "color": "Black and grey", "summary": "A small sun and crescent create a light celestial composition." },
+          { "slug": "swallow-hand", "name": "Swallow hand tattoo", "placement": "Back of hand", "size": "8 cm", "style": "Neo-traditional", "color": "Black, blue and rust", "summary": "A flying swallow crosses the hand diagonally with open wings." },
+          { "slug": "cyber-sigil-hand", "name": "Cyber-sigil hand tattoo", "placement": "Wrist to middle finger", "size": "13 cm", "style": "Cyber-sigilism", "color": "Black", "summary": "Sharp symmetrical marks form a continuous vertical hand piece." },
+          { "slug": "scarab-hand", "name": "Scarab hand tattoo", "placement": "Back of hand", "size": "6 cm", "style": "Microrealism", "color": "Black and grey", "summary": "An engraved scarab keeps fine detail inside a compact silhouette." },
+          { "slug": "peony-hand", "name": "Peony hand tattoo", "placement": "Wrist to hand", "size": "12 cm", "style": "Fine line botanical", "color": "Black and grey", "summary": "A peony opens from the wrist and curves across one side of the hand." },
+          { "slug": "tiny-moon-side-hand", "name": "Tiny moon hand tattoo", "placement": "Side of hand", "size": "3 cm", "style": "Minimalist", "color": "Black", "summary": "A crescent and three dots sit discreetly below the little finger." },
+          { "slug": "sacred-heart-hand", "name": "Sacred heart hand tattoo", "placement": "Back of hand", "size": "8 cm", "style": "Traditional", "color": "Black, red and gold", "summary": "A framed red heart creates a compact traditional centerpiece." },
+          { "slug": "koi-wave-hand", "name": "Koi hand tattoo", "placement": "Back of hand", "size": "10 cm", "style": "Japanese", "color": "Black and grey", "summary": "A koi swims diagonally through small wave curls toward the wrist." },
+          { "slug": "engraved-raven-hand", "name": "Raven hand tattoo", "placement": "Back of hand", "size": "9 cm", "style": "Engraving", "color": "Black", "summary": "Dense feather hatching gives a side-view raven a graphic silhouette." },
+          { "slug": "abstract-brush-hand", "name": "Abstract brush hand tattoo", "placement": "Back of hand", "size": "9 cm", "style": "Abstract", "color": "Black and rust", "summary": "One black gesture crosses a rust-red circle with deliberate open skin." },
+          { "slug": "realistic-skull-hand", "name": "Skull hand tattoo", "placement": "Back of hand", "size": "10 cm", "style": "Black and grey realism", "color": "Black and grey", "summary": "A non-graphic skull follows the hand from wrist to knuckles." },
+          { "slug": "fine-chain-knuckles", "name": "Chain knuckle tattoo", "placement": "Knuckle bases", "size": "8 cm", "style": "Fine line", "color": "Black", "summary": "Small linked loops form a light horizontal band above four fingers." },
+          { "slug": "compass-hand", "name": "Compass hand tattoo", "placement": "Back of hand", "size": "7 cm", "style": "Dotwork geometric", "color": "Black", "summary": "A compact compass rose points toward the middle finger." }
+        ]
+      },
+      "details": {
+        "Pain level": "Commonly described as high",
+        "Typical size": "3-10 cm",
+        "Session time": "1-3 hours",
+        "Typical price": "$150-$600",
+        "Healing": "Ask your artist",
+        "Work visibility": "Cannot be covered - check your workplace first"
+      },
+      "related": ["small-tattoos-for-men", "tattoo-ideas-for-men", "forearm-tattoo-ideas-for-men", "couple-tattoo-ideas", "flower-tattoo-ideas", "fine-line-tattoo-ideas", "tattoo-ideas-male-arm", "forearm-tattoo-ideas"]
+    },
+    {
+      "slug": "sleeve-tattoo-ideas-for-men",
+      "h1": "Sleeve tattoo ideas for men",
+      "volume": 8100, "kd": 34,
+      "placementLabel": "Full arm", "sizeRange": "Half to full sleeve",
+      "answer": [
+        "Half and full sleeves for men - how panels connect, where the flow breaks, what to plan before the first session.",
+        "A full sleeve is a multi-session project measured in days of chair time, not hours."
+      ],
+      "images": 24,
+      "gallery": {
+        "placement": "Full arm", "size": "Full sleeve", "style": "Mixed", "color": "Mixed", "altPattern": "Sleeve tattoo idea for men, reference {n}",
+        "items": [
+          { "slug": "japanese-dragon-koi-sleeve", "name": "Dragon and koi sleeve tattoo", "placement": "Shoulder to wrist", "size": "Full sleeve", "style": "Japanese", "color": "Black, grey and gold", "summary": "A dragon and koi connect through waves that carry the design around the elbow." },
+          { "slug": "mythology-statue-sleeve", "name": "Mythology sleeve tattoo", "placement": "Shoulder to wrist", "size": "Full sleeve", "style": "Black and grey realism", "color": "Black and grey", "summary": "Classical faces and architecture form a continuous sculptural sleeve." },
+          { "slug": "traditional-patchwork-sleeve", "name": "Traditional patchwork sleeve", "placement": "Full arm", "size": "Full sleeve", "style": "Traditional patchwork", "color": "Black, red and gold", "summary": "Spaced eagle, rose, dagger and swallow motifs leave visible skin between pieces." },
+          { "slug": "biomechanical-full-sleeve", "name": "Biomechanical sleeve tattoo", "placement": "Shoulder to wrist", "size": "Full sleeve", "style": "Biomechanical", "color": "Black and grey", "summary": "Mechanical structures follow muscles and joints for an integrated arm design." },
+          { "slug": "forest-landscape-sleeve", "name": "Forest landscape sleeve tattoo", "placement": "Shoulder to wrist", "size": "Full sleeve", "style": "Engraving", "color": "Black and grey", "summary": "Mountains, pines and a river descend through atmospheric layers." },
+          { "slug": "geometric-blackwork-sleeve", "name": "Geometric blackwork sleeve", "placement": "Full arm", "size": "Full sleeve", "style": "Geometric blackwork", "color": "Black", "summary": "Large polygons and dot gradients alternate with clean negative-space bands." },
+          { "slug": "tiger-chrysanthemum-sleeve", "name": "Tiger and chrysanthemum sleeve", "placement": "Shoulder to wrist", "size": "Full sleeve", "style": "Neo-traditional", "color": "Black, rust, gold and green", "summary": "A tiger and layered flowers create a saturated flowing color sleeve." },
+          { "slug": "ornamental-blackwork-sleeve", "name": "Ornamental sleeve tattoo", "placement": "Full arm", "size": "Full sleeve", "style": "Ornamental blackwork", "color": "Black", "summary": "Repeating arcs and floral geometry create rhythm around the arm." },
+          { "slug": "negative-space-blackout-sleeve", "name": "Negative-space blackout sleeve", "placement": "Shoulder to wrist", "size": "Full sleeve", "style": "Blackout", "color": "Black", "summary": "Solid black fields frame broad botanical windows of untouched skin." },
+          { "slug": "fine-line-patchwork-sleeve", "name": "Fine-line patchwork sleeve", "placement": "Full arm", "size": "Full sleeve", "style": "Fine-line patchwork", "color": "Black and grey", "summary": "Small celestial, botanical and architectural studies stay light and separated." },
+          { "slug": "raven-knotwork-sleeve", "name": "Raven knotwork sleeve tattoo", "placement": "Shoulder to wrist", "size": "Full sleeve", "style": "Illustrative black and grey", "color": "Black and grey", "summary": "Ravens and woven knotwork move through a windswept landscape." },
+          { "slug": "octopus-ocean-sleeve", "name": "Octopus ocean sleeve tattoo", "placement": "Shoulder to wrist", "size": "Full sleeve", "style": "Black and grey realism", "color": "Black and grey", "summary": "An octopus and small fish use deep-water currents to cross the elbow." },
+          { "slug": "natural-history-sleeve", "name": "Natural history sleeve tattoo", "placement": "Full arm", "size": "Full sleeve", "style": "Fine-line engraving", "color": "Black and grey", "summary": "Fern, moth, beetle and wildflowers form a scientific botanical study." },
+          { "slug": "surreal-clock-sleeve", "name": "Surreal clock sleeve tattoo", "placement": "Shoulder to wrist", "size": "Full sleeve", "style": "Surrealism", "color": "Black and grey", "summary": "Clock fragments and impossible staircases connect through soft shadows." },
+          { "slug": "wildlife-realism-sleeve", "name": "Wildlife realism sleeve tattoo", "placement": "Full arm", "size": "Full sleeve", "style": "Realism", "color": "Black and grey", "summary": "Bear, eagle and mountain forest blend through atmospheric transitions." },
+          { "slug": "samurai-peony-sleeve", "name": "Samurai and peony sleeve tattoo", "placement": "Shoulder to wrist", "size": "Full sleeve", "style": "Japanese", "color": "Black, grey and crimson", "summary": "A samurai mask and peonies are linked by wind bars around the arm." },
+          { "slug": "astronaut-space-sleeve", "name": "Astronaut space sleeve tattoo", "placement": "Shoulder to wrist", "size": "Full sleeve", "style": "Color realism", "color": "Blue, violet and black", "summary": "An anonymous astronaut floats through a layered nebula and small planets." },
+          { "slug": "abstract-brush-sleeve", "name": "Abstract brush sleeve tattoo", "placement": "Full arm", "size": "Full sleeve", "style": "Abstract", "color": "Black and rust", "summary": "Energetic black strokes cross rust circles while preserving open skin." },
+          { "slug": "sacred-geometry-sleeve", "name": "Geometric dotwork sleeve tattoo", "placement": "Shoulder to wrist", "size": "Full sleeve", "style": "Geometric dotwork", "color": "Black", "summary": "Interlocking circles and hexagons change density from shoulder to wrist." },
+          { "slug": "planet-orbit-sleeve", "name": "Planet sleeve tattoo", "placement": "Full arm", "size": "Full sleeve", "style": "Illustrative", "color": "Black, indigo and gold", "summary": "Planets and orbital arcs create a dark continuous space composition." },
+          { "slug": "medieval-armor-sleeve", "name": "Medieval armor sleeve tattoo", "placement": "Shoulder to wrist", "size": "Full sleeve", "style": "Black and grey realism", "color": "Black and grey", "summary": "Engraved plate sections follow the elbow and forearm like fitted armor." },
+          { "slug": "peony-thorn-blackwork-sleeve", "name": "Floral blackwork sleeve tattoo", "placement": "Full arm", "size": "Full sleeve", "style": "Floral blackwork", "color": "Black and grey", "summary": "Large peonies and thorny stems create strong dark-to-open contrast." },
+          { "slug": "raven-clock-trash-polka", "name": "Raven trash polka sleeve", "placement": "Shoulder to wrist", "size": "Full sleeve", "style": "Trash polka", "color": "Black and red", "summary": "A raven and clock fragments cut through red blocks and black textures." },
+          { "slug": "maritime-engraving-sleeve", "name": "Maritime sleeve tattoo", "placement": "Full arm", "size": "Full sleeve", "style": "Engraving", "color": "Black and grey", "summary": "A lighthouse, clipper ship and storm waves connect through rope framing." }
+        ]
+      },
+      "details": {
+        "Pain level": "Varies along the arm",
+        "Typical size": "Half sleeve to full sleeve",
+        "Session time": "Multiple sessions of 4-6 hours",
+        "Typical price": "Usually day rate",
+        "Healing": "Ask your artist",
+        "Work visibility": "A half sleeve stays under a short sleeve, a full one does not"
+      },
+      "related": ["tattoo-ideas-male-arm", "forearm-tattoo-ideas-for-men", "chest-tattoo-ideas-for-guys", "tattoo-ideas-for-men", "hand-tattoo-ideas", "small-tattoos-for-men", "forearm-tattoo-ideas", "fine-line-tattoo-ideas"]
+    },
+    {
+      "slug": "forearm-tattoo-ideas",
+      "h1": "Forearm tattoo ideas",
+      "volume": 5400, "kd": 27,
+      "placementLabel": "Forearm", "sizeRange": "3-20 cm",
+      "answer": [
+        "Inner and outer forearm designs, from 3 cm singles to full panels that read down the arm.",
+        "The flattest, most forgiving area to start with and the easiest to see on yourself."
+      ],
+      "images": 24,
+      "gallery": {
+        "placement": "Forearm", "size": "3-20 cm", "style": "Mixed", "color": "Mixed", "altPattern": "Forearm tattoo idea, reference {n}",
+        "items": [
+          { "slug": "botanical-snake-forearm", "name": "Botanical snake forearm tattoo", "placement": "Inner forearm", "size": "16 cm", "style": "Fine line", "color": "Black", "summary": "A slender snake and small leaves follow the long inner forearm shape." },
+          { "slug": "traditional-eagle-forearm", "name": "Traditional eagle forearm tattoo", "placement": "Outer forearm", "size": "15 cm", "style": "Traditional", "color": "Black, rust and gold", "summary": "Open wings create a bold tapered panel above the wrist." },
+          { "slug": "watercolor-koi-forearm", "name": "Watercolor koi forearm tattoo", "placement": "Inner forearm", "size": "16 cm", "style": "Watercolor", "color": "Blue, orange and black", "summary": "A diagonal koi uses loose color washes around a crisp outline." },
+          { "slug": "blackwork-raven-forearm", "name": "Blackwork raven forearm tattoo", "placement": "Outer forearm", "size": "14 cm", "style": "Blackwork", "color": "Black", "summary": "A side-view raven keeps a strong readable silhouette and open skin." },
+          { "slug": "arched-window-landscape-forearm", "name": "Window landscape forearm tattoo", "placement": "Inner forearm", "size": "12 cm", "style": "Fine line illustrative", "color": "Black and grey", "summary": "An arched window frames a small distant landscape." },
+          { "slug": "geometric-mountain-forearm", "name": "Geometric mountain forearm tattoo", "placement": "Inner forearm", "size": "14 cm", "style": "Geometric dotwork", "color": "Black", "summary": "A mountain and rising sun sit inside a precise vertical frame." },
+          { "slug": "realistic-fox-forearm", "name": "Fox forearm tattoo", "placement": "Outer forearm", "size": "17 cm", "style": "Realism", "color": "Black, grey and rust", "summary": "A softly shaded fox portrait fills the broader outer forearm." },
+          { "slug": "ornamental-dagger-forearm", "name": "Ornamental dagger forearm tattoo", "placement": "Inner forearm", "size": "19 cm", "style": "Ornamental", "color": "Black and grey", "summary": "A long dagger uses the full axis from elbow toward wrist." },
+          { "slug": "tiny-match-forearm", "name": "Tiny match forearm tattoo", "placement": "Inner wrist", "size": "4 cm", "style": "Microrealism", "color": "Black, grey and orange", "summary": "A small burning match shows how a compact idea sits near the wrist." },
+          { "slug": "peony-panel-forearm", "name": "Peony forearm tattoo", "placement": "Outer forearm", "size": "20 cm", "style": "Black and grey", "color": "Black and grey", "summary": "Layered peony petals create a full-length floral panel." },
+          { "slug": "astronaut-planets-forearm", "name": "Astronaut forearm tattoo", "placement": "Inner forearm", "size": "16 cm", "style": "Illustrative", "color": "Indigo, black and gold", "summary": "An astronaut floats through small planets in a narrow composition." },
+          { "slug": "traditional-panther-forearm", "name": "Panther forearm tattoo", "placement": "Outer forearm", "size": "17 cm", "style": "Traditional", "color": "Black and red", "summary": "A crawling panther follows the outer forearm with one red accent." },
+          { "slug": "moth-fern-forearm", "name": "Moth and fern forearm tattoo", "placement": "Inner forearm", "size": "15 cm", "style": "Natural-history engraving", "color": "Black and grey", "summary": "A moth and fern fronds read like a botanical specimen study." },
+          { "slug": "abstract-circle-forearm", "name": "Abstract forearm tattoo", "placement": "Inner forearm", "size": "14 cm", "style": "Abstract brush", "color": "Black and rust", "summary": "A black gesture crosses one rust circle with deliberate negative space." },
+          { "slug": "art-nouveau-iris-forearm", "name": "Art Nouveau forearm tattoo", "placement": "Inner forearm", "size": "18 cm", "style": "Art Nouveau", "color": "Black and violet", "summary": "A profile portrait and iris flowers fit a tall decorative frame." },
+          { "slug": "ocean-wave-forearm", "name": "Ocean wave forearm tattoo", "placement": "Outer forearm", "size": "17 cm", "style": "Color realism", "color": "Black, grey and blue", "summary": "A cresting wave wraps lightly around the outer forearm." },
+          { "slug": "neo-traditional-owl-forearm", "name": "Owl forearm tattoo", "placement": "Outer forearm", "size": "18 cm", "style": "Neo-traditional", "color": "Black, amber and green", "summary": "An owl portrait uses a tall frame and saturated eye accents." },
+          { "slug": "small-compass-forearm", "name": "Small compass forearm tattoo", "placement": "Inner forearm", "size": "6 cm", "style": "Engraving", "color": "Black and grey", "summary": "A compact compass rose leaves plenty of open skin around it." },
+          { "slug": "chrysanthemum-wind-forearm", "name": "Chrysanthemum forearm tattoo", "placement": "Outer forearm", "size": "20 cm", "style": "Japanese", "color": "Black, grey and red", "summary": "A chrysanthemum and wind curls form a long outer panel." },
+          { "slug": "eclipse-dotwork-forearm", "name": "Eclipse forearm tattoo", "placement": "Inner forearm", "size": "14 cm", "style": "Dotwork geometric", "color": "Black", "summary": "A dark eclipse and orbital marks create a precise vertical design." },
+          { "slug": "book-mountain-forearm", "name": "Book landscape forearm tattoo", "placement": "Inner forearm", "size": "13 cm", "style": "Illustrative", "color": "Black and warm brown", "summary": "A mountain scene rises from an open book without lettering." },
+          { "slug": "jellyfish-forearm", "name": "Jellyfish forearm tattoo", "placement": "Outer forearm", "size": "18 cm", "style": "Black and grey", "color": "Black and grey", "summary": "A translucent-looking jellyfish drifts vertically toward the wrist." },
+          { "slug": "embroidered-kingfisher-forearm", "name": "Kingfisher forearm tattoo", "placement": "Inner forearm", "size": "12 cm", "style": "Embroidered illustrative", "color": "Blue, orange and black", "summary": "Thread-like marks build a bright perched kingfisher." },
+          { "slug": "cyber-sigil-forearm", "name": "Cyber-sigil forearm tattoo", "placement": "Outer forearm", "size": "20 cm", "style": "Cyber-sigilism", "color": "Black", "summary": "Sharp symmetrical lines run down the full outer forearm." }
+        ]
+      },
+      "details": {
+        "Pain level": "Commonly described as moderate",
+        "Typical size": "3-20 cm",
+        "Session time": "1-4 hours",
+        "Typical price": "$150-$800",
+        "Healing": "Ask your artist",
+        "Work visibility": "Shows with short sleeves, inner forearm is easier to hide"
+      },
+      "related": ["forearm-tattoo-ideas-for-men", "small-tattoos-for-men", "tattoo-ideas-male-arm", "sleeve-tattoo-ideas-for-men", "fine-line-tattoo-ideas", "couple-tattoo-ideas", "flower-tattoo-ideas", "tattoo-ideas-for-women"]
+    },
+    {
+      "slug": "fine-line-tattoo-ideas",
+      "h1": "Fine line tattoo ideas",
+      "volume": 1900, "kd": 31,
+      "placementLabel": "Forearm", "sizeRange": "3-10 cm",
+      "answer": [
+        "Single-needle and fine line work - what holds up at small sizes and what closes up over time.",
+        "Line weight matters more than subject: give detail room or simplify it."
+      ],
+      "images": 24,
+      "gallery": {
+        "placement": "Mixed", "size": "4-14 cm", "style": "Fine line", "color": "Black", "altPattern": "Fine line tattoo idea, reference {n}",
+        "items": [
+          { "slug": "fine-line-monarch-forearm", "name": "Fine-line butterfly tattoo", "placement": "Inner forearm", "size": "8 cm", "style": "Fine line dotwork", "color": "Black", "summary": "An open-wing monarch uses clear cells and restrained dot shading." },
+          { "slug": "lavender-ankle-fine-line", "name": "Fine-line lavender tattoo", "placement": "Outer ankle", "size": "7 cm", "style": "Botanical fine line", "color": "Black", "summary": "A single lavender sprig keeps each leaf and flower clearly separated." },
+          { "slug": "crescent-stars-collarbone", "name": "Fine-line moon and stars tattoo", "placement": "Outer collarbone", "size": "9 cm", "style": "Celestial fine line", "color": "Black", "summary": "A slim crescent and spaced stars follow the collarbone curve." },
+          { "slug": "continuous-line-dog-arm", "name": "Fine-line dog tattoo", "placement": "Outer upper arm", "size": "7 cm", "style": "Continuous line", "color": "Black", "summary": "One clean contour builds a recognizable dog portrait." },
+          { "slug": "wildflower-spine-fine-line", "name": "Fine-line spine flower tattoo", "placement": "Upper spine", "size": "14 cm", "style": "Botanical fine line", "color": "Black", "summary": "A vertical wildflower stem follows the center of the upper back." },
+          { "slug": "tiny-nautilus-wrist", "name": "Tiny fine-line shell tattoo", "placement": "Inner wrist", "size": "4 cm", "style": "Minimal fine line", "color": "Black", "summary": "A simplified nautilus spiral stays readable at wrist scale." },
+          { "slug": "doorway-mountain-calf", "name": "Fine-line landscape tattoo", "placement": "Outer calf", "size": "10 cm", "style": "Architectural fine line", "color": "Black and grey", "summary": "An arched doorway frames a distant mountain view." },
+          { "slug": "hummingbird-flower-shoulder", "name": "Fine-line hummingbird tattoo", "placement": "Shoulder cap", "size": "9 cm", "style": "Fine line", "color": "Black and grey", "summary": "A hovering hummingbird approaches one open flower." },
+          { "slug": "geometric-crane-forearm", "name": "Geometric crane tattoo", "placement": "Outer forearm", "size": "10 cm", "style": "Geometric fine line", "color": "Black", "summary": "Simplified angular wings keep a flying crane light and readable." },
+          { "slug": "tiny-mountain-ankle", "name": "Tiny mountain tattoo", "placement": "Inner ankle", "size": "5 cm", "style": "Minimal fine line", "color": "Black", "summary": "A small ridge and rising sun leave generous open skin." },
+          { "slug": "peony-ribs-fine-line", "name": "Fine-line peony tattoo", "placement": "Side ribs", "size": "12 cm", "style": "Botanical fine line", "color": "Black", "summary": "An open peony and curved stem follow the side torso." },
+          { "slug": "humpback-whale-calf", "name": "Fine-line whale tattoo", "placement": "Outer calf", "size": "8 cm", "style": "Fine line", "color": "Black and grey", "summary": "A humpback whale uses a clean contour and a few spaced shading lines." },
+          { "slug": "ornamental-sun-arm", "name": "Fine-line sun tattoo", "placement": "Outer upper arm", "size": "8 cm", "style": "Ornamental fine line", "color": "Black", "summary": "A calm sun face sits inside balanced rays and limited dotwork." },
+          { "slug": "orbital-arcs-forearm", "name": "Abstract orbit tattoo", "placement": "Inner forearm", "size": "9 cm", "style": "Geometric fine line", "color": "Black", "summary": "Three circles connect through clean orbital arcs." },
+          { "slug": "olive-branch-collarbone", "name": "Fine-line olive branch tattoo", "placement": "Collarbone", "size": "10 cm", "style": "Botanical fine line", "color": "Black", "summary": "A slender branch follows the collarbone with simple open leaves." },
+          { "slug": "sleeping-cat-shoulder-blade", "name": "Fine-line cat tattoo", "placement": "Shoulder blade", "size": "7 cm", "style": "Continuous line", "color": "Black and grey", "summary": "A curled sleeping cat uses one main contour and a small shadow." },
+          { "slug": "dragonfly-wrist-fine-line", "name": "Fine-line dragonfly tattoo", "placement": "Inner wrist", "size": "6 cm", "style": "Fine line dotwork", "color": "Black", "summary": "Simplified wings and sparse dots keep the dragonfly clear." },
+          { "slug": "profile-flower-forearm", "name": "Fine-line face and flower tattoo", "placement": "Inner forearm", "size": "9 cm", "style": "Abstract fine line", "color": "Black", "summary": "A side profile merges smoothly into one outlined flower." },
+          { "slug": "tiny-bicycle-calf", "name": "Tiny bicycle tattoo", "placement": "Outer calf", "size": "6 cm", "style": "Minimal fine line", "color": "Black", "summary": "A simplified bicycle keeps its frame and wheels readable at small scale." },
+          { "slug": "jellyfish-upper-arm-fine-line", "name": "Fine-line jellyfish tattoo", "placement": "Outer upper arm", "size": "10 cm", "style": "Fine line dotwork", "color": "Black and grey", "summary": "Spaced tentacles descend from a lightly shaded bell." },
+          { "slug": "poppy-ankle-fine-line", "name": "Fine-line poppy tattoo", "placement": "Outer ankle", "size": "8 cm", "style": "Botanical fine line", "color": "Black", "summary": "One open poppy and two leaves form a simple ankle-length stem." },
+          { "slug": "touching-hands-upper-arm", "name": "Fine-line hands tattoo", "placement": "Inner upper arm", "size": "8 cm", "style": "Fine line", "color": "Black", "summary": "Two simplified hands nearly meet inside a clean open composition." },
+          { "slug": "framed-lake-thigh", "name": "Fine-line mountain lake tattoo", "placement": "Outer thigh", "size": "10 cm", "style": "Fine-line engraving", "color": "Black and grey", "summary": "A small rectangular frame contains a mountain and lake scene." },
+          { "slug": "tiny-swallow-behind-ear", "name": "Tiny swallow tattoo", "placement": "Behind the ear", "size": "4 cm", "style": "Minimal fine line", "color": "Black", "summary": "A side-flight swallow keeps a simple readable wing silhouette." }
+        ]
+      },
+      "details": {
+        "Pain level": "Commonly described as mild",
+        "Typical size": "3-10 cm",
+        "Session time": "45 minutes to 2 hours",
+        "Typical price": "$120-$450",
+        "Healing": "Ask your artist",
+        "Work visibility": "Depends on placement"
+      },
+      "related": ["butterfly-tattoo-ideas", "flower-tattoo-ideas", "small-tattoos-for-men", "couple-tattoo-ideas", "tattoo-ideas-for-women", "forearm-tattoo-ideas", "forearm-tattoo-ideas-for-men", "hand-tattoo-ideas"]
+    }
+  ]
+}

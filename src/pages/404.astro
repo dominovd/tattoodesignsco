@@ -1,0 +1,31 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import PopularSearches from '@components/PopularSearches.astro';
+import popular from '@data/popular.json';
+---
+
+<BaseLayout
+  title="Page not found | TattooDesignsCo"
+  description="That page does not exist. Start from a placement, subject or style instead."
+  path="/404/"
+  noindex={true}
+>
+  <section class="container top">
+    <h1>That page does not exist</h1>
+    <div class="lead">
+      <p>The link may be old, or the idea moved to a different collection.</p>
+      <p>Start from one of these instead.</p>
+    </div>
+    <p class="cta">
+      <a class="btn btn-primary" href="/ideas/">Browse ideas</a>
+    </p>
+  </section>
+
+  <PopularSearches items={popular.searches} title="Popular collections" />
+</BaseLayout>
+
+<style>
+  .top { padding-top: 40px; }
+  .top .lead { margin-top: 10px; }
+  .cta { margin-top: 20px; }
+</style>

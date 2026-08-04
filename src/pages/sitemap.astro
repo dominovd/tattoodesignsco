@@ -1,0 +1,134 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Icon from '@components/Icon.astro';
+import axes from '@data/axes.json';
+import combos from '@data/combos.json';
+import site from '@data/site.json';
+
+/**
+ * HTML-карта сайта: полный список хабов и комбинаций одной страницей.
+ * XML для роботов генерирует @astrojs/sitemap - /sitemap-index.xml.
+ * Страницы отдельных идей сюда не выводятся: они noindex, и ссылок с
+ * галерей им достаточно.
+ */
+const ideas = [...combos.items].sort((a, b) => b.volume - a.volume);
+
+const groups = [
+  { title: 'Audience', base: '/for/', items: axes.audience.map((a) => ({ label: a.label, href: `/for/${a.slug}/` })) },
+  { title: 'Placement', base: '/placement/', items: axes.placements.map((p) => ({ label: p.label, href: `/placement/${p.slug}/` })) },
+  { title: 'Subjects', base: '/subject/', items: axes.subjects.map((s) => ({ label: s.label, href: `/subject/${s.slug}/` })) },
+  { title: 'Styles', base: '/style/', items: axes.styles.map((s) => ({ label: s.label, href: `/style/${s.slug}/` })) },
+  { title: 'Sizes', base: '/size/', items: axes.sizes.map((s) => ({ label: `${s.label} - ${s.hint}`, href: `/size/${s.slug}/` })) },
+  {
+    title: 'Tools',
+    base: '/tools/',
+    items: [
+      { label: 'Placement picker', href: '/tools/placement-picker/' },
+      { label: 'Size guide', href: '/tools/size-guide/' },
+      { label: '30-second quiz', href: '/tools/quiz/' },
+    ],
+  },
+  {
+    title: 'Company',
+    base: '/about/',
+    items: [
+      { label: 'About us', href: '/about/' },
+      { label: 'Contact', href: '/contact/' },
+      { label: 'Editorial standards', href: '/editorial-standards/' },
+      { label: 'Privacy policy', href: '/privacy/' },
+      { label: 'Terms of use', href: '/terms/' },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title={`Sitemap - ${site.name}`}
+  description="Every collection, hub and tool on the site, on one page."
+  path="/sitemap/"
+  noindex={true}
+  crumbs={[
+    { label: 'Home', href: '/' },
+    { label: 'Sitemap', href: '/sitemap/' },
+  ]}
+>
+  <section class="container page-top">
+    <h1>Sitemap</h1>
+    <div class="lead">
+      <p>Every collection, hub and tool on the site.</p>
+      <p>Machines want <a class="xml" href="/sitemap-index.xml">sitemap-index.xml</a>.</p>
+    </div>
+  </section>
+
+  <section class="section container" aria-labelledby="ideas-head">
+    <div class="section-head">
+      <h2 id="ideas-head">Tattoo ideas</h2>
+      <a class="more" href="/ideas/">All ideas</a>
+    </div>
+    <ul class="links">
+      {
+        ideas.map((c) => (
+          <li>
+            <a href={`/ideas/${c.slug}/`}>
+              {c.h1}
+              <Icon name="chevron" size={14} class="chev" />
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  {
+    groups.map((g) => (
+      <section class="section container" aria-label={g.title}>
+        <div class="section-head">
+          <h2>{g.title}</h2>
+          <a class="more" href={g.base}>Hub</a>
+        </div>
+        <ul class="links">
+          {g.items.map((i) => (
+            <li>
+              <a href={i.href}>
+                {i.label}
+                <Icon name="chevron" size={14} class="chev" />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</BaseLayout>
+
+<style>
+  .xml { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+
+  .links {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 6px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .links a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: var(--tap);
+    padding: 0 14px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    font-size: 15px;
+  }
+
+  .links a:hover { border-color: var(--accent); color: var(--accent); }
+  .chev { color: var(--accent); }
+
+  @media (min-width: 640px) { .links { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (min-width: 960px) { .links { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+</style>

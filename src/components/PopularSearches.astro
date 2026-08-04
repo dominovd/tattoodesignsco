@@ -1,0 +1,64 @@
+---
+import Icon from './Icon.astro';
+
+/**
+ * Блок 11 шаблона страницы (PROJECT.md §6): 8-10 фраз.
+ * Порядок - по объёму, чтобы вес с главной шёл в головы кластеров.
+ */
+interface Item {
+  label: string;
+  href: string;
+}
+
+interface Props {
+  items: Item[];
+  title?: string;
+}
+
+const { items, title = 'Popular searches' } = Astro.props;
+---
+
+<section class="section container" aria-labelledby="searches-head">
+  <div class="section-head">
+    <h2 id="searches-head">{title}</h2>
+  </div>
+
+  <nav class="grid searches" aria-label={title}>
+    {
+      items.map((i) => (
+        <a class="s" href={i.href}>
+          <span>{i.label}</span>
+          <Icon name="chevron" size={15} class="chev" />
+        </a>
+      ))
+    }
+  </nav>
+</section>
+
+<style>
+  .searches { grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 8px; }
+
+  .s {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: var(--tap);
+    padding: 0 14px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    font-size: 15px;
+  }
+
+  .s:hover { border-color: var(--accent); color: var(--accent); }
+  .chev { color: var(--accent); }
+
+  @media (min-width: 640px) {
+    .searches { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+
+  @media (min-width: 960px) {
+    .searches { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  }
+</style>

@@ -1,0 +1,167 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "TattooDesignsCo home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e12]: Tattoo Designs Co
+      - navigation "Main" [ref=e13]:
+        - link "Ideas" [ref=e14] [cursor=pointer]:
+          - /url: /ideas/
+        - link "Placement" [ref=e15] [cursor=pointer]:
+          - /url: /placement/
+        - link "Subjects" [ref=e16] [cursor=pointer]:
+          - /url: /subject/
+        - link "Styles" [ref=e17] [cursor=pointer]:
+          - /url: /style/
+        - link "Sizes" [ref=e18] [cursor=pointer]:
+          - /url: /size/
+        - link "Tools" [ref=e19] [cursor=pointer]:
+          - /url: /tools/
+      - link "Saved" [ref=e20] [cursor=pointer]:
+        - /url: /saved/
+  - navigation "Breadcrumb" [ref=e21]:
+    - list [ref=e22]:
+      - listitem [ref=e23]:
+        - link "Home" [ref=e24] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=e25]:
+        - text: /
+        - link "Tools" [ref=e26] [cursor=pointer]:
+          - /url: /tools/
+      - listitem [ref=e27]: / Size guide
+  - main [ref=e28]:
+    - generic [ref=e29]:
+      - heading "Tattoo size guide" [level=1] [ref=e30]
+      - generic [ref=e31]:
+        - paragraph [ref=e32]: Centimetres mean nothing until you see them on skin.
+        - paragraph [ref=e33]: The same design at 3 and 10 cm is not the same tattoo.
+    - region "Forearm sizes" [ref=e34]:
+      - generic [ref=e35]:
+        - heading "Forearm" [level=2] [ref=e36]
+        - link "Forearm ideas" [ref=e37] [cursor=pointer]:
+          - /url: /placement/forearm/
+      - list [ref=e38]:
+        - listitem [ref=e39]:
+          - generic [ref=e40]: 3 cm
+          - img "A 3 cm tattoo on a forearm" [ref=e42]
+        - listitem [ref=e43]:
+          - generic [ref=e44]: 5 cm
+          - img "A 5 cm tattoo on a forearm" [ref=e46]
+        - listitem [ref=e47]:
+          - generic [ref=e48]: 10 cm
+          - img "A 10 cm tattoo on a forearm" [ref=e50]
+    - region "Wrist sizes" [ref=e51]:
+      - generic [ref=e52]:
+        - heading "Wrist" [level=2] [ref=e53]
+        - link "Wrist ideas" [ref=e54] [cursor=pointer]:
+          - /url: /placement/wrist/
+      - list [ref=e55]:
+        - listitem [ref=e56]:
+          - generic [ref=e57]: 3 cm
+          - img "A 3 cm tattoo on a wrist" [ref=e59]
+        - listitem [ref=e60]:
+          - generic [ref=e61]: 5 cm
+          - img "A 5 cm tattoo on a wrist" [ref=e63]
+        - listitem [ref=e64]:
+          - generic [ref=e65]: 10 cm
+          - img "A 10 cm tattoo on a wrist" [ref=e67]
+    - region "Upper arm sizes" [ref=e68]:
+      - generic [ref=e69]:
+        - heading "Upper arm" [level=2] [ref=e70]
+        - link "Upper arm ideas" [ref=e71] [cursor=pointer]:
+          - /url: /placement/shoulder/
+      - list [ref=e72]:
+        - listitem [ref=e73]:
+          - generic [ref=e74]: 5 cm
+          - img "A 5 cm tattoo on a upper arm" [ref=e76]
+        - listitem [ref=e77]:
+          - generic [ref=e78]: 10 cm
+          - img "A 10 cm tattoo on a upper arm" [ref=e80]
+        - listitem [ref=e81]:
+          - generic [ref=e82]: 15 cm
+          - img "A 15 cm tattoo on a upper arm" [ref=e84]
+    - generic [ref=e85]:
+      - heading "Compare sizes at a normal viewing distance" [level=2] [ref=e86]
+      - paragraph [ref=e87]: A phone screen enlarges a small tattoo and hides the relationship between the design and the body. Measure or print a rectangle at 3, 5 and 10 cm, place it on the intended area and step back. Check the result with the arm or torso relaxed rather than turned toward a mirror.
+      - paragraph [ref=e88]: The same dimensions feel different on a wrist, forearm and upper arm. Available width matters as much as height. A narrow vertical design may fit at 10 cm on the forearm, while a round subject needs more width to keep the same detail.
+      - heading "Reduce detail before reducing the outline" [level=2] [ref=e89]
+      - paragraph [ref=e90]: When a reference is too complex for the chosen size, identify the outer shape and the one feature that makes the subject recognisable. Remove secondary texture before shrinking everything. Bring the measurement and the simplified reference to the artist, who can set the final stencil for your anatomy.
+      - paragraph [ref=e91]: Keep the original measurement in the brief, but expect the stencil to move slightly after it is placed on the body. A small adjustment can align the composition with the arm or avoid a crease without changing the overall scale you selected.
+  - contentinfo [ref=e92]:
+    - generic [ref=e93]:
+      - generic [ref=e94]:
+        - navigation "Explore" [ref=e95]:
+          - heading "Explore" [level=2] [ref=e96]
+          - list [ref=e97]:
+            - listitem [ref=e98]:
+              - link "Ideas" [ref=e99] [cursor=pointer]:
+                - /url: /ideas/
+            - listitem [ref=e100]:
+              - link "Placement" [ref=e101] [cursor=pointer]:
+                - /url: /placement/
+            - listitem [ref=e102]:
+              - link "Subjects" [ref=e103] [cursor=pointer]:
+                - /url: /subject/
+            - listitem [ref=e104]:
+              - link "Styles" [ref=e105] [cursor=pointer]:
+                - /url: /style/
+            - listitem [ref=e106]:
+              - link "Sizes" [ref=e107] [cursor=pointer]:
+                - /url: /size/
+        - navigation "Resources" [ref=e108]:
+          - heading "Resources" [level=2] [ref=e109]
+          - list [ref=e110]:
+            - listitem [ref=e111]:
+              - link "Tattoo size guide" [ref=e112] [cursor=pointer]:
+                - /url: /tools/size-guide/
+            - listitem [ref=e113]:
+              - link "Placement picker" [ref=e114] [cursor=pointer]:
+                - /url: /tools/placement-picker/
+            - listitem [ref=e115]:
+              - link "30-second quiz" [ref=e116] [cursor=pointer]:
+                - /url: /tools/quiz/
+            - listitem [ref=e117]:
+              - link "Cover up ideas" [ref=e118] [cursor=pointer]:
+                - /url: /ideas/cover-up-tattoo-ideas/
+        - navigation "Company" [ref=e119]:
+          - heading "Company" [level=2] [ref=e120]
+          - list [ref=e121]:
+            - listitem [ref=e122]:
+              - link "About us" [ref=e123] [cursor=pointer]:
+                - /url: /about/
+            - listitem [ref=e124]:
+              - link "Contact" [ref=e125] [cursor=pointer]:
+                - /url: /contact/
+            - listitem [ref=e126]:
+              - link "Editorial standards" [ref=e127] [cursor=pointer]:
+                - /url: /editorial-standards/
+            - listitem [ref=e128]:
+              - link "Privacy policy" [ref=e129] [cursor=pointer]:
+                - /url: /privacy/
+            - listitem [ref=e130]:
+              - link "Terms of use" [ref=e131] [cursor=pointer]:
+                - /url: /terms/
+            - listitem [ref=e132]:
+              - link "Sitemap" [ref=e133] [cursor=pointer]:
+                - /url: /sitemap/
+      - generic [ref=e134]:
+        - text: Tattoo Designs Co
+        - paragraph [ref=e135]: Real ideas. Real ink. Real you.
+        - list [ref=e136]:
+          - listitem [ref=e137]:
+            - link "Instagram" [ref=e138] [cursor=pointer]:
+              - /url: https://instagram.com/
+          - listitem [ref=e143]:
+            - link "Pinterest" [ref=e144] [cursor=pointer]:
+              - /url: https://pinterest.com/
+          - listitem [ref=e148]:
+            - link "TikTok" [ref=e149] [cursor=pointer]:
+              - /url: https://tiktok.com/
+          - listitem [ref=e153]:
+            - link "YouTube" [ref=e154] [cursor=pointer]:
+              - /url: https://youtube.com/
+    - generic [ref=e158]:
+      - paragraph [ref=e159]: © 2026 TattooDesignsCo. All rights reserved.
+      - paragraph [ref=e160]: Ideas and reference images only. For anything about healing, skin reactions or removal, ask your artist or a doctor.

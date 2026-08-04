@@ -1,0 +1,183 @@
+---
+import Picture from './Picture.astro';
+import Icon from './Icon.astro';
+import { imageUrl } from '@lib/images';
+import site from '@data/site.json';
+
+/**
+ * Галерея комбинационной страницы - DESIGN.md §4.
+ * 16-24 изображения, фиксированное 3:4, ленивая загрузка ниже первого экрана,
+ * подпись с параметрами текстом (не на картинке), ImageObject на каждое.
+ */
+export interface GalleryItem {
+  /** Путь без суффикса размера: "ideas/<slug>/01" */
+  image: string;
+  alt: string;
+  placement: string;
+  size: string;
+  style: string;
+  color: string;
+  /** Ссылка на страницу идеи. Без неё плитка не кликабельна. */
+  href?: string;
+}
+
+interface Props {
+  items: GalleryItem[];
+  pageTitle: string;
+  pagePath: string;
+  /** Первое изображение страницы грузится eager, остальные ленивые. */
+  firstIsPriority?: boolean;
+  /** ImageObject выводится один раз на страницу - для всех изображений сразу. */
+  emitSchema?: boolean;
+  schemaItems?: GalleryItem[];
+}
+
+const {
+  items,
+  pageTitle,
+  pagePath,
+  firstIsPriority = true,
+  emitSchema = true,
+  schemaItems,
+} = Astro.props;
+
+const pageUrl = new URL(pagePath, site.url).href;
+
+const pin = (item: GalleryItem) =>
+  `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(new URL(imageUrl(item.image, 1200), site.url).href)}&description=${encodeURIComponent(item.alt)}`;
+
+const imagesLd = {
+  '@context': 'https://schema.org',
+  '@graph': (schemaItems ?? items).map((item) => ({
+    '@type': 'ImageObject',
+    contentUrl: new URL(imageUrl(item.image, 1200), site.url).href,
+    thumbnailUrl: new URL(imageUrl(item.image, 400), site.url).href,
+    caption: item.alt,
+    representativeOfPage: false,
+    isPartOf: { '@type': 'WebPage', url: pageUrl, name: pageTitle },
+  })),
+};
+---
+
+<div class="grid grid-gallery">
+  {
+    items.map((item, i) => (
+      <figure
+        class="tile"
+        data-gal
+        data-id={`${pagePath}#${i + 1}`}
+        data-image={item.image}
+        data-alt={item.alt}
+        data-placement={item.placement}
+        data-size={item.size}
+        data-style={item.style}
+        data-color={item.color}
+        data-href={item.href}
+      >
+        {/*
+          Есть страница идеи: плитка остаётся ссылкой и работает без JS,
+          открывается в новой вкладке, годится как пин-таргет. Лайтбокс
+          перехватывает обычный клик поверх (DESIGN.md §5).
+          Нет страницы идеи (оси): плитка это кнопка, увеличивающая картинку.
+        */}
+        {item.href ? (
+          <a class="hit" href={item.href} data-open>
+            <Picture src={item.image} alt={item.alt} priority={firstIsPriority && i === 0} />
+          </a>
+        ) : (
+          <button class="hit" type="button" data-open aria-label={`Enlarge: ${item.alt}`}>
+            <Picture src={item.image} alt={item.alt} priority={firstIsPriority && i === 0} />
+          </button>
+        )}
+
+        <div class="actions">
+          <button
+            class="iconbtn"
+            type="button"
+            data-save={`${pagePath}#${i + 1}`}
+            data-save-title={item.alt}
+            data-save-image={item.image}
+            aria-pressed="false"
+            aria-label={`Save: ${item.alt}`}
+          >
+            <Icon name="bookmark" size={18} />
+          </button>
+          <a
+            class="iconbtn"
+            href={pin(item)}
+            target="_blank"
+            rel="noopener nofollow"
+            aria-label={`Pin: ${item.alt}`}
+          >
+            <Icon name="pinterest" size={18} />
+          </a>
+        </div>
+
+        {/* Подпись - html-текст, иначе теряется семантика (DESIGN.md §4) */}
+        <figcaption class="small">
+          <span>{item.placement}</span>
+          <span class="muted"> · {item.size}</span>
+          <span class="muted"> · {item.style}</span>
+          <span class="muted"> · {item.color}</span>
+        </figcaption>
+      </figure>
+    ))
+  }
+</div>
+
+{emitSchema && <script type="application/ld+json" set:html={JSON.stringify(imagesLd)} />}
+
+<style>
+  .tile {
+    position: relative;
+    margin: 0;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
+  /* Кнопка-обёртка не должна выглядеть кнопкой */
+  .hit {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: zoom-in;
+  }
+
+  .actions {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    gap: 6px;
+  }
+
+  .iconbtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--tap);
+    height: var(--tap);
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius-sm);
+    background: rgba(17, 17, 17, 0.78);
+    color: var(--text);
+  }
+
+  .iconbtn:hover { border-color: var(--accent); color: var(--accent); }
+
+  .iconbtn[aria-pressed='true'] {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: rgba(201, 162, 39, 0.18);
+  }
+
+  figcaption {
+    padding: 8px 10px 10px;
+    border-top: 1px solid var(--line);
+    line-height: 1.4;
+  }
+</style>

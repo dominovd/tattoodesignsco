@@ -1,0 +1,121 @@
+---
+import Picture from './Picture.astro';
+import Icon from './Icon.astro';
+import { imageUrl } from '@lib/images';
+
+interface Props {
+  href: string;
+  title: string;
+  image: string;
+  alt: string;
+  /** Количество изображений на странице. Ставить реальное число. */
+  ideas?: number;
+  /** Подпись с параметрами - зона, размер, стиль, цвет (DESIGN.md §4). */
+  meta?: string;
+  priority?: boolean;
+}
+
+const { href, title, image, alt, ideas, meta, priority = false } = Astro.props;
+
+const pageUrl = new URL(href, Astro.site ?? 'https://tattoodesignsco.com').href;
+const mediaUrl = new URL(imageUrl(image, 1200), Astro.site ?? 'https://tattoodesignsco.com').href;
+const pinUrl = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(mediaUrl)}&description=${encodeURIComponent(title)}`;
+const id = href;
+---
+
+<article class="card">
+  <a class="hit" href={href}>
+    <Picture src={image} alt={alt} priority={priority} />
+    <span class="visually-hidden">{title}</span>
+  </a>
+
+  <div class="actions">
+    <button
+      class="iconbtn"
+      type="button"
+      data-save={id}
+      data-save-title={title}
+      data-save-image={image}
+      aria-pressed="false"
+      aria-label={`Save ${title}`}
+    >
+      <Icon name="bookmark" size={18} />
+    </button>
+
+    <a
+      class="iconbtn"
+      href={pinUrl}
+      target="_blank"
+      rel="noopener nofollow"
+      aria-label={`Pin ${title}`}
+      data-pin
+    >
+      <Icon name="pinterest" size={18} />
+    </a>
+  </div>
+
+  <div class="caption">
+    <a href={href} class="title">{title}</a>
+    {ideas ? <span class="muted"> · {ideas} ideas</span> : null}
+    {meta ? <p class="small muted meta">{meta}</p> : null}
+  </div>
+</article>
+
+<style>
+  .card {
+    position: relative;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
+  .card:hover { border-color: var(--line-strong); }
+
+  .hit { display: block; }
+
+  .actions {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    gap: 6px;
+  }
+
+  /* Тач-цель 44×44 - DESIGN.md §1. Иконка меньше, кликабельная зона нет. */
+  .iconbtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--tap);
+    height: var(--tap);
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius-sm);
+    background: rgba(17, 17, 17, 0.78);
+    color: var(--text);
+    backdrop-filter: blur(4px);
+  }
+
+  .iconbtn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .iconbtn[aria-pressed='true'] {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: rgba(201, 162, 39, 0.18);
+  }
+
+  .iconbtn[aria-pressed='true'] :global(svg) { fill: currentColor; }
+
+  .caption {
+    padding: 10px 12px 12px;
+    border-top: 1px solid var(--line);
+    font-size: 14px;
+  }
+
+  .title { font-weight: 600; }
+
+  .meta { margin-top: 2px; }
+</style>

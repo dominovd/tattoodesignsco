@@ -1,0 +1,85 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+/**
+ * PROJECT.md §8 - изображения главный барьер проекта, и правила должны быть
+ * публичными: это одновременно снижает репутационный риск и работает как
+ * сигнал доверия.
+ */
+---
+
+<BaseLayout
+  title="Editorial standards | How we select images | TattooDesignsCo"
+  description="How images on TattooDesignsCo are sourced, checked and credited."
+  path="/editorial-standards/"
+  crumbs={[
+    { label: 'Home', href: '/' },
+    { label: 'Editorial standards', href: '/editorial-standards/' },
+  ]}
+>
+  <section class="container top">
+    <h1>Editorial standards</h1>
+    <div class="lead">
+      <p>What ends up on this site, what does not, and why.</p>
+      <p>If something here looks wrong, tell us and we will take it down.</p>
+    </div>
+  </section>
+
+  <section class="section container prose">
+    <h2>Where images come from</h2>
+    <p>
+      Images are licensed stock, work published with an artist's permission and
+      credit, or produced for this site. We do not republish work taken from
+      social platforms or from a studio's portfolio.
+    </p>
+
+    <h2>What we check on every image</h2>
+    <ul>
+      <li>Anatomy: hands, fingers and joints are the first thing we reject.</li>
+      <li>Line quality: designs that would not hold up as a real tattoo are out.</li>
+      <li>Placement clarity: the body area has to be unambiguous.</li>
+      <li>Caption accuracy: area, size, style and colour are written as text, not baked into the picture.</li>
+    </ul>
+
+    <h2>Artists</h2>
+    <p>
+      If you are an artist and want your work featured with a credit and a link,
+      or you have found your work here without permission, get in touch and we
+      will act the same day.
+    </p>
+
+    <h2>What we do not do</h2>
+    <ul>
+      <li>We do not give medical guidance. Healing, skin reactions and removal are questions for your artist or a doctor.</li>
+      <li>We do not present tattoos as a decision for anyone under 18.</li>
+      <li>We describe cultural motifs by their origin, or we leave them out.</li>
+    </ul>
+
+    <h2>How captions are checked</h2>
+    <p>
+      The visible body area must support the placement label. Size is an
+      estimate unless the artist supplies a measurement, so captions use a
+      range when a precise number cannot be verified. Style and colour describe
+      what appears in the image rather than assigning an artist to a movement
+      they have not used themselves.
+    </p>
+
+    <h2>Corrections and removals</h2>
+    <p>
+      A correction request should include the page address, image title and the
+      proposed change. Rights and consent concerns are reviewed before routine
+      editorial suggestions. When ownership or permission cannot be confirmed
+      quickly, the disputed image can be removed while the request is checked.
+    </p>
+  </section>
+</BaseLayout>
+
+<style>
+  .top { padding-top: 24px; }
+  .top .lead { margin-top: 10px; }
+
+  .prose { max-width: 70ch; display: grid; gap: 10px; }
+  .prose h2 { margin-top: 18px; font-size: 20px; }
+  .prose p, .prose li { color: var(--text-muted); }
+  .prose ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
+</style>

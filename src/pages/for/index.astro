@@ -1,0 +1,26 @@
+---
+import AxisHub from '@components/AxisHub.astro';
+import axes from '@data/axes.json';
+
+/**
+ * Хаб оси аудитории. Мужчины 546,8K - крупнейшая и наименее обслуженная ось
+ * (PROJECT.md §3), поэтому стоит первой.
+ */
+---
+
+<AxisHub
+  title="Tattoo ideas for men, women and couples | TattooDesignsCo"
+  h1="Browse by audience"
+  description="Tattoo ideas grouped by who they are for - men, women and couples."
+  base="/for/"
+  answer={[
+    'Start from who the tattoo is for, then narrow by area, size and style.',
+    'Groups are ordered by how often people look for them.',
+  ]}
+  children_={axes.audience.map((a) => ({
+    slug: a.slug,
+    label: a.label,
+    hint: a.blurb,
+    volume: a.volume,
+  }))}
+/>

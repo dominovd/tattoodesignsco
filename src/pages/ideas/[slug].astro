@@ -1,0 +1,188 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Chips from '@components/Chips.astro';
+import GalleryGrid from '@components/GalleryGrid.astro';
+import AdSlot from '@components/AdSlot.astro';
+import Shortlist from '@components/Shortlist.astro';
+import DetailsTable from '@components/DetailsTable.astro';
+import ConsiderAsk from '@components/ConsiderAsk.astro';
+import IdeaCard from '@components/IdeaCard.astro';
+import Faq from '@components/Faq.astro';
+import PopularSearches from '@components/PopularSearches.astro';
+import Icon from '@components/Icon.astro';
+
+import combos from '@data/combos.json';
+import popular from '@data/popular.json';
+import { buildGallery } from '@lib/gallery';
+import { imageUrl } from '@lib/images';
+import { faqFor, considerationsFor, questionsFor, searchesFor } from '@lib/pageContent';
+
+/**
+ * Шаблон страницы комбинации - 11 блоков PROJECT.md §6.
+ *
+ * Порядок первого экрана жёсткий (DESIGN.md §3): H1 → короткий ответ →
+ * фильтры-ссылки → галерея. Ничего между ответом и изображениями.
+ * Первый рекламный блок - после 8-го изображения (§10).
+ */
+export function getStaticPaths() {
+  return combos.items.map((item) => ({
+    params: { slug: item.slug },
+    props: { item },
+  }));
+}
+
+const { item } = Astro.props;
+const path = `/ideas/${item.slug}/`;
+
+const now = new Date();
+const year = now.getFullYear();
+const updated = now.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+
+const gallery = buildGallery(item.slug, item.images, item.gallery, path);
+const first = gallery.slice(0, 8);
+const rest = gallery.slice(8);
+
+const related = item.related
+  .map((slug) => combos.items.find((c) => c.slug === slug))
+  .filter(Boolean)
+  .slice(0, 8);
+
+const g = item.gallery;
+const brief = `${g.style.toLowerCase()}, ~${g.size}, ${g.placement.toLowerCase()}, ${g.color.toLowerCase()}`;
+
+const faqItems = faqFor(item as any);
+const considerations = considerationsFor(item as any);
+const questions = questionsFor(item as any);
+const searches = searchesFor(item as any, combos.items as any);
+---
+
+<BaseLayout
+  title={`${item.h1} - ${gallery.length} designs (${year}) | TattooDesignsCo`}
+  description={item.answer.join(' ')}
+  path={path}
+  preloadImage={imageUrl(gallery[0].image, 800)}
+  crumbs={[
+    { label: 'Home', href: '/' },
+    { label: 'Ideas', href: '/ideas/' },
+    { label: item.h1, href: path },
+  ]}
+>
+  <section class="container top">
+    <h1>{item.h1}</h1>
+    <div class="lead">{item.answer.map((line) => <p>{line}</p>)}</div>
+    <p class="small muted meta">
+      Updated {updated} · {gallery.length} ideas
+    </p>
+  </section>
+
+  <section class="section container" aria-label="Ideas">
+    <div class="filters">
+      <Chips items={popular.chips} label="Narrow these ideas" />
+      <p class="saved-note">
+        <Icon name="bookmark" size={16} />
+        <span data-saved-count-text>0 saved</span>
+      </p>
+    </div>
+
+    <div class="section-head gallery-head">
+      <div>
+        <h2>{gallery.length} {item.h1.toLowerCase()}</h2>
+        <p class="small muted">Tap any idea to view details.</p>
+      </div>
+    </div>
+
+    <GalleryGrid items={first} schemaItems={gallery} pageTitle={item.h1} pagePath={path} />
+
+    {/* Первый рекламный блок - ровно после 8-го изображения, DESIGN.md §10 */}
+    <AdSlot id={`${item.slug}-inline`} height={100} />
+
+    <div class="after-ad">
+      <GalleryGrid
+        items={rest}
+        pageTitle={item.h1}
+        pagePath={path}
+        firstIsPriority={false}
+        emitSchema={false}
+      />
+    </div>
+
+    <p class="tally small muted">
+      <span>Showing all {gallery.length} ideas</span>
+    </p>
+  </section>
+
+  <Shortlist brief={brief} />
+
+  <DetailsTable title={`${item.placementLabel} tattoo details`} details={item.details} />
+
+  <ConsiderAsk considerations={considerations} questions={questions} />
+
+  <section class="section container" aria-labelledby="related-head">
+    <div class="section-head">
+      <h2 id="related-head">Explore related tattoo ideas</h2>
+    </div>
+    <div class="grid grid-gallery">
+      {
+        related.map((r) => (
+          <IdeaCard
+            href={`/ideas/${r.slug}/`}
+            title={r.h1}
+            image={`ideas/${r.slug}/01`}
+            alt={r.h1}
+            ideas={r.images}
+          />
+        ))
+      }
+    </div>
+  </section>
+
+  <Faq items={faqItems} title={`${item.h1} FAQ`} />
+
+  <PopularSearches items={searches} title="Related searches" />
+</BaseLayout>
+
+<style>
+  .top { padding-top: 24px; }
+  .top .lead { margin-top: 10px; }
+  .meta { margin-top: 10px; }
+
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px 16px;
+  }
+
+  .filters :global(.chips) { margin-bottom: 0; }
+
+  .saved-note {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .gallery-head { margin-top: 20px; }
+  .gallery-head h2 { font-size: 20px; }
+
+  .after-ad { margin-top: 24px; }
+
+  /* Разделитель «Showing all N ideas» - линия с текстом посередине */
+  .tally {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 28px;
+  }
+
+  .tally::before,
+  .tally::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--line);
+  }
+</style>

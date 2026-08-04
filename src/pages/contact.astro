@@ -1,0 +1,117 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Icon from '@components/Icon.astro';
+import site from '@data/site.json';
+
+/**
+ * Формы нет намеренно: она требует бэкенда или стороннего скрипта, а сайт
+ * статический и бюджет по скорости уже израсходован изображениями.
+ * Почта решает ту же задачу без единого килобайта JS.
+ */
+const reasons = [
+  {
+    title: 'Artists',
+    text: 'Want your work featured with a credit and a link, or found your work here without permission? Write and we will act the same day.',
+  },
+  {
+    title: 'Corrections',
+    text: 'Wrong size, placement or style on an image? Send the page address, card title and the correction you are proposing.',
+  },
+  {
+    title: 'Partnerships and press',
+    text: 'Collaborations, licensing and anything commercial.',
+  },
+];
+---
+
+<BaseLayout
+  title={`Contact ${site.name}`}
+  description={`Get in touch with ${site.name} about artists, corrections and partnerships.`}
+  path="/contact/"
+  crumbs={[
+    { label: 'Home', href: '/' },
+    { label: 'Contact', href: '/contact/' },
+  ]}
+>
+  <section class="container page-top">
+    <h1>Contact</h1>
+    <div class="lead">
+      <p>One address, read by a person.</p>
+      <p>Artists and corrections get answered first.</p>
+    </div>
+  </section>
+
+  <section class="section container">
+    <a class="panel panel-accent mail" href={`mailto:${site.email}`}>
+      <Icon name="clipboard" size={28} class="ic" />
+      <div>
+        <span class="small muted">Email</span>
+        <strong>{site.email}</strong>
+      </div>
+      <Icon name="chevron" size={18} class="chev" />
+    </a>
+  </section>
+
+  <section class="section container prose">
+    {
+      reasons.map((r) => (
+        <>
+          <h2>{r.title}</h2>
+          <p>{r.text}</p>
+        </>
+      ))
+    }
+
+    <h2>What we cannot help with</h2>
+    <p>
+      We do not give medical guidance and we do not recommend individual
+      studios. Questions about healing, skin reactions or removal belong with
+      your artist or a doctor.
+    </p>
+
+    <h2>What to include</h2>
+    <p>
+      Put the page address in the message and name the image or heading you are
+      referring to. For a factual correction, include the current wording and
+      the replacement you recommend. For a rights request, explain your
+      relationship to the work and provide a portfolio or publication link that
+      helps us verify ownership.
+    </p>
+
+    <h2>Image submissions</h2>
+    <p>
+      Artists may send a portfolio link and state which images can be reviewed
+      for publication. Do not attach client photographs without permission. We
+      need the artist credit, studio or portfolio address, placement and an
+      approximate size for every accepted image. Sending work does not guarantee
+      publication and ownership remains with the creator.
+    </p>
+
+    <h2>Response order</h2>
+    <p>
+      Copyright and consent requests are reviewed first, followed by caption
+      corrections and technical problems. General partnership messages follow
+      after those. Please send one complete message rather than repeating the
+      same request through several addresses.
+    </p>
+    <p>
+      We do not sell contact lists and there is no newsletter signup on this
+      page. Your email is used to understand and answer the message you send.
+    </p>
+  </section>
+</BaseLayout>
+
+<style>
+  .mail {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 14px;
+    padding: 20px;
+    max-width: 520px;
+  }
+
+  .mail:hover { color: inherit; }
+  .mail strong { display: block; font-size: 18px; }
+  .ic, .chev { color: var(--accent); }
+</style>

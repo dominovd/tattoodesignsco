@@ -1,0 +1,117 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Icon from '@components/Icon.astro';
+import axes from '@data/axes.json';
+
+/**
+ * Квиз из PROJECT.md §5: «хаб: входы по осям + квиз».
+ *
+ * Пока это статичные шаги-ссылки: каждый ответ ведёт на реальный URL оси,
+ * поэтому квиз работает без JS и не создаёт страниц-призраков. Когда поверх
+ * появится клиентская логика, ссылки остаются fallback'ом.
+ */
+const steps = [
+  { n: 1, q: 'Who is it for?', options: axes.audience.map((a) => ({ label: a.label, href: `/for/${a.slug}/` })) },
+  { n: 2, q: 'Where should it go?', options: axes.placements.slice(0, 6).map((p) => ({ label: p.label, href: `/placement/${p.slug}/` })) },
+  { n: 3, q: 'How big?', options: axes.sizes.map((s) => ({ label: `${s.label} - ${s.hint}`, href: `/size/${s.slug}/` })) },
+  { n: 4, q: 'What look?', options: axes.styles.slice(0, 4).map((s) => ({ label: s.label, href: `/style/${s.slug}/` })) },
+];
+---
+
+<BaseLayout
+  title="30-second tattoo quiz | TattooDesignsCo"
+  description="Answer four quick questions about placement, size and style to get a shortlist of tattoo ideas."
+  path="/tools/quiz/"
+  crumbs={[
+    { label: 'Home', href: '/' },
+    { label: 'Tools', href: '/tools/' },
+    { label: 'Quiz', href: '/tools/quiz/' },
+  ]}
+>
+  <section class="container top">
+    <h1>30-second tattoo quiz</h1>
+    <div class="lead">
+      <p>Four questions, then a shortlist you can save and share.</p>
+      <p>Nothing is stored anywhere except your own browser.</p>
+    </div>
+  </section>
+
+  {
+    steps.map((step) => (
+      <section class="section container" aria-labelledby={`step-${step.n}`}>
+        <div class="panel step">
+          <h2 id={`step-${step.n}`}>
+            <span class="n">{step.n}</span>
+            {step.q}
+          </h2>
+          <nav class="chips" aria-label={step.q}>
+            {step.options.map((o) => (
+              <a class="chip" href={o.href}>
+                {o.label}
+                <Icon name="chevron" size={14} class="chev" />
+              </a>
+            ))}
+          </nav>
+        </div>
+      </section>
+    ))
+  }
+
+  <section class="section container prose">
+    <h2>How to use your answers</h2>
+    <p>
+      Treat each answer as a filter, not a permanent decision. Placement sets
+      the available shape, size controls how much detail can remain, and style
+      determines line weight, contrast and colour. If one choice conflicts with
+      another, simplify the subject or compare a larger body area.
+    </p>
+    <p>
+      Open two or three result pages and save references for different reasons.
+      One image might show the flow you want, another the amount of open space,
+      and a third the palette. Write those reasons down before your consultation
+      so the artist can combine the useful qualities without copying a tattoo.
+    </p>
+
+    <h2>What the quiz does not decide</h2>
+    <p>
+      It does not choose an artist, estimate a final price or replace a stencil
+      fitting. Those depend on the drawing, body area and individual studio.
+      The result is a short visual brief that makes the first conversation more
+      specific. You can change any answer by following a different real link.
+    </p>
+    <p>
+      Review the shortlist again after a day and remove references you cannot
+      explain. A smaller set with clear reasons gives the artist more direction
+      than dozens of images that share only a trend or subject name.
+    </p>
+  </section>
+</BaseLayout>
+
+<style>
+  .top { padding-top: 24px; }
+  .top .lead { margin-top: 10px; }
+
+  .step { padding: 18px; }
+
+  h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .n {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border: 1px solid var(--accent);
+    border-radius: 50%;
+    color: var(--accent);
+    font-size: 13px;
+  }
+
+  .step :global(.chips) { margin-bottom: 0; }
+</style>

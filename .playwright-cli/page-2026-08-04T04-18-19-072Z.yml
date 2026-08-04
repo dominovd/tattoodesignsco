@@ -1,0 +1,470 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "TattooDesignsCo home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e12]: Tattoo Designs Co
+      - navigation "Main" [ref=e13]:
+        - link "Ideas" [ref=e14] [cursor=pointer]:
+          - /url: /ideas/
+        - link "Placement" [ref=e15] [cursor=pointer]:
+          - /url: /placement/
+        - link "Subjects" [ref=e16] [cursor=pointer]:
+          - /url: /subject/
+        - link "Styles" [ref=e17] [cursor=pointer]:
+          - /url: /style/
+        - link "Sizes" [ref=e18] [cursor=pointer]:
+          - /url: /size/
+        - link "Tools" [ref=e19] [cursor=pointer]:
+          - /url: /tools/
+      - link "Saved" [ref=e20] [cursor=pointer]:
+        - /url: /saved/
+  - navigation "Breadcrumb" [ref=e21]:
+    - list [ref=e22]:
+      - listitem [ref=e23]:
+        - link "Home" [ref=e24] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=e25]:
+        - text: /
+        - link "Ideas" [ref=e26] [cursor=pointer]:
+          - /url: /ideas/
+      - listitem [ref=e27]: / Forearm tattoo ideas for men
+  - main [ref=e28]:
+    - generic [ref=e29]:
+      - heading "Forearm tattoo ideas for men" [level=1] [ref=e30]
+      - generic [ref=e31]:
+        - paragraph [ref=e32]: Forearm tattoos suit designs that need clear detail and can be shown or covered easily.
+        - paragraph [ref=e33]: A medium piece often takes 2-4 hours - confirm size, price and timing with your artist.
+      - paragraph [ref=e34]: Updated August 2026 · 16 ideas
+    - region "Ideas" [ref=e35]:
+      - generic [ref=e36]:
+        - navigation "Narrow these ideas" [ref=e37]:
+          - link "Men" [ref=e38] [cursor=pointer]:
+            - /url: /for/men/
+          - link "Women" [ref=e41] [cursor=pointer]:
+            - /url: /for/women/
+          - link "Couples" [ref=e44] [cursor=pointer]:
+            - /url: /for/couples/
+          - link "Small" [ref=e47] [cursor=pointer]:
+            - /url: /size/small/
+          - link "Forearm" [ref=e50] [cursor=pointer]:
+            - /url: /placement/forearm/
+          - link "Fine line" [ref=e53] [cursor=pointer]:
+            - /url: /style/fine-line/
+          - link "Traditional" [ref=e56] [cursor=pointer]:
+            - /url: /style/traditional/
+        - paragraph [ref=e59]:
+          - generic [ref=e62]: 0 saved
+      - generic [ref=e64]:
+        - heading "16 forearm tattoo ideas for men" [level=2] [ref=e65]
+        - paragraph [ref=e66]: Tap any idea to view details.
+      - generic [ref=e67]:
+        - figure "Inner forearm · 12 cm · Fine line · Black" [ref=e68]:
+          - link [ref=e69]:
+            - /url: /ideas/forearm-tattoo-ideas-for-men/fine-line-mountain/
+            - img "Fine line mountain - A vertical landscape designed to follow the inner forearm without crowding the wrist." [ref=e71]
+          - generic [ref=e72]:
+            - 'button "Save: Fine line mountain - A vertical landscape designed to follow the inner forearm without crowding the wrist." [ref=e73] [cursor=pointer]'
+            - 'link "Pin: Fine line mountain - A vertical landscape designed to follow the inner forearm without crowding the wrist." [ref=e76] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fforearm-tattoo-ideas-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fforearm-tattoo-ideas-for-men%2F01-1200.webp&description=Fine%20line%20mountain%20-%20A%20vertical%20landscape%20designed%20to%20follow%20the%20inner%20forearm%20without%20crowding%20the%20wrist.
+        - figure "Outer forearm · 14 cm · Blackwork · Black" [ref=e81]:
+          - link [ref=e82]:
+            - /url: /ideas/forearm-tattoo-ideas-for-men/blackwork-botanical/
+            - img "Blackwork botanical - A long stem that runs with the length of the outer forearm." [ref=e84]
+          - generic [ref=e85]:
+            - 'button "Save: Blackwork botanical - A long stem that runs with the length of the outer forearm." [ref=e86] [cursor=pointer]'
+            - 'link "Pin: Blackwork botanical - A long stem that runs with the length of the outer forearm." [ref=e89] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fforearm-tattoo-ideas-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fforearm-tattoo-ideas-for-men%2F02-1200.webp&description=Blackwork%20botanical%20-%20A%20long%20stem%20that%20runs%20with%20the%20length%20of%20the%20outer%20forearm.
+        - figure "Inner forearm · 10 cm · Fine line · Black" [ref=e94]:
+          - link [ref=e95]:
+            - /url: /ideas/forearm-tattoo-ideas-for-men/compass-fine-line/
+            - img "Fine line compass - A symmetrical piece that sits well centred on the inner forearm." [ref=e97]
+          - generic [ref=e98]:
+            - 'button "Save: Fine line compass - A symmetrical piece that sits well centred on the inner forearm." [ref=e99] [cursor=pointer]'
+            - 'link "Pin: Fine line compass - A symmetrical piece that sits well centred on the inner forearm." [ref=e102] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fforearm-tattoo-ideas-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fforearm-tattoo-ideas-for-men%2F03-1200.webp&description=Fine%20line%20compass%20-%20A%20symmetrical%20piece%20that%20sits%20well%20centred%20on%20the%20inner%20forearm.
+        - figure "Outer forearm · 15 cm · Realism · Black & grey" [ref=e107]:
+          - link [ref=e108]:
+            - /url: /ideas/forearm-tattoo-ideas-for-men/wolf-realism/
+            - img "Wolf portrait - A portrait that needs the full width of the outer forearm to hold its detail." [ref=e110]
+          - generic [ref=e111]:
+            - 'button "Save: Wolf portrait - A portrait that needs the full width of the outer forearm to hold its detail." [ref=e112] [cursor=pointer]'
+            - 'link "Pin: Wolf portrait - A portrait that needs the full width of the outer forearm to hold its detail." [ref=e115] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fforearm-tattoo-ideas-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fforearm-tattoo-ideas-for-men%2F04-1200.webp&description=Wolf%20portrait%20-%20A%20portrait%20that%20needs%20the%20full%20width%20of%20the%20outer%20forearm%20to%20hold%20its%20detail.
+        - figure "Inner forearm · 9 cm · Geometric · Black" [ref=e120]:
+          - link [ref=e121]:
+            - /url: /ideas/forearm-tattoo-ideas-for-men/ornamental-band/
+            - img "Ornamental band - A wrap-around band that reads the same from every angle." [ref=e123]
+          - generic [ref=e124]:
+            - 'button "Save: Ornamental band - A wrap-around band that reads the same from every angle." [ref=e125] [cursor=pointer]'
+            - 'link "Pin: Ornamental band - A wrap-around band that reads the same from every angle." [ref=e128] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fforearm-tattoo-ideas-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fforearm-tattoo-ideas-for-men%2F05-1200.webp&description=Ornamental%20band%20-%20A%20wrap-around%20band%20that%20reads%20the%20same%20from%20every%20angle.
+        - figure "Outer forearm · 13 cm · Traditional · Black & colour" [ref=e133]:
+          - link [ref=e134]:
+            - /url: /ideas/forearm-tattoo-ideas-for-men/traditional-eagle/
+            - img "Traditional eagle - Bold outlines and flat colour, built to stay readable for decades." [ref=e136]
+          - generic [ref=e137]:
+            - 'button "Save: Traditional eagle - Bold outlines and flat colour, built to stay readable for decades." [ref=e138] [cursor=pointer]'
+            - 'link "Pin: Traditional eagle - Bold outlines and flat colour, built to stay readable for decades." [ref=e141] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fforearm-tattoo-ideas-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fforearm-tattoo-ideas-for-men%2F06-1200.webp&description=Traditional%20eagle%20-%20Bold%20outlines%20and%20flat%20colour%2C%20built%20to%20stay%20readable%20for%20decades.
+        - figure "Inner forearm · 3 cm · Minimal · Black" [ref=e146]:
+          - link [ref=e147]:
+            - /url: /ideas/forearm-tattoo-ideas-for-men/minimal-sun/
+            - img "Minimal sun - A small first piece that works as a standalone or as filler later." [ref=e149]
+          - generic [ref=e150]:
+            - 'button "Save: Minimal sun - A small first piece that works as a standalone or as filler later." [ref=e151] [cursor=pointer]'
+            - 'link "Pin: Minimal sun - A small first piece that works as a standalone or as filler later." [ref=e154] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fforearm-tattoo-ideas-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fforearm-tattoo-ideas-for-men%2F07-1200.webp&description=Minimal%20sun%20-%20A%20small%20first%20piece%20that%20works%20as%20a%20standalone%20or%20as%20filler%20later.
+        - figure "Outer forearm · 16 cm · Realism · Black & grey" [ref=e159]:
+          - link [ref=e160]:
+            - /url: /ideas/forearm-tattoo-ideas-for-men/lion-realism/
+            - img "Lion portrait - The largest single piece that fits a forearm without wrapping." [ref=e162]
+          - generic [ref=e163]:
+            - 'button "Save: Lion portrait - The largest single piece that fits a forearm without wrapping." [ref=e164] [cursor=pointer]'
+            - 'link "Pin: Lion portrait - The largest single piece that fits a forearm without wrapping." [ref=e167] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fforearm-tattoo-ideas-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fforearm-tattoo-ideas-for-men%2F08-1200.webp&description=Lion%20portrait%20-%20The%20largest%20single%20piece%20that%20fits%20a%20forearm%20without%20wrapping.
+      - complementary "Advertisement" [ref=e172]
+      - generic [ref=e175]:
+        - figure "Inner forearm · 15 cm · Black & grey · Black" [ref=e176]:
+          - link [ref=e177]:
+            - /url: /ideas/forearm-tattoo-ideas-for-men/forest-landscape/
+            - img "Forest landscape - A depth-heavy scene that uses the length of the arm as perspective." [ref=e179]
+          - generic [ref=e180]:
+            - 'button "Save: Forest landscape - A depth-heavy scene that uses the length of the arm as perspective." [ref=e181] [cursor=pointer]'
+            - 'link "Pin: Forest landscape - A depth-heavy scene that uses the length of the arm as perspective." [ref=e184] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fforearm-tattoo-ideas-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fforearm-tattoo-ideas-for-men%2F09-1200.webp&description=Forest%20landscape%20-%20A%20depth-heavy%20scene%20that%20uses%20the%20length%20of%20the%20arm%20as%20perspective.
+        - figure "Outer forearm · 12 cm · Abstract · Black" [ref=e189]:
+          - link [ref=e190]:
+            - /url: /ideas/forearm-tattoo-ideas-for-men/abstract-brush/
+            - img "Abstract brush stroke - A single gesture that suits people who want movement over subject." [ref=e192]
+          - generic [ref=e193]:
+            - 'button "Save: Abstract brush stroke - A single gesture that suits people who want movement over subject." [ref=e194] [cursor=pointer]'
+            - 'link "Pin: Abstract brush stroke - A single gesture that suits people who want movement over subject." [ref=e197] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fforearm-tattoo-ideas-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fforearm-tattoo-ideas-for-men%2F10-1200.webp&description=Abstract%20brush%20stroke%20-%20A%20single%20gesture%20that%20suits%20people%20who%20want%20movement%20over%20subject.
+        - figure "Inner forearm · 5 cm · Minimal · Black" [ref=e202]:
+          - link [ref=e203]:
+            - /url: /ideas/forearm-tattoo-ideas-for-men/coordinates/
+            - img "Coordinates - Small type that needs generous spacing to stay legible as it ages." [ref=e205]
+          - generic [ref=e206]:
+            - 'button "Save: Coordinates - Small type that needs generous spacing to stay legible as it ages." [ref=e207] [cursor=pointer]'
+            - 'link "Pin: Coordinates - Small type that needs generous spacing to stay legible as it ages." [ref=e210] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fforearm-tattoo-ideas-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fforearm-tattoo-ideas-for-men%2F11-1200.webp&description=Coordinates%20-%20Small%20type%20that%20needs%20generous%20spacing%20to%20stay%20legible%20as%20it%20ages.
+        - figure "Outer forearm · 14 cm · Black & grey · Black" [ref=e215]:
+          - link [ref=e216]:
+            - /url: /ideas/forearm-tattoo-ideas-for-men/skull-and-flowers/
+            - img "Skull and flowers - A contrast piece pairing a hard subject with soft botanical framing." [ref=e218]
+          - generic [ref=e219]:
+            - 'button "Save: Skull and flowers - A contrast piece pairing a hard subject with soft botanical framing." [ref=e220] [cursor=pointer]'
+            - 'link "Pin: Skull and flowers - A contrast piece pairing a hard subject with soft botanical framing." [ref=e223] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fforearm-tattoo-ideas-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fforearm-tattoo-ideas-for-men%2F12-1200.webp&description=Skull%20and%20flowers%20-%20A%20contrast%20piece%20pairing%20a%20hard%20subject%20with%20soft%20botanical%20framing.
+        - figure "Inner forearm · 13 cm · Ornamental · Black" [ref=e228]:
+          - link [ref=e229]:
+            - /url: /ideas/forearm-tattoo-ideas-for-men/ornamental-pattern/
+            - img "Ornamental pattern - Repeating geometry that follows the taper of the forearm." [ref=e231]
+          - generic [ref=e232]:
+            - 'button "Save: Ornamental pattern - Repeating geometry that follows the taper of the forearm." [ref=e233] [cursor=pointer]'
+            - 'link "Pin: Ornamental pattern - Repeating geometry that follows the taper of the forearm." [ref=e236] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fforearm-tattoo-ideas-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fforearm-tattoo-ideas-for-men%2F13-1200.webp&description=Ornamental%20pattern%20-%20Repeating%20geometry%20that%20follows%20the%20taper%20of%20the%20forearm.
+        - figure "Outer forearm · 15 cm · Black & grey · Black" [ref=e241]:
+          - link [ref=e242]:
+            - /url: /ideas/forearm-tattoo-ideas-for-men/snake-black-grey/
+            - img "Snake - A subject built for a long narrow area - it wraps naturally." [ref=e244]
+          - generic [ref=e245]:
+            - 'button "Save: Snake - A subject built for a long narrow area - it wraps naturally." [ref=e246] [cursor=pointer]'
+            - 'link "Pin: Snake - A subject built for a long narrow area - it wraps naturally." [ref=e249] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fforearm-tattoo-ideas-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fforearm-tattoo-ideas-for-men%2F14-1200.webp&description=Snake%20-%20A%20subject%20built%20for%20a%20long%20narrow%20area%20-%20it%20wraps%20naturally.
+        - figure "Inner forearm · 14 cm · Fine line · Black" [ref=e254]:
+          - link [ref=e255]:
+            - /url: /ideas/forearm-tattoo-ideas-for-men/tree-of-life/
+            - img "Tree line - Fine roots and canopy that need room, so keep it above 12 cm." [ref=e257]
+          - generic [ref=e258]:
+            - 'button "Save: Tree line - Fine roots and canopy that need room, so keep it above 12 cm." [ref=e259] [cursor=pointer]'
+            - 'link "Pin: Tree line - Fine roots and canopy that need room, so keep it above 12 cm." [ref=e262] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fforearm-tattoo-ideas-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fforearm-tattoo-ideas-for-men%2F15-1200.webp&description=Tree%20line%20-%20Fine%20roots%20and%20canopy%20that%20need%20room%2C%20so%20keep%20it%20above%2012%20cm.
+        - figure "Outer forearm · 8 cm · Fine line · Black" [ref=e267]:
+          - link [ref=e268]:
+            - /url: /ideas/forearm-tattoo-ideas-for-men/moon-and-stars/
+            - img "Moon and stars - A compact piece that pairs easily with a second tattoo later." [ref=e270]
+          - generic [ref=e271]:
+            - 'button "Save: Moon and stars - A compact piece that pairs easily with a second tattoo later." [ref=e272] [cursor=pointer]'
+            - 'link "Pin: Moon and stars - A compact piece that pairs easily with a second tattoo later." [ref=e275] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fforearm-tattoo-ideas-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fforearm-tattoo-ideas-for-men%2F16-1200.webp&description=Moon%20and%20stars%20-%20A%20compact%20piece%20that%20pairs%20easily%20with%20a%20second%20tattoo%20later.
+      - paragraph [ref=e280]:
+        - generic [ref=e281]: Showing all 16 ideas
+    - region [ref=e282]:
+      - generic [ref=e283]:
+        - heading "Build your shortlist" [level=2] [ref=e284]
+        - paragraph [ref=e285]: Save the ideas you like, then copy one clear description for your artist.
+        - generic [ref=e286]:
+          - list [ref=e287]:
+            - listitem [ref=e288]: Tap the bookmark on any idea to add it here.
+          - paragraph [ref=e289]:
+            - generic [ref=e292]: 0 ideas saved
+        - generic [ref=e293]:
+          - generic [ref=e294]: Description for your artist
+          - textbox "Description for your artist" [ref=e295]: fine line, ~12 cm, inner forearm, black
+        - generic [ref=e299]:
+          - button "Copy description" [ref=e300] [cursor=pointer]
+          - link "View saved ideas" [ref=e302] [cursor=pointer]:
+            - /url: /saved/
+    - region [ref=e303]:
+      - generic [ref=e304]:
+        - heading "Forearm tattoo details" [level=2] [ref=e305]
+        - table [ref=e307]:
+          - rowgroup [ref=e308]:
+            - row [ref=e309]:
+              - columnheader "Pain level" [ref=e310]
+              - columnheader "Typical size" [ref=e311]
+              - columnheader "Session time" [ref=e312]
+              - columnheader "Typical price" [ref=e313]
+              - columnheader "Healing" [ref=e314]
+          - rowgroup [ref=e315]:
+            - row [ref=e316]:
+              - cell "Commonly described as moderate" [ref=e317]
+              - cell "5-18 cm" [ref=e318]
+              - cell "1-5 hours" [ref=e319]
+              - cell "$150-$900" [ref=e320]
+              - cell "Ask your artist" [ref=e321]
+        - paragraph [ref=e322]: Estimates vary by design, location and artist. Ask your artist or a doctor about anything to do with healing or individual health concerns.
+    - generic [ref=e323]:
+      - generic [ref=e324]:
+        - heading "What to consider before your session" [level=2] [ref=e325]
+        - list [ref=e326]:
+          - listitem [ref=e327]:
+            - generic [ref=e331]: Work visibility - inner forearm is easier to cover than outer.
+          - listitem [ref=e332]:
+            - generic [ref=e335]: Skin movement - the design should follow your anatomy, not fight it.
+          - listitem [ref=e336]:
+            - generic [ref=e340]: Sun exposure - ask your artist about long-term protection for this area.
+          - listitem [ref=e341]:
+            - generic [ref=e345]: Available space - small details need enough room to age clearly.
+      - generic [ref=e346]:
+        - heading "What to ask your artist" [level=2] [ref=e347]
+        - list [ref=e348]:
+          - listitem [ref=e349]:
+            - generic [ref=e350]: Can this level of detail work at my chosen size?
+          - listitem [ref=e351]:
+            - generic [ref=e352]: How should the design follow my forearm?
+          - listitem [ref=e353]:
+            - generic [ref=e354]: Would inner or outer placement suit it better?
+          - listitem [ref=e355]:
+            - generic [ref=e356]: How many sessions should I expect?
+          - listitem [ref=e357]:
+            - generic [ref=e358]: What aftercare do you recommend for me?
+    - region [ref=e359]:
+      - heading "Explore related tattoo ideas" [level=2] [ref=e361]
+      - generic [ref=e362]:
+        - article [ref=e363]:
+          - link "Small tattoos for men Small tattoos for men" [ref=e364] [cursor=pointer]:
+            - /url: /ideas/small-tattoos-for-men/
+            - img "Small tattoos for men" [ref=e366]
+            - generic [ref=e367]: Small tattoos for men
+          - generic [ref=e368]:
+            - button "Save Small tattoos for men" [ref=e369] [cursor=pointer]
+            - link "Pin Small tattoos for men" [ref=e372] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fsmall-tattoos-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fsmall-tattoos-for-men%2F01-1200.webp&description=Small%20tattoos%20for%20men
+          - generic [ref=e376]:
+            - link "Small tattoos for men" [ref=e377] [cursor=pointer]:
+              - /url: /ideas/small-tattoos-for-men/
+            - text: · 24 ideas
+        - article [ref=e378]:
+          - link "Tattoo ideas for male arm Tattoo ideas for male arm" [ref=e379] [cursor=pointer]:
+            - /url: /ideas/tattoo-ideas-male-arm/
+            - img "Tattoo ideas for male arm" [ref=e381]
+            - generic [ref=e382]: Tattoo ideas for male arm
+          - generic [ref=e383]:
+            - button "Save Tattoo ideas for male arm" [ref=e384] [cursor=pointer]
+            - link "Pin Tattoo ideas for male arm" [ref=e387] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ftattoo-ideas-male-arm%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ftattoo-ideas-male-arm%2F01-1200.webp&description=Tattoo%20ideas%20for%20male%20arm
+          - generic [ref=e391]:
+            - link "Tattoo ideas for male arm" [ref=e392] [cursor=pointer]:
+              - /url: /ideas/tattoo-ideas-male-arm/
+            - text: · 24 ideas
+        - article [ref=e393]:
+          - link "Sleeve tattoo ideas for men Sleeve tattoo ideas for men" [ref=e394] [cursor=pointer]:
+            - /url: /ideas/sleeve-tattoo-ideas-for-men/
+            - img "Sleeve tattoo ideas for men" [ref=e396]
+            - generic [ref=e397]: Sleeve tattoo ideas for men
+          - generic [ref=e398]:
+            - button "Save Sleeve tattoo ideas for men" [ref=e399] [cursor=pointer]
+            - link "Pin Sleeve tattoo ideas for men" [ref=e402] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fsleeve-tattoo-ideas-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fsleeve-tattoo-ideas-for-men%2F01-1200.webp&description=Sleeve%20tattoo%20ideas%20for%20men
+          - generic [ref=e406]:
+            - link "Sleeve tattoo ideas for men" [ref=e407] [cursor=pointer]:
+              - /url: /ideas/sleeve-tattoo-ideas-for-men/
+            - text: · 24 ideas
+        - article [ref=e408]:
+          - link "Hand tattoo ideas Hand tattoo ideas" [ref=e409] [cursor=pointer]:
+            - /url: /ideas/hand-tattoo-ideas/
+            - img "Hand tattoo ideas" [ref=e411]
+            - generic [ref=e412]: Hand tattoo ideas
+          - generic [ref=e413]:
+            - button "Save Hand tattoo ideas" [ref=e414] [cursor=pointer]
+            - link "Pin Hand tattoo ideas" [ref=e417] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fhand-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fhand-tattoo-ideas%2F01-1200.webp&description=Hand%20tattoo%20ideas
+          - generic [ref=e421]:
+            - link "Hand tattoo ideas" [ref=e422] [cursor=pointer]:
+              - /url: /ideas/hand-tattoo-ideas/
+            - text: · 24 ideas
+        - article [ref=e423]:
+          - link "Chest tattoo ideas for guys Chest tattoo ideas for guys" [ref=e424] [cursor=pointer]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/
+            - img "Chest tattoo ideas for guys" [ref=e426]
+            - generic [ref=e427]: Chest tattoo ideas for guys
+          - generic [ref=e428]:
+            - button "Save Chest tattoo ideas for guys" [ref=e429] [cursor=pointer]
+            - link "Pin Chest tattoo ideas for guys" [ref=e432] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F01-1200.webp&description=Chest%20tattoo%20ideas%20for%20guys
+          - generic [ref=e436]:
+            - link "Chest tattoo ideas for guys" [ref=e437] [cursor=pointer]:
+              - /url: /ideas/chest-tattoo-ideas-for-guys/
+            - text: · 24 ideas
+        - article [ref=e438]:
+          - link "Fine line tattoo ideas Fine line tattoo ideas" [ref=e439] [cursor=pointer]:
+            - /url: /ideas/fine-line-tattoo-ideas/
+            - img "Fine line tattoo ideas" [ref=e441]
+            - generic [ref=e442]: Fine line tattoo ideas
+          - generic [ref=e443]:
+            - button "Save Fine line tattoo ideas" [ref=e444] [cursor=pointer]
+            - link "Pin Fine line tattoo ideas" [ref=e447] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F01-1200.webp&description=Fine%20line%20tattoo%20ideas
+          - generic [ref=e451]:
+            - link "Fine line tattoo ideas" [ref=e452] [cursor=pointer]:
+              - /url: /ideas/fine-line-tattoo-ideas/
+            - text: · 24 ideas
+        - article [ref=e453]:
+          - link "Tattoo ideas for men Tattoo ideas for men" [ref=e454] [cursor=pointer]:
+            - /url: /ideas/tattoo-ideas-for-men/
+            - img "Tattoo ideas for men" [ref=e456]
+            - generic [ref=e457]: Tattoo ideas for men
+          - generic [ref=e458]:
+            - button "Save Tattoo ideas for men" [ref=e459] [cursor=pointer]
+            - link "Pin Tattoo ideas for men" [ref=e462] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ftattoo-ideas-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ftattoo-ideas-for-men%2F01-1200.webp&description=Tattoo%20ideas%20for%20men
+          - generic [ref=e466]:
+            - link "Tattoo ideas for men" [ref=e467] [cursor=pointer]:
+              - /url: /ideas/tattoo-ideas-for-men/
+            - text: · 24 ideas
+        - article [ref=e468]:
+          - link "Forearm tattoo ideas Forearm tattoo ideas" [ref=e469] [cursor=pointer]:
+            - /url: /ideas/forearm-tattoo-ideas/
+            - img "Forearm tattoo ideas" [ref=e471]
+            - generic [ref=e472]: Forearm tattoo ideas
+          - generic [ref=e473]:
+            - button "Save Forearm tattoo ideas" [ref=e474] [cursor=pointer]
+            - link "Pin Forearm tattoo ideas" [ref=e477] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fforearm-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fforearm-tattoo-ideas%2F01-1200.webp&description=Forearm%20tattoo%20ideas
+          - generic [ref=e481]:
+            - link "Forearm tattoo ideas" [ref=e482] [cursor=pointer]:
+              - /url: /ideas/forearm-tattoo-ideas/
+            - text: · 24 ideas
+    - region [ref=e483]:
+      - heading "Forearm tattoo ideas for men FAQ" [level=2] [ref=e485]
+      - generic [ref=e486]:
+        - group [ref=e487]:
+          - generic "How painful is a forearm tattoo?" [ref=e488] [cursor=pointer]
+        - group [ref=e491]:
+          - generic "What size works best on the forearm?" [ref=e492] [cursor=pointer]
+        - group [ref=e495]:
+          - generic "Can a forearm tattoo be covered for work?" [ref=e496] [cursor=pointer]
+        - group [ref=e499]:
+          - generic "How long does a forearm tattoo take?" [ref=e500] [cursor=pointer]
+        - group [ref=e503]:
+          - generic "Should I choose the inner or outer forearm?" [ref=e504] [cursor=pointer]
+    - region [ref=e507]:
+      - heading "Related searches" [level=2] [ref=e509]
+      - navigation "Related searches" [ref=e510]:
+        - link "forearm tattoo ideas for men" [ref=e511] [cursor=pointer]:
+          - /url: /ideas/forearm-tattoo-ideas/
+        - link "small forearm tattoos for men" [ref=e515] [cursor=pointer]:
+          - /url: /ideas/small-tattoos-for-men/
+        - link "male arm tattoo ideas" [ref=e519] [cursor=pointer]:
+          - /url: /ideas/tattoo-ideas-male-arm/
+        - link "simple tattoo ideas for men" [ref=e523] [cursor=pointer]:
+          - /url: /ideas/tattoo-ideas-for-men/
+        - link "blackwork forearm tattoos" [ref=e527] [cursor=pointer]:
+          - /url: /style/blackwork/
+        - link "fine line forearm tattoos" [ref=e531] [cursor=pointer]:
+          - /url: /ideas/fine-line-tattoo-ideas/
+        - link "sleeve tattoo ideas for men" [ref=e535] [cursor=pointer]:
+          - /url: /ideas/sleeve-tattoo-ideas-for-men/
+        - link "hand tattoo ideas" [ref=e539] [cursor=pointer]:
+          - /url: /ideas/hand-tattoo-ideas/
+  - contentinfo [ref=e543]:
+    - generic [ref=e544]:
+      - generic [ref=e545]:
+        - navigation "Explore" [ref=e546]:
+          - heading "Explore" [level=2] [ref=e547]
+          - list [ref=e548]:
+            - listitem [ref=e549]:
+              - link "Ideas" [ref=e550] [cursor=pointer]:
+                - /url: /ideas/
+            - listitem [ref=e551]:
+              - link "Placement" [ref=e552] [cursor=pointer]:
+                - /url: /placement/
+            - listitem [ref=e553]:
+              - link "Subjects" [ref=e554] [cursor=pointer]:
+                - /url: /subject/
+            - listitem [ref=e555]:
+              - link "Styles" [ref=e556] [cursor=pointer]:
+                - /url: /style/
+            - listitem [ref=e557]:
+              - link "Sizes" [ref=e558] [cursor=pointer]:
+                - /url: /size/
+        - navigation "Resources" [ref=e559]:
+          - heading "Resources" [level=2] [ref=e560]
+          - list [ref=e561]:
+            - listitem [ref=e562]:
+              - link "Tattoo size guide" [ref=e563] [cursor=pointer]:
+                - /url: /tools/size-guide/
+            - listitem [ref=e564]:
+              - link "Placement picker" [ref=e565] [cursor=pointer]:
+                - /url: /tools/placement-picker/
+            - listitem [ref=e566]:
+              - link "30-second quiz" [ref=e567] [cursor=pointer]:
+                - /url: /tools/quiz/
+            - listitem [ref=e568]:
+              - link "Cover up ideas" [ref=e569] [cursor=pointer]:
+                - /url: /ideas/cover-up-tattoo-ideas/
+        - navigation "Company" [ref=e570]:
+          - heading "Company" [level=2] [ref=e571]
+          - list [ref=e572]:
+            - listitem [ref=e573]:
+              - link "About us" [ref=e574] [cursor=pointer]:
+                - /url: /about/
+            - listitem [ref=e575]:
+              - link "Contact" [ref=e576] [cursor=pointer]:
+                - /url: /contact/
+            - listitem [ref=e577]:
+              - link "Editorial standards" [ref=e578] [cursor=pointer]:
+                - /url: /editorial-standards/
+            - listitem [ref=e579]:
+              - link "Privacy policy" [ref=e580] [cursor=pointer]:
+                - /url: /privacy/
+            - listitem [ref=e581]:
+              - link "Terms of use" [ref=e582] [cursor=pointer]:
+                - /url: /terms/
+            - listitem [ref=e583]:
+              - link "Sitemap" [ref=e584] [cursor=pointer]:
+                - /url: /sitemap/
+      - generic [ref=e585]:
+        - text: Tattoo Designs Co
+        - paragraph [ref=e586]: Real ideas. Real ink. Real you.
+        - list [ref=e587]:
+          - listitem [ref=e588]:
+            - link "Instagram" [ref=e589] [cursor=pointer]:
+              - /url: https://instagram.com/
+          - listitem [ref=e594]:
+            - link "Pinterest" [ref=e595] [cursor=pointer]:
+              - /url: https://pinterest.com/
+          - listitem [ref=e599]:
+            - link "TikTok" [ref=e600] [cursor=pointer]:
+              - /url: https://tiktok.com/
+          - listitem [ref=e604]:
+            - link "YouTube" [ref=e605] [cursor=pointer]:
+              - /url: https://youtube.com/
+    - generic [ref=e609]:
+      - paragraph [ref=e610]: © 2026 TattooDesignsCo. All rights reserved.
+      - paragraph [ref=e611]: Ideas and reference images only. For anything about healing, skin reactions or removal, ask your artist or a doctor.

@@ -1,0 +1,78 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import site from '@data/site.json';
+
+---
+
+<BaseLayout
+  title={`About ${site.name}`}
+  description={`What ${site.name} is, who makes it and how the ideas are put together.`}
+  path="/about/"
+  crumbs={[
+    { label: 'Home', href: '/' },
+    { label: 'About us', href: '/about/' },
+  ]}
+>
+  <section class="container page-top">
+    <h1>About us</h1>
+    <div class="lead">
+      <p>{site.name} is a reference library for people planning a tattoo.</p>
+      <p>Browse by placement, size, style and subject, then walk into the studio knowing what to ask.</p>
+    </div>
+  </section>
+
+  <section class="section container prose">
+    <h2>Why this site exists</h2>
+    <p>
+      Most tattoo inspiration lives on social platforms, where you cannot filter
+      by body area or size, and where the same image gets reposted without any
+      idea of how big it actually is. Every image here carries the placement,
+      the size in centimetres, the style and the colour as text you can read.
+    </p>
+
+    <h2>What we do differently</h2>
+    <ul>
+      <li>Filters that are real pages, so a combination you want has a link you can send someone.</li>
+      <li>A shortlist you can build without an account and take to your appointment.</li>
+      <li>A brief you can copy and hand to your artist in plain words.</li>
+      <li>Size compared on a real body, not as a circle on a white page.</li>
+    </ul>
+
+    <h2>Who makes it</h2>
+    <p>
+      TattooDesignsCo is maintained as an independent editorial reference
+      project. Pages are organised from search research, then reviewed for a
+      clear relationship between the image, placement label, size and style.
+      Commercial relationships do not determine which idea appears first.
+    </p>
+    <p>
+      We are not a tattoo studio and do not accept bookings. The purpose of the
+      site is to help you prepare a more precise conversation with an artist who
+      can adapt a concept to your body and draw an original version.
+    </p>
+
+    <h2>Images and artists</h2>
+    <p>
+      How images are sourced and checked is written out in full on the
+      <a href="/editorial-standards/">editorial standards</a> page. If you are an
+      artist and want your work featured with a credit, or you have found your
+      work here without permission, write to
+      <a href={`mailto:${site.email}`}>{site.email}</a>.
+    </p>
+
+    <h2>What this site is not</h2>
+    <p>
+      It is not medical guidance. Anything about healing, skin reactions,
+      allergies or removal is a question for your artist or a doctor, and we
+      will always say so rather than answer it ourselves.
+    </p>
+
+    <h2>Corrections</h2>
+    <p>
+      If a caption names the wrong placement, size, style or colour, send the
+      page address and identify the image. We review factual corrections and
+      rights requests before general partnership messages. The contact page
+      explains what information helps us investigate quickly.
+    </p>
+  </section>
+</BaseLayout>

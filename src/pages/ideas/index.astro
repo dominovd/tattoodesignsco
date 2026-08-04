@@ -1,0 +1,91 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Chips from '@components/Chips.astro';
+import IdeaCard from '@components/IdeaCard.astro';
+import AdSlot from '@components/AdSlot.astro';
+import PopularSearches from '@components/PopularSearches.astro';
+import combos from '@data/combos.json';
+import popular from '@data/popular.json';
+
+/** Индекс всех комбинаций. Порядок - по объёму. */
+const items = [...combos.items].sort((a, b) => b.volume - a.volume);
+---
+
+<BaseLayout
+  title="Tattoo ideas by placement, style and subject | TattooDesignsCo"
+  description="Every tattoo idea collection on the site, sorted by how often people look for it."
+  path="/ideas/"
+  crumbs={[
+    { label: 'Home', href: '/' },
+    { label: 'Ideas', href: '/ideas/' },
+  ]}
+>
+  <section class="container top">
+    <h1>Tattoo ideas</h1>
+    <div class="lead">
+      <p>Every collection on the site, from first small pieces to full sleeves.</p>
+      <p>Pick a starting point, save what you like, copy a brief for your artist.</p>
+    </div>
+  </section>
+
+  <section class="section container" aria-label="All ideas">
+    <Chips items={popular.chips} label="Narrow by axis" />
+
+    <div class="grid grid-gallery">
+      {
+        items.slice(0, 8).map((c, i) => (
+          <IdeaCard
+            href={`/ideas/${c.slug}/`}
+            title={c.h1}
+            image={`ideas/${c.slug}/01`}
+            alt={c.h1}
+            ideas={c.images}
+            priority={i === 0}
+          />
+        ))
+      }
+    </div>
+
+    <AdSlot id="ideas-index" height={100} />
+
+    {
+      items.length > 8 && (
+        <div class="grid grid-gallery rest">
+          {items.slice(8).map((c) => (
+            <IdeaCard
+              href={`/ideas/${c.slug}/`}
+              title={c.h1}
+              image={`ideas/${c.slug}/01`}
+              alt={c.h1}
+              ideas={c.images}
+            />
+          ))}
+        </div>
+      )
+    }
+  </section>
+
+  <section class="section container prose">
+    <h2>How the collections are organised</h2>
+    <p>
+      Each collection combines choices people make together, such as audience,
+      placement, subject and style. The label under every image states the body
+      area, approximate size, treatment and colour. Use those details to compare
+      references that could realistically support the same composition.
+    </p>
+    <p>
+      Save images for specific reasons instead of collecting near-duplicates.
+      A useful shortlist might include one reference for overall flow, one for
+      line weight and one for the amount of detail. The copied description turns
+      those choices into a starting brief for an original drawing.
+    </p>
+  </section>
+
+  <PopularSearches items={popular.searches} />
+</BaseLayout>
+
+<style>
+  .top { padding-top: 24px; }
+  .top .lead { margin-top: 10px; }
+  .rest { margin-top: 24px; }
+</style>

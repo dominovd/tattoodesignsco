@@ -1,0 +1,47 @@
+---
+import AxisLeaf from '@components/AxisLeaf.astro';
+import axes from '@data/axes.json';
+import { subjectGalleries } from '@data/subject-galleries';
+
+export function getStaticPaths() {
+  return axes.subjects.map((s) => ({ params: { slug: s.slug }, props: { s } }));
+}
+
+const { s } = Astro.props;
+const path = `/subject/${s.slug}/`;
+const label = s.label.toLowerCase();
+const galleryItems = subjectGalleries[s.slug];
+
+const siblings = axes.subjects
+  .filter((x) => x.slug !== s.slug)
+  .slice(0, 8)
+  .map((x) => ({ label: x.label, href: `/subject/${x.slug}/` }));
+---
+
+<AxisLeaf
+  h1={`${s.label} tattoo ideas`}
+  title={`${s.label} tattoo ideas - designs by size and area | TattooDesignsCo`}
+  description={`${s.label} tattoo ideas with size, style and colour on every image.`}
+  path={path}
+  contentKey={`subject/${s.slug}`}
+  crumbs={[
+    { label: 'Home', href: '/' },
+    { label: 'Subjects', href: '/subject/' },
+    { label: s.label, href: path },
+  ]}
+  answer={[
+    `${s.label} designs across forearm, shoulder, thigh and wrist, from fine line to heavy blackwork.`,
+    'Save what you like, then copy one clear description for your artist.',
+  ]}
+  gallerySlug={`subject-${s.slug}`}
+  galleryDefaults={{
+    placement: 'Forearm',
+    size: '5-12 cm',
+    style: 'Fine line',
+    color: 'Black',
+    altPattern: `${s.label} tattoo idea, reference {n}`,
+    items: galleryItems,
+  }}
+  siblings={siblings}
+  brief={`fine line ${label}, ~8 cm, inner forearm, black only`}
+/>

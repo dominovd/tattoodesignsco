@@ -1,0 +1,16 @@
+---
+import AxisHub from '@components/AxisHub.astro';
+import axes from '@data/axes.json';
+---
+
+<AxisHub
+  title="Tattoo sizes - 3, 5 and 10 cm compared | TattooDesignsCo"
+  h1="Tattoo sizes"
+  description="See what 3, 5 and 10 cm actually look like on the body before you choose a design."
+  base="/size/"
+  answer={[
+    'Size decides how much detail a design can hold, not just how much space it takes.',
+    'Compare real centimetres on the body before you commit.',
+  ]}
+  children_={axes.sizes.map((s) => ({ ...s, volume: null }))}
+/>

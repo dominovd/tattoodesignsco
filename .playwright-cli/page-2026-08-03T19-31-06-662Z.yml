@@ -1,0 +1,534 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "TattooDesignsCo home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e12]: Tattoo Designs Co
+      - navigation "Main" [ref=e13]:
+        - link "Ideas" [ref=e14] [cursor=pointer]:
+          - /url: /ideas/
+        - link "Placement" [ref=e15] [cursor=pointer]:
+          - /url: /placement/
+        - link "Subjects" [ref=e16] [cursor=pointer]:
+          - /url: /subject/
+        - link "Styles" [ref=e17] [cursor=pointer]:
+          - /url: /style/
+        - link "Sizes" [ref=e18] [cursor=pointer]:
+          - /url: /size/
+        - link "Tools" [ref=e19] [cursor=pointer]:
+          - /url: /tools/
+      - link "Saved" [ref=e20] [cursor=pointer]:
+        - /url: /saved/
+  - navigation "Breadcrumb" [ref=e21]:
+    - list [ref=e22]:
+      - listitem [ref=e23]:
+        - link "Home" [ref=e24] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=e25]:
+        - text: /
+        - link "Ideas" [ref=e26] [cursor=pointer]:
+          - /url: /ideas/
+      - listitem [ref=e27]: / Chest tattoo ideas for guys
+  - main [ref=e28]:
+    - generic [ref=e29]:
+      - heading "Chest tattoo ideas for guys" [level=1] [ref=e30]
+      - generic [ref=e31]:
+        - paragraph [ref=e32]: Chest pieces for men - single-side panels, symmetrical spreads and designs that run into the shoulder.
+        - paragraph [ref=e33]: Most are 15 cm and up and are planned across several sessions.
+      - paragraph [ref=e34]: Updated August 2026 · 24 ideas
+    - region "Ideas" [ref=e35]:
+      - generic [ref=e36]:
+        - navigation "Narrow these ideas" [ref=e37]:
+          - link "Men" [ref=e38] [cursor=pointer]:
+            - /url: /for/men/
+          - link "Women" [ref=e41] [cursor=pointer]:
+            - /url: /for/women/
+          - link "Couples" [ref=e44] [cursor=pointer]:
+            - /url: /for/couples/
+          - link "Small" [ref=e47] [cursor=pointer]:
+            - /url: /size/small/
+          - link "Forearm" [ref=e50] [cursor=pointer]:
+            - /url: /placement/forearm/
+          - link "Fine line" [ref=e53] [cursor=pointer]:
+            - /url: /style/fine-line/
+          - link "Traditional" [ref=e56] [cursor=pointer]:
+            - /url: /style/traditional/
+        - paragraph [ref=e59]:
+          - generic [ref=e62]: 0 saved
+      - generic [ref=e64]:
+        - heading "24 chest tattoo ideas for guys" [level=2] [ref=e65]
+        - paragraph [ref=e66]: Tap any idea to view details.
+      - generic [ref=e67]:
+        - figure "Upper chest · 28 cm · Neo-traditional · Black, brown and red" [ref=e68]:
+          - link [ref=e69]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/spread-wing-eagle-chest/
+            - img "Spread wing eagle chest tattoo - A broad bird and layered wings follow the upper pectoral line." [ref=e71]
+          - generic [ref=e72]:
+            - 'button "Save: Spread wing eagle chest tattoo - A broad bird and layered wings follow the upper pectoral line." [ref=e73] [cursor=pointer]'
+            - 'link "Pin: Spread wing eagle chest tattoo - A broad bird and layered wings follow the upper pectoral line." [ref=e76] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F01-1200.webp&description=Spread%20wing%20eagle%20chest%20tattoo%20-%20A%20broad%20bird%20and%20layered%20wings%20follow%20the%20upper%20pectoral%20line.
+        - figure "Center chest · 15 cm · Fine line · Black and grey" [ref=e81]:
+          - link [ref=e82]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/compass-sternum-chest/
+            - img "Compass chest tattoo - A clean compass rose sits centrally below the collarbones." [ref=e84]
+          - generic [ref=e85]:
+            - 'button "Save: Compass chest tattoo - A clean compass rose sits centrally below the collarbones." [ref=e86] [cursor=pointer]'
+            - 'link "Pin: Compass chest tattoo - A clean compass rose sits centrally below the collarbones." [ref=e89] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F02-1200.webp&description=Compass%20chest%20tattoo%20-%20A%20clean%20compass%20rose%20sits%20centrally%20below%20the%20collarbones.
+        - figure "Upper chest · 30 cm · Blackwork · Black" [ref=e94]:
+          - link [ref=e95]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/raven-sun-chest/
+            - img "Raven sun chest tattoo - Dark wings spread from a small sun placed over the sternum." [ref=e97]
+          - generic [ref=e98]:
+            - 'button "Save: Raven sun chest tattoo - Dark wings spread from a small sun placed over the sternum." [ref=e99] [cursor=pointer]'
+            - 'link "Pin: Raven sun chest tattoo - Dark wings spread from a small sun placed over the sternum." [ref=e102] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F03-1200.webp&description=Raven%20sun%20chest%20tattoo%20-%20Dark%20wings%20spread%20from%20a%20small%20sun%20placed%20over%20the%20sternum.
+        - figure "Left pectoral · 19 cm · Black and grey realism · Black and grey" [ref=e107]:
+          - link [ref=e108]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/clipper-ship-pectoral/
+            - img "Clipper ship chest tattoo - An engraved sailing ship fills one pectoral without crossing the center line." [ref=e110]
+          - generic [ref=e111]:
+            - 'button "Save: Clipper ship chest tattoo - An engraved sailing ship fills one pectoral without crossing the center line." [ref=e112] [cursor=pointer]'
+            - 'link "Pin: Clipper ship chest tattoo - An engraved sailing ship fills one pectoral without crossing the center line." [ref=e115] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F04-1200.webp&description=Clipper%20ship%20chest%20tattoo%20-%20An%20engraved%20sailing%20ship%20fills%20one%20pectoral%20without%20crossing%20the%20center%20line.
+        - figure "Right pectoral · 20 cm · Neo-traditional · Black, brown and red" [ref=e120]:
+          - link [ref=e121]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/bear-oak-right-pectoral/
+            - img "Bear chest tattoo - A framed bear portrait uses leaves to fit the rounded pectoral shape." [ref=e123]
+          - generic [ref=e124]:
+            - 'button "Save: Bear chest tattoo - A framed bear portrait uses leaves to fit the rounded pectoral shape." [ref=e125] [cursor=pointer]'
+            - 'link "Pin: Bear chest tattoo - A framed bear portrait uses leaves to fit the rounded pectoral shape." [ref=e128] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F05-1200.webp&description=Bear%20chest%20tattoo%20-%20A%20framed%20bear%20portrait%20uses%20leaves%20to%20fit%20the%20rounded%20pectoral%20shape.
+        - figure "Left pectoral · 21 cm · Black and grey realism · Black and grey" [ref=e133]:
+          - link [ref=e134]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/realistic-lion-pectoral/
+            - img "Lion chest tattoo - A softly shaded lion portrait creates a strong single-side chest panel." [ref=e136]
+          - generic [ref=e137]:
+            - 'button "Save: Lion chest tattoo - A softly shaded lion portrait creates a strong single-side chest panel." [ref=e138] [cursor=pointer]'
+            - 'link "Pin: Lion chest tattoo - A softly shaded lion portrait creates a strong single-side chest panel." [ref=e141] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F06-1200.webp&description=Lion%20chest%20tattoo%20-%20A%20softly%20shaded%20lion%20portrait%20creates%20a%20strong%20single-side%20chest%20panel.
+        - figure "Chest to shoulder · 24 cm · Japanese · Black, orange and red" [ref=e146]:
+          - link [ref=e147]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/tiger-peony-chest/
+            - img "Tiger and peony chest tattoo - A tiger and peony sweep from one pectoral into the shoulder cap." [ref=e149]
+          - generic [ref=e150]:
+            - 'button "Save: Tiger and peony chest tattoo - A tiger and peony sweep from one pectoral into the shoulder cap." [ref=e151] [cursor=pointer]'
+            - 'link "Pin: Tiger and peony chest tattoo - A tiger and peony sweep from one pectoral into the shoulder cap." [ref=e154] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F07-1200.webp&description=Tiger%20and%20peony%20chest%20tattoo%20-%20A%20tiger%20and%20peony%20sweep%20from%20one%20pectoral%20into%20the%20shoulder%20cap.
+        - figure "Center chest · 24 cm · Illustrative · Black and grey" [ref=e159]:
+          - link [ref=e160]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/ornamental-wings-chest/
+            - img "Ornamental wing chest tattoo - Two narrow feathered wings mirror each other around the sternum." [ref=e162]
+          - generic [ref=e163]:
+            - 'button "Save: Ornamental wing chest tattoo - Two narrow feathered wings mirror each other around the sternum." [ref=e164] [cursor=pointer]'
+            - 'link "Pin: Ornamental wing chest tattoo - Two narrow feathered wings mirror each other around the sternum." [ref=e167] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F08-1200.webp&description=Ornamental%20wing%20chest%20tattoo%20-%20Two%20narrow%20feathered%20wings%20mirror%20each%20other%20around%20the%20sternum.
+      - complementary "Advertisement" [ref=e172]
+      - generic [ref=e175]:
+        - figure "Center chest · 24 cm · Geometric · Black and grey" [ref=e176]:
+          - link [ref=e177]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/geometric-wolf-chest/
+            - img "Geometric wolf chest tattoo - Faceted lines and dot shading form a centered wolf portrait." [ref=e179]
+          - generic [ref=e180]:
+            - 'button "Save: Geometric wolf chest tattoo - Faceted lines and dot shading form a centered wolf portrait." [ref=e181] [cursor=pointer]'
+            - 'link "Pin: Geometric wolf chest tattoo - Faceted lines and dot shading form a centered wolf portrait." [ref=e184] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F09-1200.webp&description=Geometric%20wolf%20chest%20tattoo%20-%20Faceted%20lines%20and%20dot%20shading%20form%20a%20centered%20wolf%20portrait.
+        - figure "Right pectoral · 18 cm · Engraving · Black and grey" [ref=e189]:
+          - link [ref=e190]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/roman-statue-pectoral/
+            - img "Roman statue chest tattoo - A classical statue fragment reads like an etched museum study." [ref=e192]
+          - generic [ref=e193]:
+            - 'button "Save: Roman statue chest tattoo - A classical statue fragment reads like an etched museum study." [ref=e194] [cursor=pointer]'
+            - 'link "Pin: Roman statue chest tattoo - A classical statue fragment reads like an etched museum study." [ref=e197] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F10-1200.webp&description=Roman%20statue%20chest%20tattoo%20-%20A%20classical%20statue%20fragment%20reads%20like%20an%20etched%20museum%20study.
+        - figure "Upper chest · 31 cm · Illustrative · Black and muted red" [ref=e202]:
+          - link [ref=e203]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/phoenix-spread-chest/
+            - img "Phoenix chest tattoo - A phoenix spreads evenly over both pectorals with the body at center." [ref=e205]
+          - generic [ref=e206]:
+            - 'button "Save: Phoenix chest tattoo - A phoenix spreads evenly over both pectorals with the body at center." [ref=e207] [cursor=pointer]'
+            - 'link "Pin: Phoenix chest tattoo - A phoenix spreads evenly over both pectorals with the body at center." [ref=e210] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F11-1200.webp&description=Phoenix%20chest%20tattoo%20-%20A%20phoenix%20spreads%20evenly%20over%20both%20pectorals%20with%20the%20body%20at%20center.
+        - figure "Center chest · 15 cm · Dotwork · Black" [ref=e215]:
+          - link [ref=e216]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/dotwork-mandala-sternum/
+            - img "Mandala chest tattoo - A radial mandala creates a compact symmetrical sternum piece." [ref=e218]
+          - generic [ref=e219]:
+            - 'button "Save: Mandala chest tattoo - A radial mandala creates a compact symmetrical sternum piece." [ref=e220] [cursor=pointer]'
+            - 'link "Pin: Mandala chest tattoo - A radial mandala creates a compact symmetrical sternum piece." [ref=e223] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F12-1200.webp&description=Mandala%20chest%20tattoo%20-%20A%20radial%20mandala%20creates%20a%20compact%20symmetrical%20sternum%20piece.
+        - figure "Left pectoral · 20 cm · Blackwork · Black and grey" [ref=e228]:
+          - link [ref=e229]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/blackwork-octopus-chest/
+            - img "Octopus chest tattoo - Curving tentacles make an organic frame across one side of the chest." [ref=e231]
+          - generic [ref=e232]:
+            - 'button "Save: Octopus chest tattoo - Curving tentacles make an organic frame across one side of the chest." [ref=e233] [cursor=pointer]'
+            - 'link "Pin: Octopus chest tattoo - Curving tentacles make an organic frame across one side of the chest." [ref=e236] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F13-1200.webp&description=Octopus%20chest%20tattoo%20-%20Curving%20tentacles%20make%20an%20organic%20frame%20across%20one%20side%20of%20the%20chest.
+        - figure "Both pectorals · 29 cm · Japanese · Black and grey" [ref=e241]:
+          - link [ref=e242]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/mirrored-koi-chest/
+            - img "Two koi chest tattoo - Two koi mirror each other beneath the collarbones." [ref=e244]
+          - generic [ref=e245]:
+            - 'button "Save: Two koi chest tattoo - Two koi mirror each other beneath the collarbones." [ref=e246] [cursor=pointer]'
+            - 'link "Pin: Two koi chest tattoo - Two koi mirror each other beneath the collarbones." [ref=e249] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F14-1200.webp&description=Two%20koi%20chest%20tattoo%20-%20Two%20koi%20mirror%20each%20other%20beneath%20the%20collarbones.
+        - figure "Right pectoral · 19 cm · Fine line engraving · Black and grey" [ref=e254]:
+          - link [ref=e255]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/mountain-forest-pectoral/
+            - img "Mountain forest chest tattoo - Layered pines and peaks form a quiet landscape panel." [ref=e257]
+          - generic [ref=e258]:
+            - 'button "Save: Mountain forest chest tattoo - Layered pines and peaks form a quiet landscape panel." [ref=e259] [cursor=pointer]'
+            - 'link "Pin: Mountain forest chest tattoo - Layered pines and peaks form a quiet landscape panel." [ref=e262] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F15-1200.webp&description=Mountain%20forest%20chest%20tattoo%20-%20Layered%20pines%20and%20peaks%20form%20a%20quiet%20landscape%20panel.
+        - figure "Left pectoral · 16 cm · Traditional · Black and red" [ref=e267]:
+          - link [ref=e268]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/panther-rose-chest/
+            - img "Panther and rose chest tattoo - A compact crawling panther pairs with one bold red rose." [ref=e270]
+          - generic [ref=e271]:
+            - 'button "Save: Panther and rose chest tattoo - A compact crawling panther pairs with one bold red rose." [ref=e272] [cursor=pointer]'
+            - 'link "Pin: Panther and rose chest tattoo - A compact crawling panther pairs with one bold red rose." [ref=e275] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F16-1200.webp&description=Panther%20and%20rose%20chest%20tattoo%20-%20A%20compact%20crawling%20panther%20pairs%20with%20one%20bold%20red%20rose.
+        - figure "Chest to shoulder · 24 cm · Japanese black and grey · Black and grey" [ref=e280]:
+          - link [ref=e281]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/samurai-mask-chest/
+            - img "Samurai mask chest tattoo - A detailed warrior mask follows the outer pectoral toward the shoulder." [ref=e283]
+          - generic [ref=e284]:
+            - 'button "Save: Samurai mask chest tattoo - A detailed warrior mask follows the outer pectoral toward the shoulder." [ref=e285] [cursor=pointer]'
+            - 'link "Pin: Samurai mask chest tattoo - A detailed warrior mask follows the outer pectoral toward the shoulder." [ref=e288] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F17-1200.webp&description=Samurai%20mask%20chest%20tattoo%20-%20A%20detailed%20warrior%20mask%20follows%20the%20outer%20pectoral%20toward%20the%20shoulder.
+        - figure "Upper chest · 27 cm · Abstract · Black" [ref=e293]:
+          - link [ref=e294]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/abstract-brush-chest/
+            - img "Abstract brush chest tattoo - Loose brush marks cross the chest while leaving deliberate open skin." [ref=e296]
+          - generic [ref=e297]:
+            - 'button "Save: Abstract brush chest tattoo - Loose brush marks cross the chest while leaving deliberate open skin." [ref=e298] [cursor=pointer]'
+            - 'link "Pin: Abstract brush chest tattoo - Loose brush marks cross the chest while leaving deliberate open skin." [ref=e301] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F18-1200.webp&description=Abstract%20brush%20chest%20tattoo%20-%20Loose%20brush%20marks%20cross%20the%20chest%20while%20leaving%20deliberate%20open%20skin.
+        - figure "Center chest · 17 cm · Fine line geometric · Black and grey" [ref=e306]:
+          - link [ref=e307]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/technical-geometry-sternum/
+            - img "Geometric sternum tattoo - Hexagonal construction lines build a precise vertical center piece." [ref=e309]
+          - generic [ref=e310]:
+            - 'button "Save: Geometric sternum tattoo - Hexagonal construction lines build a precise vertical center piece." [ref=e311] [cursor=pointer]'
+            - 'link "Pin: Geometric sternum tattoo - Hexagonal construction lines build a precise vertical center piece." [ref=e314] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F19-1200.webp&description=Geometric%20sternum%20tattoo%20-%20Hexagonal%20construction%20lines%20build%20a%20precise%20vertical%20center%20piece.
+        - figure "Upper chest · 18 cm · Fine line · Black and grey" [ref=e319]:
+          - link [ref=e320]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/snake-upper-chest-collarbone/
+            - img "Snake collarbone tattoo - A slender snake and leaves follow the natural collarbone curve." [ref=e322]
+          - generic [ref=e323]:
+            - 'button "Save: Snake collarbone tattoo - A slender snake and leaves follow the natural collarbone curve." [ref=e324] [cursor=pointer]'
+            - 'link "Pin: Snake collarbone tattoo - A slender snake and leaves follow the natural collarbone curve." [ref=e327] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F20-1200.webp&description=Snake%20collarbone%20tattoo%20-%20A%20slender%20snake%20and%20leaves%20follow%20the%20natural%20collarbone%20curve.
+        - figure "Both pectorals · 30 cm · Black and grey engraving · Black and grey" [ref=e332]:
+          - link [ref=e333]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/angelic-wings-upper-chest/
+            - img "Angelic wings chest tattoo - Mirrored feathered wings span both sides with a clear center gap." [ref=e335]
+          - generic [ref=e336]:
+            - 'button "Save: Angelic wings chest tattoo - Mirrored feathered wings span both sides with a clear center gap." [ref=e337] [cursor=pointer]'
+            - 'link "Pin: Angelic wings chest tattoo - Mirrored feathered wings span both sides with a clear center gap." [ref=e340] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F21-1200.webp&description=Angelic%20wings%20chest%20tattoo%20-%20Mirrored%20feathered%20wings%20span%20both%20sides%20with%20a%20clear%20center%20gap.
+        - figure "Left pectoral · 21 cm · Black and grey realism · Black and grey" [ref=e345]:
+          - link [ref=e346]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/skull-raven-pectoral/
+            - img "Skull and raven chest tattoo - A raven rises behind a non-graphic skull in a dark one-side panel." [ref=e348]
+          - generic [ref=e349]:
+            - 'button "Save: Skull and raven chest tattoo - A raven rises behind a non-graphic skull in a dark one-side panel." [ref=e350] [cursor=pointer]'
+            - 'link "Pin: Skull and raven chest tattoo - A raven rises behind a non-graphic skull in a dark one-side panel." [ref=e353] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F22-1200.webp&description=Skull%20and%20raven%20chest%20tattoo%20-%20A%20raven%20rises%20behind%20a%20non-graphic%20skull%20in%20a%20dark%20one-side%20panel.
+        - figure "Right pectoral · 20 cm · Illustrative · Black and brown" [ref=e358]:
+          - link [ref=e359]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/botanical-stag-chest/
+            - img "Botanical stag chest tattoo - Oak leaves and antlers frame a compact stag portrait." [ref=e361]
+          - generic [ref=e362]:
+            - 'button "Save: Botanical stag chest tattoo - Oak leaves and antlers frame a compact stag portrait." [ref=e363] [cursor=pointer]'
+            - 'link "Pin: Botanical stag chest tattoo - Oak leaves and antlers frame a compact stag portrait." [ref=e366] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F23-1200.webp&description=Botanical%20stag%20chest%20tattoo%20-%20Oak%20leaves%20and%20antlers%20frame%20a%20compact%20stag%20portrait.
+        - figure "Chest to shoulder · 26 cm · Japanese · Black, grey and gold" [ref=e371]:
+          - link [ref=e372]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/japanese-dragon-chest/
+            - img "Japanese dragon chest tattoo - A coiling dragon travels from the center chest toward one shoulder." [ref=e374]
+          - generic [ref=e375]:
+            - 'button "Save: Japanese dragon chest tattoo - A coiling dragon travels from the center chest toward one shoulder." [ref=e376] [cursor=pointer]'
+            - 'link "Pin: Japanese dragon chest tattoo - A coiling dragon travels from the center chest toward one shoulder." [ref=e379] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F24-1200.webp&description=Japanese%20dragon%20chest%20tattoo%20-%20A%20coiling%20dragon%20travels%20from%20the%20center%20chest%20toward%20one%20shoulder.
+      - paragraph [ref=e384]:
+        - generic [ref=e385]: Showing all 24 ideas
+    - region [ref=e386]:
+      - generic [ref=e387]:
+        - heading "Build your shortlist" [level=2] [ref=e388]
+        - paragraph [ref=e389]: Save the ideas you like, then copy one clear description for your artist.
+        - generic [ref=e390]:
+          - list [ref=e391]:
+            - listitem [ref=e392]: Tap the bookmark on any idea to add it here.
+          - paragraph [ref=e393]:
+            - generic [ref=e396]: 0 ideas saved
+        - generic [ref=e397]:
+          - generic [ref=e398]: Description for your artist
+          - textbox "Description for your artist" [ref=e399]: black and grey, ~20 cm, chest, black and grey
+        - generic [ref=e403]:
+          - button "Copy description" [ref=e404] [cursor=pointer]
+          - link "View saved ideas" [ref=e406] [cursor=pointer]:
+            - /url: /saved/
+    - region [ref=e407]:
+      - generic [ref=e408]:
+        - heading "Chest tattoo details" [level=2] [ref=e409]
+        - table [ref=e411]:
+          - rowgroup [ref=e412]:
+            - row [ref=e413]:
+              - columnheader "Pain level" [ref=e414]
+              - columnheader "Typical size" [ref=e415]
+              - columnheader "Session time" [ref=e416]
+              - columnheader "Typical price" [ref=e417]
+              - columnheader "Healing" [ref=e418]
+          - rowgroup [ref=e419]:
+            - row [ref=e420]:
+              - cell "Commonly described as high near the sternum" [ref=e421]
+              - cell "15 cm and up" [ref=e422]
+              - cell "3-6 hours, often multiple sessions" [ref=e423]
+              - cell "Usually hourly or day rate" [ref=e424]
+              - cell "Ask your artist" [ref=e425]
+        - paragraph [ref=e426]: Estimates vary by design, location and artist. Ask your artist or a doctor about anything to do with healing or individual health concerns.
+    - generic [ref=e427]:
+      - generic [ref=e428]:
+        - heading "What to consider before your session" [level=2] [ref=e429]
+        - list [ref=e430]:
+          - listitem [ref=e431]:
+            - generic [ref=e435]: Work visibility - fully covered by a shirt.
+          - listitem [ref=e436]:
+            - generic [ref=e439]: Skin movement - the design should follow your anatomy, not fight it.
+          - listitem [ref=e440]:
+            - generic [ref=e444]: Sun exposure - ask your artist about long-term protection for this area.
+          - listitem [ref=e445]:
+            - generic [ref=e449]: Available space - small details need enough room to age clearly.
+      - generic [ref=e450]:
+        - heading "What to ask your artist" [level=2] [ref=e451]
+        - list [ref=e452]:
+          - listitem [ref=e453]:
+            - generic [ref=e454]: Can this level of detail work at my chosen size?
+          - listitem [ref=e455]:
+            - generic [ref=e456]: How should the design follow my chest?
+          - listitem [ref=e457]:
+            - generic [ref=e458]: Would a different position on the same area suit it better?
+          - listitem [ref=e459]:
+            - generic [ref=e460]: How many sessions should I expect?
+          - listitem [ref=e461]:
+            - generic [ref=e462]: What aftercare do you recommend for me?
+    - region [ref=e463]:
+      - heading "Explore related tattoo ideas" [level=2] [ref=e465]
+      - generic [ref=e466]:
+        - article [ref=e467]:
+          - link "Tattoo ideas for male arm Tattoo ideas for male arm" [ref=e468] [cursor=pointer]:
+            - /url: /ideas/tattoo-ideas-male-arm/
+            - img "Tattoo ideas for male arm" [ref=e470]
+            - generic [ref=e471]: Tattoo ideas for male arm
+          - generic [ref=e472]:
+            - button "Save Tattoo ideas for male arm" [ref=e473] [cursor=pointer]
+            - link "Pin Tattoo ideas for male arm" [ref=e476] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ftattoo-ideas-male-arm%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ftattoo-ideas-male-arm%2F01-1200.webp&description=Tattoo%20ideas%20for%20male%20arm
+          - generic [ref=e480]:
+            - link "Tattoo ideas for male arm" [ref=e481] [cursor=pointer]:
+              - /url: /ideas/tattoo-ideas-male-arm/
+            - text: · 24 ideas
+        - article [ref=e482]:
+          - link "Sleeve tattoo ideas for men Sleeve tattoo ideas for men" [ref=e483] [cursor=pointer]:
+            - /url: /ideas/sleeve-tattoo-ideas-for-men/
+            - img "Sleeve tattoo ideas for men" [ref=e485]
+            - generic [ref=e486]: Sleeve tattoo ideas for men
+          - generic [ref=e487]:
+            - button "Save Sleeve tattoo ideas for men" [ref=e488] [cursor=pointer]
+            - link "Pin Sleeve tattoo ideas for men" [ref=e491] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fsleeve-tattoo-ideas-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fsleeve-tattoo-ideas-for-men%2F01-1200.webp&description=Sleeve%20tattoo%20ideas%20for%20men
+          - generic [ref=e495]:
+            - link "Sleeve tattoo ideas for men" [ref=e496] [cursor=pointer]:
+              - /url: /ideas/sleeve-tattoo-ideas-for-men/
+            - text: · 24 ideas
+        - article [ref=e497]:
+          - link "Tattoo ideas for men Tattoo ideas for men" [ref=e498] [cursor=pointer]:
+            - /url: /ideas/tattoo-ideas-for-men/
+            - img "Tattoo ideas for men" [ref=e500]
+            - generic [ref=e501]: Tattoo ideas for men
+          - generic [ref=e502]:
+            - button "Save Tattoo ideas for men" [ref=e503] [cursor=pointer]
+            - link "Pin Tattoo ideas for men" [ref=e506] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ftattoo-ideas-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ftattoo-ideas-for-men%2F01-1200.webp&description=Tattoo%20ideas%20for%20men
+          - generic [ref=e510]:
+            - link "Tattoo ideas for men" [ref=e511] [cursor=pointer]:
+              - /url: /ideas/tattoo-ideas-for-men/
+            - text: · 24 ideas
+        - article [ref=e512]:
+          - link "Forearm tattoo ideas for men Forearm tattoo ideas for men" [ref=e513] [cursor=pointer]:
+            - /url: /ideas/forearm-tattoo-ideas-for-men/
+            - img "Forearm tattoo ideas for men" [ref=e515]
+            - generic [ref=e516]: Forearm tattoo ideas for men
+          - generic [ref=e517]:
+            - button "Save Forearm tattoo ideas for men" [ref=e518] [cursor=pointer]
+            - link "Pin Forearm tattoo ideas for men" [ref=e521] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fforearm-tattoo-ideas-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fforearm-tattoo-ideas-for-men%2F01-1200.webp&description=Forearm%20tattoo%20ideas%20for%20men
+          - generic [ref=e525]:
+            - link "Forearm tattoo ideas for men" [ref=e526] [cursor=pointer]:
+              - /url: /ideas/forearm-tattoo-ideas-for-men/
+            - text: · 16 ideas
+        - article [ref=e527]:
+          - link "Small tattoos for men Small tattoos for men" [ref=e528] [cursor=pointer]:
+            - /url: /ideas/small-tattoos-for-men/
+            - img "Small tattoos for men" [ref=e530]
+            - generic [ref=e531]: Small tattoos for men
+          - generic [ref=e532]:
+            - button "Save Small tattoos for men" [ref=e533] [cursor=pointer]
+            - link "Pin Small tattoos for men" [ref=e536] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fsmall-tattoos-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fsmall-tattoos-for-men%2F01-1200.webp&description=Small%20tattoos%20for%20men
+          - generic [ref=e540]:
+            - link "Small tattoos for men" [ref=e541] [cursor=pointer]:
+              - /url: /ideas/small-tattoos-for-men/
+            - text: · 24 ideas
+        - article [ref=e542]:
+          - link "Hand tattoo ideas Hand tattoo ideas" [ref=e543] [cursor=pointer]:
+            - /url: /ideas/hand-tattoo-ideas/
+            - img "Hand tattoo ideas" [ref=e545]
+            - generic [ref=e546]: Hand tattoo ideas
+          - generic [ref=e547]:
+            - button "Save Hand tattoo ideas" [ref=e548] [cursor=pointer]
+            - link "Pin Hand tattoo ideas" [ref=e551] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fhand-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fhand-tattoo-ideas%2F01-1200.webp&description=Hand%20tattoo%20ideas
+          - generic [ref=e555]:
+            - link "Hand tattoo ideas" [ref=e556] [cursor=pointer]:
+              - /url: /ideas/hand-tattoo-ideas/
+            - text: · 24 ideas
+        - article [ref=e557]:
+          - link "Forearm tattoo ideas Forearm tattoo ideas" [ref=e558] [cursor=pointer]:
+            - /url: /ideas/forearm-tattoo-ideas/
+            - img "Forearm tattoo ideas" [ref=e560]
+            - generic [ref=e561]: Forearm tattoo ideas
+          - generic [ref=e562]:
+            - button "Save Forearm tattoo ideas" [ref=e563] [cursor=pointer]
+            - link "Pin Forearm tattoo ideas" [ref=e566] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fforearm-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fforearm-tattoo-ideas%2F01-1200.webp&description=Forearm%20tattoo%20ideas
+          - generic [ref=e570]:
+            - link "Forearm tattoo ideas" [ref=e571] [cursor=pointer]:
+              - /url: /ideas/forearm-tattoo-ideas/
+            - text: · 24 ideas
+        - article [ref=e572]:
+          - link "Fine line tattoo ideas Fine line tattoo ideas" [ref=e573] [cursor=pointer]:
+            - /url: /ideas/fine-line-tattoo-ideas/
+            - img "Fine line tattoo ideas" [ref=e575]
+            - generic [ref=e576]: Fine line tattoo ideas
+          - generic [ref=e577]:
+            - button "Save Fine line tattoo ideas" [ref=e578] [cursor=pointer]
+            - link "Pin Fine line tattoo ideas" [ref=e581] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F01-1200.webp&description=Fine%20line%20tattoo%20ideas
+          - generic [ref=e585]:
+            - link "Fine line tattoo ideas" [ref=e586] [cursor=pointer]:
+              - /url: /ideas/fine-line-tattoo-ideas/
+            - text: · 24 ideas
+    - region [ref=e587]:
+      - heading "Chest tattoo ideas for guys FAQ" [level=2] [ref=e589]
+      - generic [ref=e590]:
+        - group [ref=e591]:
+          - generic "How painful is a chest tattoo?" [ref=e592] [cursor=pointer]
+        - group [ref=e595]:
+          - generic "What size works best on the chest?" [ref=e596] [cursor=pointer]
+        - group [ref=e599]:
+          - generic "Can a chest tattoo be covered for work?" [ref=e600] [cursor=pointer]
+        - group [ref=e603]:
+          - generic "How long does a chest tattoo take?" [ref=e604] [cursor=pointer]
+        - group [ref=e607]:
+          - generic "How do I save these ideas?" [ref=e608] [cursor=pointer]
+    - region [ref=e611]:
+      - heading "Related searches" [level=2] [ref=e613]
+      - navigation "Related searches" [ref=e614]:
+        - link "tattoo ideas for male arm" [ref=e615] [cursor=pointer]:
+          - /url: /ideas/tattoo-ideas-male-arm/
+        - link "sleeve tattoo ideas for men" [ref=e619] [cursor=pointer]:
+          - /url: /ideas/sleeve-tattoo-ideas-for-men/
+        - link "tattoo ideas for men" [ref=e623] [cursor=pointer]:
+          - /url: /ideas/tattoo-ideas-for-men/
+        - link "forearm tattoo ideas for men" [ref=e627] [cursor=pointer]:
+          - /url: /ideas/forearm-tattoo-ideas-for-men/
+        - link "small tattoos for men" [ref=e631] [cursor=pointer]:
+          - /url: /ideas/small-tattoos-for-men/
+        - link "hand tattoo ideas" [ref=e635] [cursor=pointer]:
+          - /url: /ideas/hand-tattoo-ideas/
+        - link "forearm tattoo ideas" [ref=e639] [cursor=pointer]:
+          - /url: /ideas/forearm-tattoo-ideas/
+        - link "fine line tattoo ideas" [ref=e643] [cursor=pointer]:
+          - /url: /ideas/fine-line-tattoo-ideas/
+  - contentinfo [ref=e647]:
+    - generic [ref=e648]:
+      - generic [ref=e649]:
+        - navigation "Explore" [ref=e650]:
+          - heading "Explore" [level=2] [ref=e651]
+          - list [ref=e652]:
+            - listitem [ref=e653]:
+              - link "Ideas" [ref=e654] [cursor=pointer]:
+                - /url: /ideas/
+            - listitem [ref=e655]:
+              - link "Placement" [ref=e656] [cursor=pointer]:
+                - /url: /placement/
+            - listitem [ref=e657]:
+              - link "Subjects" [ref=e658] [cursor=pointer]:
+                - /url: /subject/
+            - listitem [ref=e659]:
+              - link "Styles" [ref=e660] [cursor=pointer]:
+                - /url: /style/
+            - listitem [ref=e661]:
+              - link "Sizes" [ref=e662] [cursor=pointer]:
+                - /url: /size/
+        - navigation "Resources" [ref=e663]:
+          - heading "Resources" [level=2] [ref=e664]
+          - list [ref=e665]:
+            - listitem [ref=e666]:
+              - link "Tattoo size guide" [ref=e667] [cursor=pointer]:
+                - /url: /tools/size-guide/
+            - listitem [ref=e668]:
+              - link "Placement picker" [ref=e669] [cursor=pointer]:
+                - /url: /tools/placement-picker/
+            - listitem [ref=e670]:
+              - link "30-second quiz" [ref=e671] [cursor=pointer]:
+                - /url: /tools/quiz/
+            - listitem [ref=e672]:
+              - link "Cover up ideas" [ref=e673] [cursor=pointer]:
+                - /url: /ideas/cover-up-tattoo-ideas/
+        - navigation "Company" [ref=e674]:
+          - heading "Company" [level=2] [ref=e675]
+          - list [ref=e676]:
+            - listitem [ref=e677]:
+              - link "About us" [ref=e678] [cursor=pointer]:
+                - /url: /about/
+            - listitem [ref=e679]:
+              - link "Contact" [ref=e680] [cursor=pointer]:
+                - /url: /contact/
+            - listitem [ref=e681]:
+              - link "Editorial standards" [ref=e682] [cursor=pointer]:
+                - /url: /editorial-standards/
+            - listitem [ref=e683]:
+              - link "Privacy policy" [ref=e684] [cursor=pointer]:
+                - /url: /privacy/
+            - listitem [ref=e685]:
+              - link "Terms of use" [ref=e686] [cursor=pointer]:
+                - /url: /terms/
+            - listitem [ref=e687]:
+              - link "Sitemap" [ref=e688] [cursor=pointer]:
+                - /url: /sitemap/
+      - generic [ref=e689]:
+        - text: Tattoo Designs Co
+        - paragraph [ref=e690]: Real ideas. Real ink. Real you.
+        - list [ref=e691]:
+          - listitem [ref=e692]:
+            - link "Instagram" [ref=e693] [cursor=pointer]:
+              - /url: https://instagram.com/
+          - listitem [ref=e698]:
+            - link "Pinterest" [ref=e699] [cursor=pointer]:
+              - /url: https://pinterest.com/
+          - listitem [ref=e703]:
+            - link "TikTok" [ref=e704] [cursor=pointer]:
+              - /url: https://tiktok.com/
+          - listitem [ref=e708]:
+            - link "YouTube" [ref=e709] [cursor=pointer]:
+              - /url: https://youtube.com/
+    - generic [ref=e713]:
+      - paragraph [ref=e714]: © 2026 TattooDesignsCo. All rights reserved.
+      - paragraph [ref=e715]: Ideas and reference images only. For anything about healing, skin reactions or removal, ask your artist or a doctor.

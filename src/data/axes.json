@@ -1,0 +1,52 @@
+{
+  "_note": "Объёмы - из PROJECT.md §3. Зоны back (47,6K) и foot (15,1K) исключены: в pagemap все их строки SKIP-high-AIO. Стили japanese (52% AIO) и tribal (44%) исключены по той же причине. Сюжет names/words (80,2K) исключён - AIO 40%. Порядок в каждом массиве = порядок вывода, отсортирован по объёму.",
+
+  "audience": [
+    { "slug": "men", "label": "Men", "blurb": "Ideas for men", "volume": 546800, "image": "audience/men" },
+    { "slug": "women", "label": "Women", "blurb": "Ideas for women", "volume": 299000, "image": "audience/women" },
+    { "slug": "couples", "label": "Couples", "blurb": "Matching tattoo ideas", "volume": 167000, "image": "audience/couples" }
+  ],
+
+  "placements": [
+    { "slug": "forearm", "label": "Forearm", "volume": 123800 },
+    { "slug": "sleeve", "label": "Sleeve", "volume": 111800 },
+    { "slug": "hand", "label": "Hand", "volume": 64900 },
+    { "slug": "chest", "label": "Chest", "volume": 51100 },
+    { "slug": "thigh", "label": "Thigh", "volume": 46000 },
+    { "slug": "neck", "label": "Neck", "volume": 44000 },
+    { "slug": "wrist", "label": "Wrist", "volume": 43800 },
+    { "slug": "finger", "label": "Finger", "volume": 25100 },
+    { "slug": "shoulder", "label": "Shoulder", "volume": 22900 },
+    { "slug": "behind-ear", "label": "Behind ear", "volume": 15300 },
+    { "slug": "ribs", "label": "Ribs", "volume": 10500 },
+    { "slug": "ankle", "label": "Ankle", "volume": 8900 },
+    { "slug": "spine", "label": "Spine", "volume": 2400 }
+  ],
+
+  "subjects": [
+    { "slug": "flowers", "label": "Flowers", "volume": 93100 },
+    { "slug": "religious", "label": "Religious", "volume": 74900 },
+    { "slug": "animals", "label": "Animals", "volume": 72400 },
+    { "slug": "zodiac", "label": "Zodiac", "volume": 60600 },
+    { "slug": "moon-stars", "label": "Moon & stars", "volume": 38000 },
+    { "slug": "butterfly", "label": "Butterfly", "volume": 31300 },
+    { "slug": "hearts", "label": "Hearts", "volume": 30700 },
+    { "slug": "nature", "label": "Nature", "volume": 27200 },
+    { "slug": "skulls", "label": "Skulls", "volume": 19700 }
+  ],
+
+  "styles": [
+    { "slug": "fine-line", "label": "Fine line", "volume": 109200 },
+    { "slug": "minimalist", "label": "Minimalist", "volume": 5400 },
+    { "slug": "traditional", "label": "Traditional", "volume": 15800 },
+    { "slug": "blackwork", "label": "Blackwork", "volume": null },
+    { "slug": "realism", "label": "Realism", "volume": null },
+    { "slug": "watercolor", "label": "Watercolor", "volume": null }
+  ],
+
+  "sizes": [
+    { "slug": "small", "label": "Small", "hint": "up to 5 cm" },
+    { "slug": "medium", "label": "Medium", "hint": "5-12 cm" },
+    { "slug": "large", "label": "Large", "hint": "12 cm and up" }
+  ]
+}

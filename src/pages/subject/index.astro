@@ -1,0 +1,21 @@
+---
+import AxisHub from '@components/AxisHub.astro';
+import axes from '@data/axes.json';
+
+/**
+ * Сюжет names/words (80,2K) в списке отсутствует намеренно: AIO 40%,
+ * PROJECT.md §2 относит надписи, имена и цитаты к «не строим».
+ */
+---
+
+<AxisHub
+  title="Tattoo subjects and motifs | TattooDesignsCo"
+  h1="Tattoo subjects"
+  description="Browse tattoo ideas by subject - flowers, animals, zodiac, butterflies and more."
+  base="/subject/"
+  answer={[
+    'Pick a theme and see how it is drawn at different sizes and on different body areas.',
+    'Subjects are ordered by how often people look for them.',
+  ]}
+  children_={axes.subjects}
+/>

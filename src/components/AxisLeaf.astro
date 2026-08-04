@@ -1,0 +1,108 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Chips from './Chips.astro';
+import GalleryGrid from './GalleryGrid.astro';
+import AdSlot from './AdSlot.astro';
+import CopyBrief from './CopyBrief.astro';
+import Faq from './Faq.astro';
+import PopularSearches from './PopularSearches.astro';
+import popular from '@data/popular.json';
+import faq from '@data/faq.json';
+import axisCopy from '@data/axis-copy.json';
+import { buildGallery } from '@lib/gallery';
+import { imageUrl } from '@lib/images';
+
+/**
+ * Страница-лист оси (например /placement/forearm/).
+ * Тот же порядок первого экрана, что и у комбинаций: H1 → ответ → галерея.
+ */
+interface Props {
+  h1: string;
+  title: string;
+  description: string;
+  path: string;
+  crumbs: { label: string; href: string }[];
+  answer: string[];
+  gallerySlug: string;
+  galleryDefaults: {
+    placement: string;
+    size: string;
+    style: string;
+    color: string;
+    altPattern: string;
+  };
+  siblings: { label: string; href: string }[];
+  brief: string;
+  contentKey: keyof typeof axisCopy;
+}
+
+const {
+  h1,
+  title,
+  description,
+  path,
+  crumbs,
+  answer,
+  gallerySlug,
+  galleryDefaults,
+  siblings,
+  brief,
+  contentKey,
+} = Astro.props;
+
+const editorial = axisCopy[contentKey];
+
+const gallery = buildGallery(gallerySlug, 16, galleryDefaults);
+const first = gallery.slice(0, 8);
+const rest = gallery.slice(8);
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  path={path}
+  crumbs={crumbs}
+  preloadImage={imageUrl(gallery[0].image, 800)}
+>
+  <section class="container top">
+    <h1>{h1}</h1>
+    <div class="lead">{answer.map((line) => <p>{line}</p>)}</div>
+  </section>
+
+  <section class="section container" aria-label="Ideas">
+    <Chips items={siblings} label="Related pages" />
+
+    <GalleryGrid items={first} schemaItems={gallery} pageTitle={h1} pagePath={path} />
+
+    <AdSlot id={`${gallerySlug}-inline`} height={100} />
+
+    <div class="after-ad">
+      <GalleryGrid
+        items={rest}
+        pageTitle={h1}
+        pagePath={path}
+        firstIsPriority={false}
+        emitSchema={false}
+      />
+    </div>
+  </section>
+
+  <CopyBrief value={brief} />
+
+  <section class="section container editorial">
+    <h2>{editorial.title}</h2>
+    {editorial.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+  </section>
+
+  <Faq items={faq} title={`${h1}: FAQ`} />
+
+  <PopularSearches items={popular.searches} title="Related searches" />
+</BaseLayout>
+
+<style>
+  .top { padding-top: 24px; }
+  .top .lead { margin-top: 10px; }
+  .after-ad { margin-top: 24px; }
+  .editorial { max-width: 76ch; display: grid; gap: 10px; }
+  .editorial p { color: var(--text-muted); }
+</style>

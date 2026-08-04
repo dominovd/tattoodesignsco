@@ -1,0 +1,146 @@
+---
+import Icon from './Icon.astro';
+
+/**
+ * «Build your shortlist» - Save-подборка и «описание для мастера» в одном
+ * блоке (DESIGN.md §7, PROJECT.md §9). Это причина выбрать сайт, а не
+ * Pinterest, и главный повод вернуться.
+ *
+ * Всё на клиенте: превью сохранённого и счётчик рисует app.js из localStorage,
+ * ноль запросов к серверу. Без JS блок остаётся рабочим - поле с описанием
+ * заполнено и его можно выделить и скопировать руками.
+ */
+interface Props {
+  brief: string;
+}
+
+const { brief } = Astro.props;
+---
+
+<section class="section container" aria-labelledby="shortlist-head">
+  <div class="panel box">
+    <h2 id="shortlist-head">Build your shortlist</h2>
+    <p class="small muted">
+      Save the ideas you like, then copy one clear description for your artist.
+    </p>
+
+    <div class="row">
+      <ul class="thumbs" data-shortlist-thumbs>
+        <li class="empty small muted">
+          Tap the bookmark on any idea to add it here.
+        </li>
+      </ul>
+
+      <p class="counter">
+        <Icon name="bookmark" size={18} />
+        <span data-saved-count-text>0 ideas saved</span>
+      </p>
+    </div>
+
+    <div class="field-wrap">
+      <label class="visually-hidden" for="shortlist-brief">
+        Description for your artist
+      </label>
+      <input
+        id="shortlist-brief"
+        class="field"
+        type="text"
+        value={brief}
+        readonly
+        data-brief-input
+      />
+      <Icon name="copy" size={18} class="field-ic" />
+    </div>
+
+    <div class="actions">
+      <button class="btn btn-primary" type="button" data-brief-copy>
+        <span data-brief-label>Copy description</span>
+      </button>
+      <a class="btn btn-outline" href="/saved/">View saved ideas</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .box { padding: 20px; display: grid; gap: 10px; }
+  h2 { font-size: 20px; }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 20px;
+    margin-top: 4px;
+  }
+
+  .thumbs {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-height: 96px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .thumbs .empty { min-height: 96px; display: flex; align-items: center; max-width: 34ch; }
+
+  .thumbs :global(li:not(.empty)) {
+    position: relative;
+    width: 72px;
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+  }
+
+  .thumbs :global(img) {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+  }
+
+  .counter {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .field-wrap { position: relative; }
+
+  .field {
+    width: 100%;
+    min-height: var(--tap);
+    padding: 0 44px 0 14px;
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius-sm);
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-mono);
+    font-size: 13px;
+  }
+
+  .field-ic {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    pointer-events: none;
+  }
+
+  .actions {
+    display: grid;
+    gap: 10px;
+    margin-top: 4px;
+  }
+
+  .actions .btn { width: 100%; }
+
+  @media (min-width: 620px) {
+    .actions { grid-template-columns: 1fr 1fr; }
+  }
+</style>

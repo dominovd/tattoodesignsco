@@ -1,0 +1,107 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import BodyDiagram from '@components/BodyDiagram.astro';
+import Icon from '@components/Icon.astro';
+import axes from '@data/axes.json';
+
+/**
+ * Логика подбора (размер × видимость на работе ×
+ * как зона обычно описывается) пишется поверх этого списка целиком на
+ * клиенте - PROJECT.md §9, ноль запросов к серверу.
+ *
+ * Формулировок про болезненность в цифрах здесь нет намеренно: DESIGN.md §11.
+ */
+const { placements } = axes;
+---
+
+<BaseLayout
+  title="Tattoo placement picker - size, visibility, body area | TattooDesignsCo"
+  description="Compare tattoo placements by how much room they give a design and how easy they are to cover."
+  path="/tools/placement-picker/"
+  crumbs={[
+    { label: 'Home', href: '/' },
+    { label: 'Tools', href: '/tools/' },
+    { label: 'Placement picker', href: '/tools/placement-picker/' },
+  ]}
+>
+  <section class="container top">
+    <h1>Placement picker</h1>
+    <div class="lead">
+      <p>Compare body areas by available space and how easy they are to cover.</p>
+      <p>Pick an area to see designs that actually suit it.</p>
+    </div>
+  </section>
+
+  <section class="section container picker">
+    <BodyDiagram selected={['forearm', 'shoulder', 'chest']} class="fig" />
+
+    <nav class="list" aria-label="Body areas">
+      {
+        placements.map((p) => (
+          <a class="row panel" href={`/placement/${p.slug}/`}>
+            <span class="label">{p.label}</span>
+            <Icon name="chevron" size={16} class="chev" />
+          </a>
+        ))
+      }
+    </nav>
+  </section>
+
+  <section class="section container prose">
+    <h2>Match the design to the body area</h2>
+    <p>
+      Begin with the outer shape of the artwork. Vertical botanicals, animals
+      and lettering can follow a forearm, spine or ribs. Round compositions
+      often fit the shoulder or thigh. Narrow symbols work on the wrist, ankle
+      and behind the ear when they keep enough open space around the outline.
+    </p>
+    <p>
+      Next decide how visible the tattoo may be in everyday clothing. Hands,
+      fingers and neck remain visible in most situations. Chest, thigh and ribs
+      are easier to cover. Watches, shoes, collars and existing tattoos create
+      additional boundaries that should be measured before the stencil is
+      resized.
+    </p>
+
+    <h2>Take a useful measurement</h2>
+    <p>
+      Measure the usable height and width with your body relaxed. Do not twist
+      the arm or torso toward a mirror, since that changes the apparent shape.
+      Send the artist a straight photograph of the full area and state whether
+      the design may wrap around the side. That information is more useful than
+      choosing a placement from a close crop alone.
+    </p>
+    <p>
+      If two areas remain possible, save the same subject from both galleries
+      and compare the complete silhouettes. The stronger option is usually the
+      one that needs less distortion to follow the body and leaves clear room
+      around joints, clothing edges and nearby work.
+    </p>
+  </section>
+</BaseLayout>
+
+<style>
+  .top { padding-top: 24px; }
+  .top .lead { margin-top: 10px; }
+
+  .picker { display: grid; gap: 20px; }
+
+  .list { display: grid; gap: 8px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: var(--tap);
+    padding: 0 14px;
+    font-size: 15px;
+  }
+
+  .row:hover { border-color: var(--accent); color: inherit; }
+  .chev { color: var(--accent); margin-left: auto; }
+
+  @media (min-width: 860px) {
+    .picker { grid-template-columns: 320px 1fr; align-items: start; }
+    .list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+</style>

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Saved collections live in the visitor's own browser - nothing to index
+Disallow: /saved/
+
+Sitemap: https://tattoodesignsco.com/sitemap-index.xml

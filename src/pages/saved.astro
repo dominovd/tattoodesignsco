@@ -1,0 +1,59 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import CopyBrief from '@components/CopyBrief.astro';
+
+/** Страница подборки. Наполняется app.js из localStorage, индексировать нечего. */
+---
+
+<BaseLayout
+  title="Your saved tattoo ideas | TattooDesignsCo"
+  description="The tattoo ideas you saved, ready to show your artist."
+  path="/saved/"
+  noindex={true}
+  crumbs={[
+    { label: 'Home', href: '/' },
+    { label: 'Saved', href: '/saved/' },
+  ]}
+>
+  <section class="container top">
+    <h1>Your saved ideas</h1>
+    <div class="lead">
+      <p>Saved without an account, kept in this browser.</p>
+      <p>Bring the list and the description to your appointment.</p>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="grid grid-gallery" data-saved-list>
+      <p class="muted">Loading your collection…</p>
+    </div>
+  </section>
+
+  <CopyBrief />
+</BaseLayout>
+
+<style>
+  .top { padding-top: 24px; }
+  .top .lead { margin-top: 10px; }
+
+  [data-saved-list] :global(.saved-item) {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
+  [data-saved-list] :global(.saved-item img) {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+  }
+
+  [data-saved-list] :global(.saved-item span) {
+    display: block;
+    padding: 10px 12px;
+    border-top: 1px solid var(--line);
+    font-size: 14px;
+    font-weight: 600;
+  }
+</style>

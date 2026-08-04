@@ -1,0 +1,142 @@
+{
+  "_note": "Восемь приоритетных голов волны 1, согласованных для главной: мужской перевес сохраняется, а family и cover up возвращены вместо менее приоритетных для этой сетки flower и butterfly. ideas - количество изображений на странице, ставить реальное.",
+  "chips": [
+    {
+      "label": "Men",
+      "href": "/for/men/"
+    },
+    {
+      "label": "Women",
+      "href": "/for/women/"
+    },
+    {
+      "label": "Couples",
+      "href": "/for/couples/"
+    },
+    {
+      "label": "Small",
+      "href": "/size/small/"
+    },
+    {
+      "label": "Forearm",
+      "href": "/placement/forearm/"
+    },
+    {
+      "label": "Fine line",
+      "href": "/style/fine-line/"
+    },
+    {
+      "label": "Traditional",
+      "href": "/style/traditional/"
+    }
+  ],
+  "cards": [
+    {
+      "slug": "small-tattoos-for-men",
+      "title": "Small tattoos for men",
+      "alt": "Small palm tree tattoo on a man's inner forearm",
+      "image": "ideas/small-tattoos-for-men",
+      "volume": 12100,
+      "kd": 28
+    },
+    {
+      "slug": "couple-tattoo-ideas",
+      "title": "Couple tattoo ideas",
+      "alt": "Matching compass and moon tattoos on two forearms",
+      "image": "ideas/couple-tattoo-ideas",
+      "volume": 9900,
+      "kd": 16
+    },
+    {
+      "slug": "tattoo-ideas-male-arm",
+      "title": "Tattoo ideas for male arm",
+      "alt": "Black and grey tiger tattoo on a man's upper arm",
+      "image": "ideas/tattoo-ideas-male-arm",
+      "volume": 9900,
+      "kd": 28
+    },
+    {
+      "slug": "chest-tattoo-ideas-for-guys",
+      "title": "Chest tattoo ideas for guys",
+      "alt": "Winged chest piece tattoo in black and grey",
+      "image": "ideas/chest-tattoo-ideas-for-guys",
+      "volume": 8100,
+      "kd": 21
+    },
+    {
+      "slug": "hand-tattoo-ideas",
+      "title": "Hand tattoo ideas",
+      "alt": "Rose tattoo on the back of a hand",
+      "image": "ideas/hand-tattoo-ideas",
+      "volume": 8100,
+      "kd": 27
+    },
+    {
+      "slug": "sleeve-tattoo-ideas-for-men",
+      "title": "Sleeve tattoo ideas for men",
+      "alt": "Full sleeve tattoo with clock and roses",
+      "image": "ideas/sleeve-tattoo-ideas-for-men",
+      "volume": 8100,
+      "kd": 34
+    },
+    {
+      "slug": "family-tattoo-ideas",
+      "title": "Family tattoo ideas",
+      "alt": "Family silhouette tattoo beneath a tree on a man's forearm",
+      "image": "ideas/family-tattoo-ideas",
+      "volume": 8100,
+      "kd": 24
+    },
+    {
+      "slug": "cover-up-tattoo-ideas",
+      "title": "Cover up tattoo ideas",
+      "alt": "Blackwork raven and botanical cover-up tattoo on a man's upper arm",
+      "image": "ideas/cover-up-tattoo-ideas",
+      "volume": 8100,
+      "kd": 30
+    }
+  ],
+  "searches": [
+    {
+      "label": "Tattoo ideas for men",
+      "href": "/ideas/tattoo-ideas-for-men/",
+      "volume": 33100
+    },
+    {
+      "label": "Tattoo ideas for women",
+      "href": "/ideas/tattoo-ideas-for-women/",
+      "volume": 22200
+    },
+    {
+      "label": "Small tattoos for men",
+      "href": "/ideas/small-tattoos-for-men/",
+      "volume": 12100
+    },
+    {
+      "label": "Couple tattoo ideas",
+      "href": "/ideas/couple-tattoo-ideas/",
+      "volume": 9900
+    },
+    {
+      "label": "Flower tattoo ideas",
+      "href": "/ideas/flower-tattoo-ideas/",
+      "volume": 9900
+    },
+    {
+      "label": "Butterfly tattoo ideas",
+      "href": "/ideas/butterfly-tattoo-ideas/",
+      "volume": 8100
+    },
+    {
+      "label": "Forearm tattoo ideas",
+      "href": "/ideas/forearm-tattoo-ideas/",
+      "volume": 5400
+    },
+    {
+      "label": "Fine line tattoo ideas",
+      "href": "/ideas/fine-line-tattoo-ideas/",
+      "volume": 1900
+    }
+  ],
+  "_ideas_note": "Поля ideas тут больше нет: подпись «N ideas» считается из combos.json функцией ideaCount() в src/lib/gallery.ts. Вписанное руками число расходилось с реальным размером галереи."
+}

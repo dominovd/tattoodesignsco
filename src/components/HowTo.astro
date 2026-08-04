@@ -1,0 +1,77 @@
+---
+import Icon from './Icon.astro';
+
+const checks = [
+  'Placement and visibility',
+  'Size in centimetres',
+  'Style and level of detail',
+  'Questions for your artist',
+];
+---
+
+<section class="section container" aria-labelledby="howto-head">
+  <div class="panel howto">
+    <div class="copy">
+      <h2 id="howto-head">How to find the right tattoo idea</h2>
+      <p>
+        Start with placement and size, then narrow by style and subject. Think
+        about visibility, how the design follows the body, and the level of
+        detail that fits the available space.
+      </p>
+      <p>
+        Save several references and show your artist what you like about each
+        one. Ask how the design should be adapted to your anatomy instead of
+        copying another tattoo exactly.
+      </p>
+    </div>
+
+    <div class="panel panel-accent checklist">
+      <h3>Before you choose</h3>
+      <ul>
+        {
+          checks.map((c) => (
+            <li>
+              <Icon name="check" size={16} class="tick" />
+              <span>{c}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+  .howto {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .copy { display: grid; gap: 12px; max-width: 62ch; }
+  .copy p { color: var(--text-muted); }
+
+  .checklist { padding: 16px 18px; background: var(--bg-elevated); }
+  .checklist h3 { color: var(--accent); margin-bottom: 10px; }
+
+  .checklist ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+  }
+
+  .checklist li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+  }
+
+  .tick { color: var(--accent); }
+
+  @media (min-width: 860px) {
+    .howto { grid-template-columns: 1fr 340px; gap: 28px; padding: 24px; }
+  }
+</style>

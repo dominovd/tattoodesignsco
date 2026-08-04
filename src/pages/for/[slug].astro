@@ -1,0 +1,53 @@
+---
+import AxisLeaf from '@components/AxisLeaf.astro';
+import axes from '@data/axes.json';
+import { audienceGalleries } from '@data/audience-galleries';
+
+/**
+ * Ось аудитории. Мужчины 546,8K - крупнейшая и наименее обслуженная
+ * (PROJECT.md §3), поэтому стоит первой везде, где ось выводится списком.
+ */
+export function getStaticPaths() {
+  return axes.audience.map((a) => ({ params: { slug: a.slug }, props: { a } }));
+}
+
+const { a } = Astro.props;
+const path = `/for/${a.slug}/`;
+const galleryItems = audienceGalleries[a.slug];
+
+const siblings = [
+  ...axes.audience
+    .filter((x) => x.slug !== a.slug)
+    .map((x) => ({ label: x.label, href: `/for/${x.slug}/` })),
+  { label: 'Small', href: '/size/small/' },
+  { label: 'Forearm', href: '/placement/forearm/' },
+  { label: 'Fine line', href: '/style/fine-line/' },
+];
+---
+
+<AxisLeaf
+  h1={`Tattoo ideas for ${a.label.toLowerCase()}`}
+  title={`Tattoo ideas for ${a.label.toLowerCase()} - designs by area and size | TattooDesignsCo`}
+  description={`Tattoo ideas for ${a.label.toLowerCase()} with size, area, style and colour on every image.`}
+  path={path}
+  contentKey={`for/${a.slug}`}
+  crumbs={[
+    { label: 'Home', href: '/' },
+    { label: a.label, href: path },
+  ]}
+  answer={[
+    `${a.blurb} across every body area, with size, style and colour on each image.`,
+    'Save what you like, then copy one clear description for your artist.',
+  ]}
+  gallerySlug={`for-${a.slug}`}
+  galleryDefaults={{
+    placement: 'Forearm',
+    size: '5-15 cm',
+    style: 'Mixed',
+    color: 'Black',
+    altPattern: `Tattoo idea for ${a.label.toLowerCase()}, reference {n}`,
+    items: galleryItems,
+  }}
+  siblings={siblings}
+  brief="fine line design, ~8 cm, inner forearm, black only"
+/>

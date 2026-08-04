@@ -1,0 +1,94 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import site from '@data/site.json';
+
+/**
+ * Каркас. Разделы соответствуют тому, что на сайте реально есть или
+ * планируется по PROJECT.md §10: аналитика, дисплейная реклама, партнёрские
+ * ссылки и локальная подборка.
+ */
+const updated = new Date().toLocaleDateString('en-US', {
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric',
+});
+---
+
+<BaseLayout
+  title={`Privacy policy | ${site.name}`}
+  description={`How ${site.name} handles data, cookies, analytics and advertising.`}
+  path="/privacy/"
+  crumbs={[
+    { label: 'Home', href: '/' },
+    { label: 'Privacy policy', href: '/privacy/' },
+  ]}
+>
+  <section class="container page-top">
+    <h1>Privacy policy</h1>
+    <div class="lead">
+      <p>What is collected, what is not, and what stays only in your browser.</p>
+      <p>Last updated {updated}.</p>
+    </div>
+  </section>
+
+  <section class="section container prose">
+    <h2>No account, no profile</h2>
+    <p>
+      You can use every part of this site without signing up. There is no login,
+      and we do not ask for your name, email or anything else to browse.
+    </p>
+
+    <h2>Your saved ideas stay in your browser</h2>
+    <p>
+      When you save an idea, it is written to your browser's local storage on
+      your own device. It is not sent to us and we cannot see it. Clearing your
+      browser data removes it, and it does not follow you to another device.
+    </p>
+
+    <h2>Analytics</h2>
+    <p>
+      The current version does not send your saved ideas to an analytics
+      service. If audience measurement is enabled later, this policy will name
+      the provider, the information it receives and the available opt-out before
+      the change goes live.
+    </p>
+
+    <h2>Advertising</h2>
+    <p>
+      The layout reserves space for advertising, but a reserved box does not by
+      itself set a cookie. Before an advertising network is connected, this page
+      will identify it and explain its cookie and consent controls. Where consent
+      is required, personalised advertising will not load before that choice.
+    </p>
+
+    <h2>Affiliate links</h2>
+    <p>
+      Some outbound links are affiliate links, which means we may earn a
+      commission if you buy something. This never changes what we show or how we
+      describe it. Any active programme will be identified near the relevant
+      link and in this policy.
+    </p>
+
+    <h2>Your choices</h2>
+    <ul>
+      <li>Clear local storage to delete your saved ideas.</li>
+      <li>Block cookies in your browser settings. Core browsing and saved links still work.</li>
+      <li>Write to <a href={`mailto:${site.email}`}>{site.email}</a> with any request about your data.</li>
+    </ul>
+
+    <h2>Children</h2>
+    <p>
+      This site is written for adults. It is not directed at anyone under 18 and
+      we do not knowingly collect data from children.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions about this policy can be sent to
+      <a href={`mailto:${site.email}`}>{site.email}</a>. Include the page address
+      and the privacy feature you are asking about. We may need enough
+      information to understand the request, but we will not ask for account
+      details because the site has no user accounts.
+    </p>
+  </section>
+</BaseLayout>

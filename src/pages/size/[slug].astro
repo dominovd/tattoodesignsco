@@ -1,0 +1,45 @@
+---
+import AxisLeaf from '@components/AxisLeaf.astro';
+import axes from '@data/axes.json';
+import { sizeGalleries } from '@data/size-galleries';
+
+export function getStaticPaths() {
+  return axes.sizes.map((s) => ({ params: { slug: s.slug }, props: { s } }));
+}
+
+const { s } = Astro.props;
+const path = `/size/${s.slug}/`;
+const galleryItems = sizeGalleries[s.slug];
+
+const siblings = axes.sizes
+  .filter((x) => x.slug !== s.slug)
+  .map((x) => ({ label: x.label, href: `/size/${x.slug}/` }));
+---
+
+<AxisLeaf
+  h1={`${s.label} tattoo ideas`}
+  title={`${s.label} tattoo ideas - ${s.hint} | TattooDesignsCo`}
+  description={`${s.label} tattoo ideas (${s.hint}) with area, style and colour on every image.`}
+  path={path}
+  contentKey={`size/${s.slug}`}
+  crumbs={[
+    { label: 'Home', href: '/' },
+    { label: 'Sizes', href: '/size/' },
+    { label: s.label, href: path },
+  ]}
+  answer={[
+    `Designs in the ${s.hint} range, with the body area and style listed on every image.`,
+    'Compare against the size guide before you settle on a number.',
+  ]}
+  gallerySlug={`size-${s.slug}`}
+  galleryDefaults={{
+    placement: 'Forearm',
+    size: s.hint,
+    style: 'Fine line',
+    color: 'Black',
+    altPattern: `${s.label} tattoo idea, reference {n}`,
+    items: galleryItems,
+  }}
+  siblings={siblings}
+  brief={`fine line design, ${s.hint}, inner forearm, black only`}
+/>

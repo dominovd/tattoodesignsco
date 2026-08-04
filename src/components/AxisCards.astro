@@ -1,0 +1,61 @@
+---
+import Icon from './Icon.astro';
+
+/**
+ * «Browse your way» - входы во все четыре оси таксономии (PROJECT.md §5).
+ * Хаб главной обязан отдавать ссылочный вес каждой оси, а не только
+ * placement: сюжетная ось - самая большая масса контента (цветы 93,1K,
+ * религиозные 74,9K, животные 72,4K, зодиак 60,6K).
+ */
+const axes = [
+  { href: '/placement/', icon: 'person', label: 'Placement', blurb: 'Choose a body area' },
+  { href: '/subject/', icon: 'flower', label: 'Subject', blurb: 'Explore themes and motifs' },
+  { href: '/style/', icon: 'pen', label: 'Style', blurb: 'Compare tattoo styles' },
+  { href: '/size/', icon: 'ruler', label: 'Size', blurb: 'See 3, 5 and 10 cm' },
+];
+---
+
+<section class="section container" aria-labelledby="axes-head">
+  <div class="section-head">
+    <h2 id="axes-head">Browse your way</h2>
+  </div>
+
+  <div class="grid grid-4">
+    {
+      axes.map((a) => (
+        <a class="axis panel" href={a.href}>
+          <Icon name={a.icon} size={26} class="ic" />
+          <span class="row">
+            <span class="label">{a.label}</span>
+            <Icon name="chevron" size={16} class="chev" />
+          </span>
+          <span class="small muted">{a.blurb}</span>
+        </a>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .axis {
+    display: grid;
+    gap: 4px;
+    padding: 16px;
+    min-height: 132px;
+    align-content: start;
+  }
+
+  .axis:hover { border-color: var(--accent); color: inherit; }
+
+  .ic { color: var(--accent); margin-bottom: 10px; }
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .label { font-weight: 700; font-size: 17px; }
+  .chev { color: var(--accent); }
+</style>

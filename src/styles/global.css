@@ -1,0 +1,410 @@
+/* ==========================================================================
+   TattooDesignsCo - глобальные стили
+   Токены и правила взяты из DESIGN.md. Менять значения здесь, а не по месту.
+   ========================================================================== */
+
+:root {
+  /* Поверхности - DESIGN.md §2 */
+  --bg: #111111;
+  --bg-elevated: #161616;
+  --card: #1e1e1e;
+  --card-hover: #262626;
+  --line: #2e2e2e;
+  --line-strong: #3d3d3d;
+
+  /* Текст */
+  --text: #f2f2f2;
+  --text-muted: #a0a0a0;
+
+  /* Один приглушённый акцент, без градиентов и неона */
+  --accent: #c9a227;
+  --accent-hover: #dcb43a;
+  --accent-ink: #14110a; /* текст на золотой заливке */
+
+  /* Типографика: только системные шрифты - DESIGN.md §9 */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas,
+    'Liberation Mono', monospace;
+
+  /* Ритм */
+  --container: 1200px;
+  --gutter: 16px;
+  --radius: 10px;
+  --radius-sm: 8px;
+  --radius-pill: 999px;
+
+  /* Минимальная тач-цель - DESIGN.md §1 */
+  --tap: 44px;
+
+  /* Соотношение сторон карточек галереи - DESIGN.md §4 */
+  --card-ratio: 3 / 4;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover { color: var(--accent-hover); }
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: clamp(28px, 5.2vw, 44px); }
+h2 { font-size: clamp(20px, 3vw, 26px); }
+h3 { font-size: clamp(17px, 2.2vw, 20px); }
+
+p { margin: 0; }
+
+/* --- Раскладка ----------------------------------------------------------- */
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.section > .section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.section-head .more {
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+  min-height: var(--tap);
+  display: inline-flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  gap: 12px;
+}
+
+/* Сетка галереи: 2 колонки на телефоне, 3 на планшете, 4 на десктопе - §1 */
+.grid-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+@media (min-width: 640px) {
+  :root { --gutter: 24px; }
+  .grid-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (min-width: 960px) {
+  .section { margin-top: 56px; }
+  .grid-gallery { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+/* --- Панели -------------------------------------------------------------- */
+
+.panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.panel-accent {
+  border-color: var(--accent);
+}
+
+/* --- Кнопки -------------------------------------------------------------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: var(--tap);
+  padding: 0 20px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 15px;
+  background: none;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+  color: var(--accent-ink);
+}
+
+.btn-ghost {
+  color: var(--accent);
+  padding-inline: 4px;
+}
+
+.btn-outline {
+  border-color: var(--line-strong);
+  color: var(--text);
+}
+
+.btn-outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* --- Чипы-ссылки: под каждым лежит настоящий <a href> - DESIGN.md §6 ------ */
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: var(--tap);
+  padding: 0 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-pill);
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  background: var(--bg-elevated);
+}
+
+.chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.chip[aria-current='page'] {
+  border-color: var(--accent);
+  background: rgba(201, 162, 39, 0.14);
+  color: var(--accent);
+}
+
+.chip .chev {
+  color: var(--accent);
+  flex: none;
+}
+
+/* --- Утилиты ------------------------------------------------------------- */
+
+.muted { color: var(--text-muted); }
+.small { font-size: 14px; }
+.stack { display: grid; gap: 8px; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.lead {
+  color: var(--text-muted);
+  font-size: clamp(15px, 2vw, 17px);
+  max-width: 56ch;
+}
+
+/* Header brand is global so the mark also keeps its layout across Astro's
+   component boundary when the SVG icon is rendered by Icon.astro. */
+.site-header .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  white-space: nowrap;
+}
+
+.site-header .brand-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  flex: none;
+  color: var(--accent);
+}
+
+/* Лайтбокс, DESIGN.md §5
+   Крупное изображение, Save, подпись с параметрами, стрелки листания и
+   кнопка «скопировать описание для мастера». Закрывается по фону, свайпом
+   вниз и по Esc, не требует попадания в крестик.
+   Разметку создаёт app.js, поэтому без JS ничего не появляется и вес нулевой.
+   -------------------------------------------------------------------------- */
+
+.lb {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background: rgba(8, 8, 8, 0.94);
+  overscroll-behavior: contain;
+}
+
+.lb[hidden] { display: none; }
+
+.lb-inner {
+  position: relative;
+  display: grid;
+  gap: 12px;
+  width: min(100%, 980px);
+  max-height: 100%;
+  grid-template-rows: minmax(0, 1fr) auto;
+  transition: transform 0.12s ease, opacity 0.12s ease;
+}
+
+.lb-figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+}
+
+.lb-img {
+  max-width: 100%;
+  max-height: 68vh;
+  width: auto;
+  height: auto;
+  border-radius: var(--radius);
+  background: var(--card);
+}
+
+.lb-meta {
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.lb-caption { font-size: 14px; }
+.lb-caption .lb-count { float: right; color: var(--text-muted); }
+
+.lb-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.lb-actions .btn { flex: 1 1 auto; min-width: 120px; }
+
+.lb-close,
+.lb-nav {
+  position: absolute;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--tap);
+  height: var(--tap);
+  border: 1px solid var(--line-strong);
+  border-radius: 50%;
+  background: rgba(17, 17, 17, 0.86);
+  color: var(--text);
+  font-size: 20px;
+  line-height: 1;
+}
+
+.lb-close:hover,
+.lb-nav:hover { border-color: var(--accent); color: var(--accent); }
+
+.lb-close { top: 12px; right: 12px; }
+.lb-prev { left: 12px; top: 50%; transform: translateY(-50%); }
+.lb-next { right: 12px; top: 50%; transform: translateY(-50%); }
+.lb-nav[disabled] { opacity: 0.3; pointer-events: none; }
+
+.lb-hint {
+  color: var(--text-muted);
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  .lb-prev { left: -8px; }
+  .lb-next { right: -8px; }
+  .lb-img { max-height: 74vh; }
+}
+
+/* --- Текстовые страницы -------------------------------------------------- */
+
+.page-top { padding-top: 24px; }
+.page-top .lead { margin-top: 10px; }
+
+.prose { max-width: 70ch; display: grid; gap: 10px; }
+.prose h2 { margin-top: 20px; font-size: 20px; }
+.prose h3 { margin-top: 12px; font-size: 17px; }
+.prose p, .prose li { color: var(--text-muted); }
+.prose ul, .prose ol { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
+.prose a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }

@@ -1,0 +1,65 @@
+---
+/**
+ * Первый экран - DESIGN.md §3.
+ * H1, короткий ответ в две строки, сразу за ним контент. Никаких баннеров,
+ * длинных вступлений и декоративных коллажей перед галереей: каждое
+ * изображение здесь стоило бы LCP и не давало кликов.
+ *
+ * H1 главной намеренно НЕ является точным ключом: PROJECT.md §4 запрещает
+ * лезть в голову «tattoo ideas» - там AI Overview и укоренившийся
+ * smalltattoos.com. Правило «H1 = точный ключ» относится к комбинационным
+ * страницам.
+ */
+interface Props {
+  title: string;
+  lines: string[];
+  primary?: { label: string; href: string };
+  secondary?: { label: string; href: string };
+}
+
+const { title, lines, primary, secondary } = Astro.props;
+---
+
+<section class="hero container">
+  <h1>{title}</h1>
+  <div class="lead">
+    {lines.map((line) => <p>{line}</p>)}
+  </div>
+
+  {
+    (primary || secondary) && (
+      <div class="cta">
+        {primary && (
+          <a class="btn btn-primary" href={primary.href}>
+            {primary.label}
+          </a>
+        )}
+        {secondary && (
+          <a class="btn btn-ghost" href={secondary.href}>
+            {secondary.label}
+          </a>
+        )}
+      </div>
+    )
+  }
+</section>
+
+<style>
+  .hero {
+    padding-top: 32px;
+  }
+
+  .lead { margin-top: 10px; }
+
+  .cta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 18px;
+    margin-top: 20px;
+  }
+
+  @media (min-width: 960px) {
+    .hero { padding-top: 44px; }
+  }
+</style>

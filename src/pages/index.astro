@@ -1,0 +1,101 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Hero from '@components/Hero.astro';
+import AudienceRow from '@components/AudienceRow.astro';
+import AxisCards from '@components/AxisCards.astro';
+import Chips from '@components/Chips.astro';
+import IdeaCard from '@components/IdeaCard.astro';
+import AdSlot from '@components/AdSlot.astro';
+import CopyBrief from '@components/CopyBrief.astro';
+import ToolCards from '@components/ToolCards.astro';
+import PlacementLinks from '@components/PlacementLinks.astro';
+import HowTo from '@components/HowTo.astro';
+import EditorialNote from '@components/EditorialNote.astro';
+import Faq from '@components/Faq.astro';
+import PopularSearches from '@components/PopularSearches.astro';
+
+import site from '@data/site.json';
+import popular from '@data/popular.json';
+import combos from '@data/combos.json';
+import { ideaCount } from '@lib/gallery';
+import faq from '@data/faq.json';
+
+const websiteLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: site.name,
+  url: site.url,
+  description: site.description,
+};
+
+// Подпись «· N ideas» считается из combos.json, того же источника,
+// из которого строится галерея. Второго места правды быть не должно.
+const countBySlug = Object.fromEntries(
+  combos.items.map((c) => [c.slug, ideaCount(c)]),
+);
+---
+
+<BaseLayout
+  title={`${site.tagline} - ${site.name}`}
+  description={site.description}
+  path="/"
+>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(websiteLd)} />
+
+  <Hero
+    title="Find a tattoo idea that fits you"
+    lines={[
+      'Browse by placement, style, subject, or size.',
+      'Save favourites and copy a clear brief for your artist.',
+    ]}
+    primary={{ label: 'Browse ideas', href: '/ideas/' }}
+    secondary={{ label: 'Start the 30-second quiz', href: '/tools/quiz/' }}
+  />
+
+  <AudienceRow />
+
+  <AxisCards />
+
+  <section class="section container" aria-labelledby="popular-head">
+    <div class="section-head">
+      <h2 id="popular-head">Popular tattoo ideas</h2>
+      <a class="more" href="/ideas/">View all</a>
+    </div>
+
+    <Chips items={popular.chips} label="Popular filters" />
+
+    <div class="grid grid-gallery">
+      {
+        popular.cards.map((card, i) => (
+          <IdeaCard
+            href={`/ideas/${card.slug}/`}
+            title={card.title}
+            image={card.image}
+            alt={card.alt}
+            ideas={countBySlug[card.slug]}
+            priority={i === 0}
+          />
+        ))
+      }
+    </div>
+  </section>
+
+  {/* Первый рекламный блок - после 8-го изображения сетки, DESIGN.md §10 */}
+  <div class="container"><AdSlot id="home-mid" height={100} /></div>
+
+  <CopyBrief />
+
+  <ToolCards />
+
+  <PlacementLinks />
+
+  <div class="container"><AdSlot id="home-lower" height={100} /></div>
+
+  <HowTo />
+
+  <EditorialNote />
+
+  <Faq items={faq} />
+
+  <PopularSearches items={popular.searches} />
+</BaseLayout>

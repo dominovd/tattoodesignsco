@@ -1,0 +1,115 @@
+---
+import site from '@data/site.json';
+import Icon from './Icon.astro';
+
+const path = Astro.url.pathname;
+---
+
+<header class="site-header">
+  <div class="container bar">
+    <a class="brand" href="/" aria-label={`${site.name} home`}>
+      <span class="brand-mark" aria-hidden="true">
+        <Icon name="brand" size={30} />
+      </span>
+      <span>{site.brandDisplay ?? site.name}</span>
+    </a>
+
+    <nav class="nav" aria-label="Main">
+      {
+        site.nav.map((item) => (
+          <a
+            href={item.href}
+            aria-current={path.startsWith(item.href) ? 'page' : undefined}
+          >
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+
+    <a class="saved" href="/saved/">
+      Saved <span class="count" data-saved-count hidden></span>
+    </a>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(17, 17, 17, 0.92);
+    backdrop-filter: saturate(140%) blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .bar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-height: 60px;
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    margin-right: auto;
+  }
+
+  .brand-mark {
+    display: inline-grid;
+    place-items: center;
+    color: var(--accent);
+  }
+
+  .nav {
+    display: none;
+    gap: 4px;
+  }
+
+  .nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap);
+    padding: 0 12px;
+    font-size: 15px;
+    color: var(--text-muted);
+    border-radius: var(--radius-sm);
+  }
+
+  .nav a:hover { color: var(--text); }
+
+  .nav a[aria-current='page'] {
+    color: var(--text);
+    box-shadow: inset 0 -2px 0 var(--accent);
+  }
+
+  .saved {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 40px;
+    padding: 0 16px;
+    border: 1px solid var(--accent);
+    border-radius: var(--radius-sm);
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .count {
+    font-variant-numeric: tabular-nums;
+    opacity: 0.85;
+  }
+
+  @media (min-width: 860px) {
+    .nav { display: flex; }
+    .brand { margin-right: 0; }
+    .bar { justify-content: space-between; }
+    .nav { flex: 1; justify-content: center; }
+  }
+</style>

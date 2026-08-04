@@ -1,0 +1,49 @@
+---
+import Icon from './Icon.astro';
+
+/**
+ * PROJECT.md §8: изображения - главный барьер проекта. Публичное обещание
+ * ручной проверки одновременно закрывает репутационный риск и работает как
+ * сигнал доверия. Ссылка ведёт на страницу, где стандарт расписан.
+ */
+---
+
+<section class="section container">
+  <div class="panel editorial">
+    <Icon name="shield" size={30} class="ic" />
+    <div>
+      <h2>How we select images</h2>
+      <p class="small muted">
+        Every image is checked for anatomy, line quality and clear placement
+        details. We do not republish artists' portfolio work without
+        permission and credit.
+      </p>
+      <a class="link" href="/editorial-standards/">Read our editorial standards</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .editorial {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 14px;
+    padding: 18px;
+    align-items: start;
+  }
+
+  .ic { color: var(--accent); }
+  h2 { font-size: 17px; margin-bottom: 4px; }
+  p { max-width: 70ch; }
+
+  .link {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap);
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+</style>

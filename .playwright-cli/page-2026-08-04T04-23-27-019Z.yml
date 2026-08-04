@@ -1,0 +1,348 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "TattooDesignsCo home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e12]: Tattoo Designs Co
+      - navigation "Main" [ref=e13]:
+        - link "Ideas" [ref=e14] [cursor=pointer]:
+          - /url: /ideas/
+        - link "Placement" [ref=e15] [cursor=pointer]:
+          - /url: /placement/
+        - link "Subjects" [ref=e16] [cursor=pointer]:
+          - /url: /subject/
+        - link "Styles" [ref=e17] [cursor=pointer]:
+          - /url: /style/
+        - link "Sizes" [ref=e18] [cursor=pointer]:
+          - /url: /size/
+        - link "Tools" [ref=e19] [cursor=pointer]:
+          - /url: /tools/
+      - link "Saved" [ref=e20] [cursor=pointer]:
+        - /url: /saved/
+  - navigation "Breadcrumb" [ref=e21]:
+    - list [ref=e22]:
+      - listitem [ref=e23]:
+        - link "Home" [ref=e24] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=e25]: / Ideas
+  - main [ref=e26]:
+    - generic [ref=e27]:
+      - heading "Tattoo ideas" [level=1] [ref=e28]
+      - generic [ref=e29]:
+        - paragraph [ref=e30]: Every collection on the site, from first small pieces to full sleeves.
+        - paragraph [ref=e31]: Pick a starting point, save what you like, copy a brief for your artist.
+    - region "All ideas" [ref=e32]:
+      - navigation "Narrow by axis" [ref=e33]:
+        - link "Men" [ref=e34] [cursor=pointer]:
+          - /url: /for/men/
+        - link "Women" [ref=e37] [cursor=pointer]:
+          - /url: /for/women/
+        - link "Couples" [ref=e40] [cursor=pointer]:
+          - /url: /for/couples/
+        - link "Small" [ref=e43] [cursor=pointer]:
+          - /url: /size/small/
+        - link "Forearm" [ref=e46] [cursor=pointer]:
+          - /url: /placement/forearm/
+        - link "Fine line" [ref=e49] [cursor=pointer]:
+          - /url: /style/fine-line/
+        - link "Traditional" [ref=e52] [cursor=pointer]:
+          - /url: /style/traditional/
+      - generic [ref=e55]:
+        - article [ref=e56]:
+          - link "Tattoo ideas for men Tattoo ideas for men" [ref=e57] [cursor=pointer]:
+            - /url: /ideas/tattoo-ideas-for-men/
+            - img "Tattoo ideas for men" [ref=e59]
+            - generic [ref=e60]: Tattoo ideas for men
+          - generic [ref=e61]:
+            - button "Save Tattoo ideas for men" [ref=e62] [cursor=pointer]
+            - link "Pin Tattoo ideas for men" [ref=e65] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ftattoo-ideas-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ftattoo-ideas-for-men%2F01-1200.webp&description=Tattoo%20ideas%20for%20men
+          - generic [ref=e69]:
+            - link "Tattoo ideas for men" [ref=e70] [cursor=pointer]:
+              - /url: /ideas/tattoo-ideas-for-men/
+            - text: · 24 ideas
+        - article [ref=e71]:
+          - link "Tattoo ideas for women Tattoo ideas for women" [ref=e72] [cursor=pointer]:
+            - /url: /ideas/tattoo-ideas-for-women/
+            - img "Tattoo ideas for women" [ref=e74]
+            - generic [ref=e75]: Tattoo ideas for women
+          - generic [ref=e76]:
+            - button "Save Tattoo ideas for women" [ref=e77] [cursor=pointer]
+            - link "Pin Tattoo ideas for women" [ref=e80] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ftattoo-ideas-for-women%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ftattoo-ideas-for-women%2F01-1200.webp&description=Tattoo%20ideas%20for%20women
+          - generic [ref=e84]:
+            - link "Tattoo ideas for women" [ref=e85] [cursor=pointer]:
+              - /url: /ideas/tattoo-ideas-for-women/
+            - text: · 24 ideas
+        - article [ref=e86]:
+          - link "Small tattoos for men Small tattoos for men" [ref=e87] [cursor=pointer]:
+            - /url: /ideas/small-tattoos-for-men/
+            - img "Small tattoos for men" [ref=e89]
+            - generic [ref=e90]: Small tattoos for men
+          - generic [ref=e91]:
+            - button "Save Small tattoos for men" [ref=e92] [cursor=pointer]
+            - link "Pin Small tattoos for men" [ref=e95] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fsmall-tattoos-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fsmall-tattoos-for-men%2F01-1200.webp&description=Small%20tattoos%20for%20men
+          - generic [ref=e99]:
+            - link "Small tattoos for men" [ref=e100] [cursor=pointer]:
+              - /url: /ideas/small-tattoos-for-men/
+            - text: · 24 ideas
+        - article [ref=e101]:
+          - link "Flower tattoo ideas Flower tattoo ideas" [ref=e102] [cursor=pointer]:
+            - /url: /ideas/flower-tattoo-ideas/
+            - img "Flower tattoo ideas" [ref=e104]
+            - generic [ref=e105]: Flower tattoo ideas
+          - generic [ref=e106]:
+            - button "Save Flower tattoo ideas" [ref=e107] [cursor=pointer]
+            - link "Pin Flower tattoo ideas" [ref=e110] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fflower-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fflower-tattoo-ideas%2F01-1200.webp&description=Flower%20tattoo%20ideas
+          - generic [ref=e114]:
+            - link "Flower tattoo ideas" [ref=e115] [cursor=pointer]:
+              - /url: /ideas/flower-tattoo-ideas/
+            - text: · 24 ideas
+        - article [ref=e116]:
+          - link "Couple tattoo ideas Couple tattoo ideas" [ref=e117] [cursor=pointer]:
+            - /url: /ideas/couple-tattoo-ideas/
+            - img "Couple tattoo ideas" [ref=e119]
+            - generic [ref=e120]: Couple tattoo ideas
+          - generic [ref=e121]:
+            - button "Save Couple tattoo ideas" [ref=e122] [cursor=pointer]
+            - link "Pin Couple tattoo ideas" [ref=e125] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fcouple-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fcouple-tattoo-ideas%2F01-1200.webp&description=Couple%20tattoo%20ideas
+          - generic [ref=e129]:
+            - link "Couple tattoo ideas" [ref=e130] [cursor=pointer]:
+              - /url: /ideas/couple-tattoo-ideas/
+            - text: · 24 ideas
+        - article [ref=e131]:
+          - link "Tattoo ideas for male arm Tattoo ideas for male arm" [ref=e132] [cursor=pointer]:
+            - /url: /ideas/tattoo-ideas-male-arm/
+            - img "Tattoo ideas for male arm" [ref=e134]
+            - generic [ref=e135]: Tattoo ideas for male arm
+          - generic [ref=e136]:
+            - button "Save Tattoo ideas for male arm" [ref=e137] [cursor=pointer]
+            - link "Pin Tattoo ideas for male arm" [ref=e140] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ftattoo-ideas-male-arm%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ftattoo-ideas-male-arm%2F01-1200.webp&description=Tattoo%20ideas%20for%20male%20arm
+          - generic [ref=e144]:
+            - link "Tattoo ideas for male arm" [ref=e145] [cursor=pointer]:
+              - /url: /ideas/tattoo-ideas-male-arm/
+            - text: · 24 ideas
+        - article [ref=e146]:
+          - link "Family tattoo ideas Family tattoo ideas" [ref=e147] [cursor=pointer]:
+            - /url: /ideas/family-tattoo-ideas/
+            - img "Family tattoo ideas" [ref=e149]
+            - generic [ref=e150]: Family tattoo ideas
+          - generic [ref=e151]:
+            - button "Save Family tattoo ideas" [ref=e152] [cursor=pointer]
+            - link "Pin Family tattoo ideas" [ref=e155] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffamily-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffamily-tattoo-ideas%2F01-1200.webp&description=Family%20tattoo%20ideas
+          - generic [ref=e159]:
+            - link "Family tattoo ideas" [ref=e160] [cursor=pointer]:
+              - /url: /ideas/family-tattoo-ideas/
+            - text: · 24 ideas
+        - article [ref=e161]:
+          - link "Cover up tattoo ideas Cover up tattoo ideas" [ref=e162] [cursor=pointer]:
+            - /url: /ideas/cover-up-tattoo-ideas/
+            - img "Cover up tattoo ideas" [ref=e164]
+            - generic [ref=e165]: Cover up tattoo ideas
+          - generic [ref=e166]:
+            - button "Save Cover up tattoo ideas" [ref=e167] [cursor=pointer]
+            - link "Pin Cover up tattoo ideas" [ref=e170] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fcover-up-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fcover-up-tattoo-ideas%2F01-1200.webp&description=Cover%20up%20tattoo%20ideas
+          - generic [ref=e174]:
+            - link "Cover up tattoo ideas" [ref=e175] [cursor=pointer]:
+              - /url: /ideas/cover-up-tattoo-ideas/
+            - text: · 24 ideas
+      - complementary "Advertisement" [ref=e176]
+      - generic [ref=e178]:
+        - article [ref=e179]:
+          - link "Butterfly tattoo ideas Butterfly tattoo ideas" [ref=e180] [cursor=pointer]:
+            - /url: /ideas/butterfly-tattoo-ideas/
+            - img "Butterfly tattoo ideas" [ref=e182]
+            - generic [ref=e183]: Butterfly tattoo ideas
+          - generic [ref=e184]:
+            - button "Save Butterfly tattoo ideas" [ref=e185] [cursor=pointer]
+            - link "Pin Butterfly tattoo ideas" [ref=e188] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fbutterfly-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fbutterfly-tattoo-ideas%2F01-1200.webp&description=Butterfly%20tattoo%20ideas
+          - generic [ref=e192]:
+            - link "Butterfly tattoo ideas" [ref=e193] [cursor=pointer]:
+              - /url: /ideas/butterfly-tattoo-ideas/
+            - text: · 24 ideas
+        - article [ref=e194]:
+          - link "Chest tattoo ideas for guys Chest tattoo ideas for guys" [ref=e195] [cursor=pointer]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/
+            - img "Chest tattoo ideas for guys" [ref=e197]
+            - generic [ref=e198]: Chest tattoo ideas for guys
+          - generic [ref=e199]:
+            - button "Save Chest tattoo ideas for guys" [ref=e200] [cursor=pointer]
+            - link "Pin Chest tattoo ideas for guys" [ref=e203] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F01-1200.webp&description=Chest%20tattoo%20ideas%20for%20guys
+          - generic [ref=e207]:
+            - link "Chest tattoo ideas for guys" [ref=e208] [cursor=pointer]:
+              - /url: /ideas/chest-tattoo-ideas-for-guys/
+            - text: · 24 ideas
+        - article [ref=e209]:
+          - link "Hand tattoo ideas Hand tattoo ideas" [ref=e210] [cursor=pointer]:
+            - /url: /ideas/hand-tattoo-ideas/
+            - img "Hand tattoo ideas" [ref=e212]
+            - generic [ref=e213]: Hand tattoo ideas
+          - generic [ref=e214]:
+            - button "Save Hand tattoo ideas" [ref=e215] [cursor=pointer]
+            - link "Pin Hand tattoo ideas" [ref=e218] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fhand-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fhand-tattoo-ideas%2F01-1200.webp&description=Hand%20tattoo%20ideas
+          - generic [ref=e222]:
+            - link "Hand tattoo ideas" [ref=e223] [cursor=pointer]:
+              - /url: /ideas/hand-tattoo-ideas/
+            - text: · 24 ideas
+        - article [ref=e224]:
+          - link "Sleeve tattoo ideas for men Sleeve tattoo ideas for men" [ref=e225] [cursor=pointer]:
+            - /url: /ideas/sleeve-tattoo-ideas-for-men/
+            - img "Sleeve tattoo ideas for men" [ref=e227]
+            - generic [ref=e228]: Sleeve tattoo ideas for men
+          - generic [ref=e229]:
+            - button "Save Sleeve tattoo ideas for men" [ref=e230] [cursor=pointer]
+            - link "Pin Sleeve tattoo ideas for men" [ref=e233] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fsleeve-tattoo-ideas-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fsleeve-tattoo-ideas-for-men%2F01-1200.webp&description=Sleeve%20tattoo%20ideas%20for%20men
+          - generic [ref=e237]:
+            - link "Sleeve tattoo ideas for men" [ref=e238] [cursor=pointer]:
+              - /url: /ideas/sleeve-tattoo-ideas-for-men/
+            - text: · 24 ideas
+        - article [ref=e239]:
+          - link "Forearm tattoo ideas Forearm tattoo ideas" [ref=e240] [cursor=pointer]:
+            - /url: /ideas/forearm-tattoo-ideas/
+            - img "Forearm tattoo ideas" [ref=e242]
+            - generic [ref=e243]: Forearm tattoo ideas
+          - generic [ref=e244]:
+            - button "Save Forearm tattoo ideas" [ref=e245] [cursor=pointer]
+            - link "Pin Forearm tattoo ideas" [ref=e248] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fforearm-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fforearm-tattoo-ideas%2F01-1200.webp&description=Forearm%20tattoo%20ideas
+          - generic [ref=e252]:
+            - link "Forearm tattoo ideas" [ref=e253] [cursor=pointer]:
+              - /url: /ideas/forearm-tattoo-ideas/
+            - text: · 24 ideas
+        - article [ref=e254]:
+          - link "Forearm tattoo ideas for men Forearm tattoo ideas for men" [ref=e255] [cursor=pointer]:
+            - /url: /ideas/forearm-tattoo-ideas-for-men/
+            - img "Forearm tattoo ideas for men" [ref=e257]
+            - generic [ref=e258]: Forearm tattoo ideas for men
+          - generic [ref=e259]:
+            - button "Save Forearm tattoo ideas for men" [ref=e260] [cursor=pointer]
+            - link "Pin Forearm tattoo ideas for men" [ref=e263] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fforearm-tattoo-ideas-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fforearm-tattoo-ideas-for-men%2F01-1200.webp&description=Forearm%20tattoo%20ideas%20for%20men
+          - generic [ref=e267]:
+            - link "Forearm tattoo ideas for men" [ref=e268] [cursor=pointer]:
+              - /url: /ideas/forearm-tattoo-ideas-for-men/
+            - text: · 16 ideas
+        - article [ref=e269]:
+          - link "Fine line tattoo ideas Fine line tattoo ideas" [ref=e270] [cursor=pointer]:
+            - /url: /ideas/fine-line-tattoo-ideas/
+            - img "Fine line tattoo ideas" [ref=e272]
+            - generic [ref=e273]: Fine line tattoo ideas
+          - generic [ref=e274]:
+            - button "Save Fine line tattoo ideas" [ref=e275] [cursor=pointer]
+            - link "Pin Fine line tattoo ideas" [ref=e278] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F01-1200.webp&description=Fine%20line%20tattoo%20ideas
+          - generic [ref=e282]:
+            - link "Fine line tattoo ideas" [ref=e283] [cursor=pointer]:
+              - /url: /ideas/fine-line-tattoo-ideas/
+            - text: · 24 ideas
+    - generic [ref=e284]:
+      - heading "How the collections are organised" [level=2] [ref=e285]
+      - paragraph [ref=e286]: Each collection combines choices people make together, such as audience, placement, subject and style. The label under every image states the body area, approximate size, treatment and colour. Use those details to compare references that could realistically support the same composition.
+      - paragraph [ref=e287]: Save images for specific reasons instead of collecting near-duplicates. A useful shortlist might include one reference for overall flow, one for line weight and one for the amount of detail. The copied description turns those choices into a starting brief for an original drawing.
+    - region [ref=e288]:
+      - heading "Popular searches" [level=2] [ref=e290]
+      - navigation "Popular searches" [ref=e291]:
+        - link "Tattoo ideas for men" [ref=e292] [cursor=pointer]:
+          - /url: /ideas/tattoo-ideas-for-men/
+        - link "Tattoo ideas for women" [ref=e296] [cursor=pointer]:
+          - /url: /ideas/tattoo-ideas-for-women/
+        - link "Small tattoos for men" [ref=e300] [cursor=pointer]:
+          - /url: /ideas/small-tattoos-for-men/
+        - link "Couple tattoo ideas" [ref=e304] [cursor=pointer]:
+          - /url: /ideas/couple-tattoo-ideas/
+        - link "Flower tattoo ideas" [ref=e308] [cursor=pointer]:
+          - /url: /ideas/flower-tattoo-ideas/
+        - link "Butterfly tattoo ideas" [ref=e312] [cursor=pointer]:
+          - /url: /ideas/butterfly-tattoo-ideas/
+        - link "Forearm tattoo ideas" [ref=e316] [cursor=pointer]:
+          - /url: /ideas/forearm-tattoo-ideas/
+        - link "Fine line tattoo ideas" [ref=e320] [cursor=pointer]:
+          - /url: /ideas/fine-line-tattoo-ideas/
+  - contentinfo [ref=e324]:
+    - generic [ref=e325]:
+      - generic [ref=e326]:
+        - navigation "Explore" [ref=e327]:
+          - heading "Explore" [level=2] [ref=e328]
+          - list [ref=e329]:
+            - listitem [ref=e330]:
+              - link "Ideas" [ref=e331] [cursor=pointer]:
+                - /url: /ideas/
+            - listitem [ref=e332]:
+              - link "Placement" [ref=e333] [cursor=pointer]:
+                - /url: /placement/
+            - listitem [ref=e334]:
+              - link "Subjects" [ref=e335] [cursor=pointer]:
+                - /url: /subject/
+            - listitem [ref=e336]:
+              - link "Styles" [ref=e337] [cursor=pointer]:
+                - /url: /style/
+            - listitem [ref=e338]:
+              - link "Sizes" [ref=e339] [cursor=pointer]:
+                - /url: /size/
+        - navigation "Resources" [ref=e340]:
+          - heading "Resources" [level=2] [ref=e341]
+          - list [ref=e342]:
+            - listitem [ref=e343]:
+              - link "Tattoo size guide" [ref=e344] [cursor=pointer]:
+                - /url: /tools/size-guide/
+            - listitem [ref=e345]:
+              - link "Placement picker" [ref=e346] [cursor=pointer]:
+                - /url: /tools/placement-picker/
+            - listitem [ref=e347]:
+              - link "30-second quiz" [ref=e348] [cursor=pointer]:
+                - /url: /tools/quiz/
+            - listitem [ref=e349]:
+              - link "Cover up ideas" [ref=e350] [cursor=pointer]:
+                - /url: /ideas/cover-up-tattoo-ideas/
+        - navigation "Company" [ref=e351]:
+          - heading "Company" [level=2] [ref=e352]
+          - list [ref=e353]:
+            - listitem [ref=e354]:
+              - link "About us" [ref=e355] [cursor=pointer]:
+                - /url: /about/
+            - listitem [ref=e356]:
+              - link "Contact" [ref=e357] [cursor=pointer]:
+                - /url: /contact/
+            - listitem [ref=e358]:
+              - link "Editorial standards" [ref=e359] [cursor=pointer]:
+                - /url: /editorial-standards/
+            - listitem [ref=e360]:
+              - link "Privacy policy" [ref=e361] [cursor=pointer]:
+                - /url: /privacy/
+            - listitem [ref=e362]:
+              - link "Terms of use" [ref=e363] [cursor=pointer]:
+                - /url: /terms/
+            - listitem [ref=e364]:
+              - link "Sitemap" [ref=e365] [cursor=pointer]:
+                - /url: /sitemap/
+      - generic [ref=e366]:
+        - text: Tattoo Designs Co
+        - paragraph [ref=e367]: Real ideas. Real ink. Real you.
+        - list [ref=e368]:
+          - listitem [ref=e369]:
+            - link "Instagram" [ref=e370] [cursor=pointer]:
+              - /url: https://instagram.com/
+          - listitem [ref=e375]:
+            - link "Pinterest" [ref=e376] [cursor=pointer]:
+              - /url: https://pinterest.com/
+          - listitem [ref=e380]:
+            - link "TikTok" [ref=e381] [cursor=pointer]:
+              - /url: https://tiktok.com/
+          - listitem [ref=e385]:
+            - link "YouTube" [ref=e386] [cursor=pointer]:
+              - /url: https://youtube.com/
+    - generic [ref=e390]:
+      - paragraph [ref=e391]: © 2026 TattooDesignsCo. All rights reserved.
+      - paragraph [ref=e392]: Ideas and reference images only. For anything about healing, skin reactions or removal, ask your artist or a doctor.

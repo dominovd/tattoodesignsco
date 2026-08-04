@@ -1,0 +1,21 @@
+---
+import AxisHub from '@components/AxisHub.astro';
+import axes from '@data/axes.json';
+
+/**
+ * Японский стиль (12,5K, AIO 52%) и трайбл (10,6K, AIO 44%) исключены:
+ * PROJECT.md §2 - «значение и объяснение стиля» Google отвечает сам.
+ */
+---
+
+<AxisHub
+  title="Tattoo styles compared | TattooDesignsCo"
+  h1="Tattoo styles"
+  description="Compare tattoo styles - fine line, minimalist, traditional, blackwork, realism and watercolour."
+  base="/style/"
+  answer={[
+    'See how the same idea changes with line weight, shading and level of detail.',
+    'Style decides how well a design holds up at small sizes.',
+  ]}
+  children_={axes.styles}
+/>

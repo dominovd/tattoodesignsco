@@ -1,0 +1,135 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Picture from '@components/Picture.astro';
+
+/**
+ * Гид по размерам - DESIGN.md §7: «как выглядят 3, 5, 10 см на разных зонах».
+ * Показываем на реальном теле, а не кружками: абстрактный круг не отвечает
+ * на вопрос «много это или мало».
+ */
+const rows = [
+  {
+    area: 'Forearm',
+    slug: 'forearm',
+    sizes: [
+      { cm: '3 cm', image: 'tools/size-3cm' },
+      { cm: '5 cm', image: 'tools/size-5cm' },
+      { cm: '10 cm', image: 'tools/size-10cm' },
+    ],
+  },
+  {
+    area: 'Wrist',
+    slug: 'wrist',
+    sizes: [
+      { cm: '3 cm', image: 'tools/wrist-3cm' },
+      { cm: '5 cm', image: 'tools/wrist-5cm' },
+      { cm: '10 cm', image: 'tools/wrist-10cm' },
+    ],
+  },
+  {
+    area: 'Upper arm',
+    slug: 'shoulder',
+    sizes: [
+      { cm: '5 cm', image: 'tools/arm-5cm' },
+      { cm: '10 cm', image: 'tools/arm-10cm' },
+      { cm: '15 cm', image: 'tools/arm-15cm' },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="Tattoo size guide - 3, 5 and 10 cm on the body | TattooDesignsCo"
+  description="See what 3, 5 and 10 cm tattoos actually look like on the forearm, wrist and upper arm."
+  path="/tools/size-guide/"
+  crumbs={[
+    { label: 'Home', href: '/' },
+    { label: 'Tools', href: '/tools/' },
+    { label: 'Size guide', href: '/tools/size-guide/' },
+  ]}
+>
+  <section class="container top">
+    <h1>Tattoo size guide</h1>
+    <div class="lead">
+      <p>Centimetres mean nothing until you see them on skin.</p>
+      <p>The same design at 3 and 10 cm is not the same tattoo.</p>
+    </div>
+  </section>
+
+  {
+    rows.map((row) => (
+      <section class="section container" aria-label={`${row.area} sizes`}>
+        <div class="section-head">
+          <h2>{row.area}</h2>
+          <a class="more" href={`/placement/${row.slug}/`}>
+            {row.area} ideas
+          </a>
+        </div>
+
+        <ul class="row">
+          {row.sizes.map((s) => (
+            <li>
+              <span class="small muted cm">{s.cm}</span>
+              <Picture
+                src={s.image}
+                alt={`A ${s.cm} tattoo on a ${row.area.toLowerCase()}`}
+                ratio="2 / 3"
+                sizes="(min-width: 960px) 240px, 30vw"
+              />
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+
+  <section class="section container prose">
+    <h2>Compare sizes at a normal viewing distance</h2>
+    <p>
+      A phone screen enlarges a small tattoo and hides the relationship between
+      the design and the body. Measure or print a rectangle at 3, 5 and 10 cm,
+      place it on the intended area and step back. Check the result with the arm
+      or torso relaxed rather than turned toward a mirror.
+    </p>
+    <p>
+      The same dimensions feel different on a wrist, forearm and upper arm.
+      Available width matters as much as height. A narrow vertical design may
+      fit at 10 cm on the forearm, while a round subject needs more width to keep
+      the same detail.
+    </p>
+
+    <h2>Reduce detail before reducing the outline</h2>
+    <p>
+      When a reference is too complex for the chosen size, identify the outer
+      shape and the one feature that makes the subject recognisable. Remove
+      secondary texture before shrinking everything. Bring the measurement and
+      the simplified reference to the artist, who can set the final stencil for
+      your anatomy.
+    </p>
+    <p>
+      Keep the original measurement in the brief, but expect the stencil to move
+      slightly after it is placed on the body. A small adjustment can align the
+      composition with the arm or avoid a crease without changing the overall
+      scale you selected.
+    </p>
+  </section>
+</BaseLayout>
+
+<style>
+  .top { padding-top: 24px; }
+  .top .lead { margin-top: 10px; }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 760px;
+  }
+
+  .row li { display: grid; gap: 6px; }
+  .cm { text-align: center; }
+  .row :global(.pic) { border-radius: var(--radius-sm); }
+</style>

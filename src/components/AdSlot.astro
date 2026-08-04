@@ -1,0 +1,41 @@
+---
+/**
+ * Место под рекламу резервируется на этапе вёрстки - DESIGN.md §10.
+ * Слот занимает высоту всегда, даже когда скрипт не загружен: иначе при
+ * подключении AdSense поедет CLS, а в нише с 20 изображениями на странице
+ * запаса по Core Web Vitals нет.
+ *
+ * Правило размещения: первый блок не раньше, чем после 8-го изображения,
+ * дальше - только между рядами галереи. Интерстишлов нет.
+ */
+interface Props {
+  id: string;
+  /** Зарезервированная высота, px. Должна совпадать с размером юнита. */
+  height?: number;
+  label?: string;
+}
+
+const { id, height = 100, label = 'Advertisement' } = Astro.props;
+---
+
+<aside
+  class="ad"
+  data-ad-slot={id}
+  style={`--ad-h: ${height}px`}
+  aria-label={label}
+>
+  <span class="small muted">{label}</span>
+</aside>
+
+<style>
+  .ad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: var(--ad-h);
+    margin-top: 24px;
+    border: 1px dashed var(--line-strong);
+    border-radius: var(--radius);
+    background: var(--bg-elevated);
+  }
+</style>

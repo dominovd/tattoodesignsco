@@ -1,0 +1,283 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "TattooDesignsCo home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e12]: Tattoo Designs Co
+      - navigation "Main" [ref=e13]:
+        - link "Ideas" [ref=e14] [cursor=pointer]:
+          - /url: /ideas/
+        - link "Placement" [ref=e15] [cursor=pointer]:
+          - /url: /placement/
+        - link "Subjects" [ref=e16] [cursor=pointer]:
+          - /url: /subject/
+        - link "Styles" [ref=e17] [cursor=pointer]:
+          - /url: /style/
+        - link "Sizes" [ref=e18] [cursor=pointer]:
+          - /url: /size/
+        - link "Tools" [ref=e19] [cursor=pointer]:
+          - /url: /tools/
+      - link "Saved" [ref=e20] [cursor=pointer]:
+        - /url: /saved/
+  - navigation "Breadcrumb" [ref=e21]:
+    - list [ref=e22]:
+      - listitem [ref=e23]:
+        - link "Home" [ref=e24] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=e25]:
+        - text: /
+        - link "Chest tattoo ideas for guys" [ref=e26] [cursor=pointer]:
+          - /url: /ideas/chest-tattoo-ideas-for-guys/
+      - listitem [ref=e27]: / Spread wing eagle chest tattoo
+  - main [ref=e28]:
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - img "A broad bird and layered wings follow the upper pectoral line." [ref=e33]
+          - button "View larger" [ref=e34] [cursor=pointer]
+          - list [ref=e38]:
+            - listitem [ref=e39]:
+              - img "Spread wing eagle chest tattoo - line detail" [ref=e41]
+              - generic [ref=e42]: Line detail
+            - listitem [ref=e43]:
+              - img "Spread wing eagle chest tattoo - full placement" [ref=e45]
+              - generic [ref=e46]: Full placement
+        - navigation "Ideas in this collection" [ref=e47]:
+          - link "Next idea →" [ref=e48] [cursor=pointer]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/compass-sternum-chest/
+      - generic [ref=e49]:
+        - paragraph [ref=e50]: "Chest idea #01"
+        - heading "Spread wing eagle chest tattoo chest tattoo" [level=1] [ref=e51]
+        - paragraph [ref=e52]: A broad bird and layered wings follow the upper pectoral line.
+        - generic [ref=e53]:
+          - button "Save idea" [ref=e54] [cursor=pointer]
+          - link "Pin" [ref=e58] [cursor=pointer]:
+            - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fchest-tattoo-ideas-for-guys%2Fspread-wing-eagle-chest%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fchest-tattoo-ideas-for-guys%2F01-1200.webp&description=Spread%20wing%20eagle%20chest%20tattoo
+          - button "Share" [ref=e63] [cursor=pointer]
+        - table [ref=e67]:
+          - rowgroup [ref=e68]:
+            - row [ref=e69]:
+              - rowheader "Placement" [ref=e70]
+              - cell "Upper chest" [ref=e71]
+            - row [ref=e72]:
+              - rowheader "Size" [ref=e73]
+              - cell "~28 cm" [ref=e74]
+            - row [ref=e75]:
+              - rowheader "Style" [ref=e76]
+              - cell "Neo-traditional" [ref=e77]
+            - row [ref=e78]:
+              - rowheader "Color" [ref=e79]
+              - cell "Black, brown and red" [ref=e80]
+        - paragraph [ref=e81]: Timing and price vary by artist and location.
+        - generic [ref=e82]:
+          - heading "Copy a brief for your artist" [level=2] [ref=e83]
+          - generic [ref=e84]: Description for your artist
+          - textbox "Description for your artist" [ref=e85]: neo-traditional spread wing eagle chest tattoo, ~28 cm, upper chest, black, brown and red
+          - button "Copy description" [ref=e86] [cursor=pointer]
+          - paragraph [ref=e88]: Use this as a reference. Ask your artist to adapt the composition to your anatomy rather than copying it exactly.
+    - region [ref=e89]:
+      - generic [ref=e90]:
+        - generic [ref=e91]:
+          - heading "Make this idea your own" [level=2] [ref=e92]
+          - list [ref=e93]:
+            - listitem [ref=e94]:
+              - generic [ref=e98]: Smaller · 8 cm
+            - listitem [ref=e99]:
+              - generic [ref=e103]: Outer chest
+            - listitem [ref=e104]:
+              - generic [ref=e107]: More shading
+            - listitem [ref=e108]:
+              - generic [ref=e112]: Simplify the detail
+        - generic [ref=e113]:
+          - generic [ref=e114]:
+            - img "Anatomical body map shown from the front and back" [ref=e117]
+            - generic [ref=e118]:
+              - generic [ref=e119]: Front
+              - generic [ref=e120]: Back
+            - paragraph [ref=e121]: Selected placement
+          - link "Open size guide" [ref=e123] [cursor=pointer]:
+            - /url: /tools/size-guide/
+    - generic [ref=e124]:
+      - generic [ref=e125]:
+        - heading "Why this design works on the chest" [level=2] [ref=e126]
+        - list [ref=e127]:
+          - listitem [ref=e128]: The composition follows the length of the chest.
+          - listitem [ref=e129]: Open space between elements keeps fine lines readable.
+          - listitem [ref=e130]: The design stops short of the joint, where skin moves most.
+      - generic [ref=e131]:
+        - heading "Ask your artist" [level=2] [ref=e132]
+        - list [ref=e133]:
+          - listitem [ref=e134]:
+            - generic [ref=e137]: Is 28 cm enough for this level of detail?
+          - listitem [ref=e138]:
+            - generic [ref=e141]: Where should the design stop above the joint?
+          - listitem [ref=e142]:
+            - generic [ref=e145]: How much shading suits my skin and placement?
+    - complementary "Advertisement" [ref=e147]
+    - region [ref=e149]:
+      - heading "Similar chest tattoo ideas" [level=2] [ref=e151]
+      - generic [ref=e152]:
+        - article [ref=e153]:
+          - link [ref=e154] [cursor=pointer]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/compass-sternum-chest/
+            - img "Compass chest tattoo" [ref=e156]
+          - button "Save Compass chest tattoo" [ref=e157] [cursor=pointer]
+          - paragraph [ref=e160]:
+            - link "Compass chest tattoo" [ref=e161] [cursor=pointer]:
+              - /url: /ideas/chest-tattoo-ideas-for-guys/compass-sternum-chest/
+            - text: · 15 cm
+        - article [ref=e162]:
+          - link [ref=e163] [cursor=pointer]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/raven-sun-chest/
+            - img "Raven sun chest tattoo" [ref=e165]
+          - button "Save Raven sun chest tattoo" [ref=e166] [cursor=pointer]
+          - paragraph [ref=e169]:
+            - link "Raven sun chest tattoo" [ref=e170] [cursor=pointer]:
+              - /url: /ideas/chest-tattoo-ideas-for-guys/raven-sun-chest/
+            - text: · 30 cm
+        - article [ref=e171]:
+          - link [ref=e172] [cursor=pointer]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/clipper-ship-pectoral/
+            - img "Clipper ship chest tattoo" [ref=e174]
+          - button "Save Clipper ship chest tattoo" [ref=e175] [cursor=pointer]
+          - paragraph [ref=e178]:
+            - link "Clipper ship chest tattoo" [ref=e179] [cursor=pointer]:
+              - /url: /ideas/chest-tattoo-ideas-for-guys/clipper-ship-pectoral/
+            - text: · 19 cm
+        - article [ref=e180]:
+          - link [ref=e181] [cursor=pointer]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/bear-oak-right-pectoral/
+            - img "Bear chest tattoo" [ref=e183]
+          - button "Save Bear chest tattoo" [ref=e184] [cursor=pointer]
+          - paragraph [ref=e187]:
+            - link "Bear chest tattoo" [ref=e188] [cursor=pointer]:
+              - /url: /ideas/chest-tattoo-ideas-for-guys/bear-oak-right-pectoral/
+            - text: · 20 cm
+        - article [ref=e189]:
+          - link [ref=e190] [cursor=pointer]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/realistic-lion-pectoral/
+            - img "Lion chest tattoo" [ref=e192]
+          - button "Save Lion chest tattoo" [ref=e193] [cursor=pointer]
+          - paragraph [ref=e196]:
+            - link "Lion chest tattoo" [ref=e197] [cursor=pointer]:
+              - /url: /ideas/chest-tattoo-ideas-for-guys/realistic-lion-pectoral/
+            - text: · 21 cm
+        - article [ref=e198]:
+          - link [ref=e199] [cursor=pointer]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/tiger-peony-chest/
+            - img "Tiger and peony chest tattoo" [ref=e201]
+          - button "Save Tiger and peony chest tattoo" [ref=e202] [cursor=pointer]
+          - paragraph [ref=e205]:
+            - link "Tiger and peony chest tattoo" [ref=e206] [cursor=pointer]:
+              - /url: /ideas/chest-tattoo-ideas-for-guys/tiger-peony-chest/
+            - text: · 24 cm
+        - article [ref=e207]:
+          - link [ref=e208] [cursor=pointer]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/ornamental-wings-chest/
+            - img "Ornamental wing chest tattoo" [ref=e210]
+          - button "Save Ornamental wing chest tattoo" [ref=e211] [cursor=pointer]
+          - paragraph [ref=e214]:
+            - link "Ornamental wing chest tattoo" [ref=e215] [cursor=pointer]:
+              - /url: /ideas/chest-tattoo-ideas-for-guys/ornamental-wings-chest/
+            - text: · 24 cm
+        - article [ref=e216]:
+          - link [ref=e217] [cursor=pointer]:
+            - /url: /ideas/chest-tattoo-ideas-for-guys/geometric-wolf-chest/
+            - img "Geometric wolf chest tattoo" [ref=e219]
+          - button "Save Geometric wolf chest tattoo" [ref=e220] [cursor=pointer]
+          - paragraph [ref=e223]:
+            - link "Geometric wolf chest tattoo" [ref=e224] [cursor=pointer]:
+              - /url: /ideas/chest-tattoo-ideas-for-guys/geometric-wolf-chest/
+            - text: · 24 cm
+    - navigation "Collection navigation" [ref=e225]:
+      - link "← Back to all chest ideas" [ref=e226] [cursor=pointer]:
+        - /url: /ideas/chest-tattoo-ideas-for-guys/
+      - 'link "Next idea: compass chest tattoo →" [ref=e227] [cursor=pointer]':
+        - /url: /ideas/chest-tattoo-ideas-for-guys/compass-sternum-chest/
+    - region [ref=e228]:
+      - heading "About this tattoo idea" [level=2] [ref=e230]
+      - generic [ref=e231]:
+        - group [ref=e232]:
+          - generic "Can this design be made smaller?" [ref=e233] [cursor=pointer]
+        - group [ref=e236]:
+          - generic "Will fine lines work on the chest?" [ref=e237] [cursor=pointer]
+        - group [ref=e240]:
+          - generic "Can the shading be removed?" [ref=e241] [cursor=pointer]
+  - contentinfo [ref=e244]:
+    - generic [ref=e245]:
+      - generic [ref=e246]:
+        - navigation "Explore" [ref=e247]:
+          - heading "Explore" [level=2] [ref=e248]
+          - list [ref=e249]:
+            - listitem [ref=e250]:
+              - link "Ideas" [ref=e251] [cursor=pointer]:
+                - /url: /ideas/
+            - listitem [ref=e252]:
+              - link "Placement" [ref=e253] [cursor=pointer]:
+                - /url: /placement/
+            - listitem [ref=e254]:
+              - link "Subjects" [ref=e255] [cursor=pointer]:
+                - /url: /subject/
+            - listitem [ref=e256]:
+              - link "Styles" [ref=e257] [cursor=pointer]:
+                - /url: /style/
+            - listitem [ref=e258]:
+              - link "Sizes" [ref=e259] [cursor=pointer]:
+                - /url: /size/
+        - navigation "Resources" [ref=e260]:
+          - heading "Resources" [level=2] [ref=e261]
+          - list [ref=e262]:
+            - listitem [ref=e263]:
+              - link "Tattoo size guide" [ref=e264] [cursor=pointer]:
+                - /url: /tools/size-guide/
+            - listitem [ref=e265]:
+              - link "Placement picker" [ref=e266] [cursor=pointer]:
+                - /url: /tools/placement-picker/
+            - listitem [ref=e267]:
+              - link "30-second quiz" [ref=e268] [cursor=pointer]:
+                - /url: /tools/quiz/
+            - listitem [ref=e269]:
+              - link "Cover up ideas" [ref=e270] [cursor=pointer]:
+                - /url: /ideas/cover-up-tattoo-ideas/
+        - navigation "Company" [ref=e271]:
+          - heading "Company" [level=2] [ref=e272]
+          - list [ref=e273]:
+            - listitem [ref=e274]:
+              - link "About us" [ref=e275] [cursor=pointer]:
+                - /url: /about/
+            - listitem [ref=e276]:
+              - link "Contact" [ref=e277] [cursor=pointer]:
+                - /url: /contact/
+            - listitem [ref=e278]:
+              - link "Editorial standards" [ref=e279] [cursor=pointer]:
+                - /url: /editorial-standards/
+            - listitem [ref=e280]:
+              - link "Privacy policy" [ref=e281] [cursor=pointer]:
+                - /url: /privacy/
+            - listitem [ref=e282]:
+              - link "Terms of use" [ref=e283] [cursor=pointer]:
+                - /url: /terms/
+            - listitem [ref=e284]:
+              - link "Sitemap" [ref=e285] [cursor=pointer]:
+                - /url: /sitemap/
+      - generic [ref=e286]:
+        - text: Tattoo Designs Co
+        - paragraph [ref=e287]: Real ideas. Real ink. Real you.
+        - list [ref=e288]:
+          - listitem [ref=e289]:
+            - link "Instagram" [ref=e290] [cursor=pointer]:
+              - /url: https://instagram.com/
+          - listitem [ref=e295]:
+            - link "Pinterest" [ref=e296] [cursor=pointer]:
+              - /url: https://pinterest.com/
+          - listitem [ref=e300]:
+            - link "TikTok" [ref=e301] [cursor=pointer]:
+              - /url: https://tiktok.com/
+          - listitem [ref=e305]:
+            - link "YouTube" [ref=e306] [cursor=pointer]:
+              - /url: https://youtube.com/
+    - generic [ref=e310]:
+      - paragraph [ref=e311]: © 2026 TattooDesignsCo. All rights reserved.
+      - paragraph [ref=e312]: Ideas and reference images only. For anything about healing, skin reactions or removal, ask your artist or a doctor.

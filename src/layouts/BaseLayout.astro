@@ -1,0 +1,149 @@
+---
+import '../styles/global.css';
+import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
+import site from '@data/site.json';
+
+interface Crumb {
+  label: string;
+  href: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  /** Канонический путь, напр. "/placement/forearm/" */
+  path?: string;
+  crumbs?: Crumb[];
+  noindex?: boolean;
+  /** Первое изображение страницы для preload - DESIGN.md §9 */
+  preloadImage?: string;
+}
+
+const {
+  title,
+  description,
+  path = Astro.url.pathname,
+  crumbs = [],
+  noindex = false,
+  preloadImage,
+} = Astro.props;
+
+const canonical = new URL(path, site.url).href;
+
+const breadcrumbLd =
+  crumbs.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: crumbs.map((c, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: c.label,
+          item: new URL(c.href, site.url).href,
+        })),
+      }
+    : null;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#111111" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    {/* Только первое изображение - остальное ленивое, DESIGN.md §4 */}
+    {preloadImage && <link rel="preload" as="image" href={preloadImage} fetchpriority="high" />}
+
+    {breadcrumbLd && <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />}
+
+    <slot name="head" />
+  </head>
+
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <Header />
+
+    {
+      crumbs.length > 0 && (
+        <nav class="crumbs container" aria-label="Breadcrumb">
+          <ol>
+            {crumbs.map((c, i) => (
+              <li>
+                {i < crumbs.length - 1 ? <a href={c.href}>{c.label}</a> : <span>{c.label}</span>}
+              </li>
+            ))}
+          </ol>
+        </nav>
+      )
+    }
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <Footer />
+
+    <script>
+      // Импорт вместо is:inline: Astro бандлит и минифицирует файл,
+      // поэтому комментарии из исходника в продакшен не попадают,
+      // а вес скрипта падает примерно вдвое.
+      import '../scripts/app.js';
+    </script>
+  </body>
+</html>
+
+<style>
+  .skip {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    padding: 12px 16px;
+    background: var(--accent);
+    color: var(--accent-ink);
+    font-weight: 600;
+    z-index: 50;
+  }
+
+  .skip:focus { left: 8px; top: 8px; }
+
+  .crumbs {
+    padding-top: 16px;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  .crumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .crumbs li + li::before {
+    content: '/';
+    margin-right: 6px;
+    opacity: 0.5;
+  }
+</style>

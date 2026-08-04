@@ -1,0 +1,37 @@
+---
+import Icon from './Icon.astro';
+
+/**
+ * Каждый чип - настоящий <a href> на собственный URL.
+ * DESIGN.md §6: комбинация, живущая только как состояние JS-фильтра, для
+ * Google не существует. Мгновенная клиентская фильтрация может лежать
+ * поверх, но ссылка обязана быть в разметке.
+ */
+interface Item {
+  label: string;
+  href: string;
+}
+
+interface Props {
+  items: Item[];
+  label?: string;
+}
+
+const { items, label = 'Filter ideas' } = Astro.props;
+const path = Astro.url.pathname;
+---
+
+<nav class="chips" aria-label={label}>
+  {
+    items.map((item) => (
+      <a
+        class="chip"
+        href={item.href}
+        aria-current={path === item.href ? 'page' : undefined}
+      >
+        {item.label}
+        <Icon name="chevron" size={14} class="chev" />
+      </a>
+    ))
+  }
+</nav>

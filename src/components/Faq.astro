@@ -1,0 +1,104 @@
+---
+/**
+ * <details>/<summary>: работает без JS, текст ответов всегда в DOM -
+ * иначе FAQPage-разметка расходится с содержимым страницы.
+ */
+interface Item {
+  q: string;
+  a: string;
+}
+
+interface Props {
+  items: Item[];
+  title?: string;
+  /** Выводить JSON-LD FAQPage. На странице должен быть ровно один. */
+  schema?: boolean;
+}
+
+const { items, title = 'Tattoo ideas FAQ', schema = true } = Astro.props;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: items.map((i) => ({
+    '@type': 'Question',
+    name: i.q,
+    acceptedAnswer: { '@type': 'Answer', text: i.a },
+  })),
+};
+---
+
+<section class="section container" aria-labelledby="faq-head">
+  <div class="section-head">
+    <h2 id="faq-head">{title}</h2>
+  </div>
+
+  <div class="faq">
+    {
+      items.map((item) => (
+        <details class="item">
+          <summary>
+            <span>{item.q}</span>
+            <span class="sign" aria-hidden="true" />
+          </summary>
+          <p class="answer muted">{item.a}</p>
+        </details>
+      ))
+    }
+  </div>
+</section>
+
+{schema && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+
+<style>
+  .faq { display: grid; gap: 8px; }
+
+  .item {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+  }
+
+  summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-height: var(--tap);
+    padding: 10px 14px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  summary::-webkit-details-marker { display: none; }
+
+  .sign {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    flex: none;
+    color: var(--text-muted);
+  }
+
+  .sign::before,
+  .sign::after {
+    content: '';
+    position: absolute;
+    inset: 50% 0 auto 0;
+    height: 1.6px;
+    background: currentColor;
+  }
+
+  .sign::after { transform: rotate(90deg); transition: transform 0.15s ease; }
+
+  .item[open] .sign::after { transform: rotate(0deg); }
+  .item[open] summary { color: var(--accent); }
+
+  .answer {
+    padding: 0 14px 14px;
+    font-size: 15px;
+    max-width: 78ch;
+  }
+</style>

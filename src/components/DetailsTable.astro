@@ -1,0 +1,82 @@
+---
+/**
+ * Блок 6 шаблона (PROJECT.md §6) - таблица, не абзацы.
+ *
+ * Отличия от макета, сделанные намеренно (DESIGN.md §11 - никаких утверждений
+ * про здоровье):
+ *   «Moderate · 4-6/10»    → «Commonly described as moderate»
+ *   «Usually 2-4 weeks»    → «Ask your artist»
+ * Шкала боли в баллах и срок заживления - это медицинские утверждения от
+ * лица сайта. Вернуть их можно только со ссылкой на источник.
+ */
+interface Props {
+  title: string;
+  details: Record<string, string>;
+  /** Порядок и состав колонок фиксированы. */
+  keys?: string[];
+}
+
+const {
+  title,
+  details,
+  keys = ['Pain level', 'Typical size', 'Session time', 'Typical price', 'Healing'],
+} = Astro.props;
+
+const cells = keys.map((k) => ({ label: k, value: details[k] ?? '-' }));
+---
+
+<section class="section container" aria-labelledby="details-head">
+  <div class="panel wrap">
+    <h2 id="details-head">{title}</h2>
+
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr>{cells.map((c) => <th scope="col">{c.label}</th>)}</tr>
+        </thead>
+        <tbody>
+          <tr>{cells.map((c) => <td>{c.value}</td>)}</tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="small muted disclaimer">
+      Estimates vary by design, location and artist. Ask your artist or a
+      doctor about anything to do with healing or individual health concerns.
+    </p>
+  </div>
+</section>
+
+<style>
+  .wrap { padding: 18px; }
+  h2 { font-size: 19px; margin-bottom: 12px; }
+
+  .scroller {
+    overflow-x: auto;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+  }
+
+  table {
+    width: 100%;
+    min-width: 620px;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 11px 14px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  th {
+    font-weight: 600;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--line);
+  }
+
+  th + th, td + td { border-left: 1px solid var(--line); }
+
+  .disclaimer { margin-top: 10px; max-width: 78ch; }
+</style>

@@ -1,0 +1,21 @@
+---
+import AxisHub from '@components/AxisHub.astro';
+import axes from '@data/axes.json';
+
+/**
+ * Зоны back (47,6K) и foot (15,1K) в списке отсутствуют намеренно: в
+ * tattoo_pagemap.csv все их строки помечены SKIP-high-AIO (PROJECT.md §2).
+ */
+---
+
+<AxisHub
+  title="Tattoo placement guide - every body area | TattooDesignsCo"
+  h1="Tattoo placement"
+  description="Compare tattoo placements by size, visibility and how designs sit on each body area."
+  base="/placement/"
+  answer={[
+    'Compare body areas by how much room they give a design and how easy they are to cover.',
+    'Areas are ordered by how often people look for them.',
+  ]}
+  children_={axes.placements}
+/>

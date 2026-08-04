@@ -1,0 +1,88 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import ToolCards from '@components/ToolCards.astro';
+import Icon from '@components/Icon.astro';
+---
+
+<BaseLayout
+  title="Tattoo tools - placement picker, size guide, quiz | TattooDesignsCo"
+  description="Free tools to choose a tattoo placement, compare real sizes and get a shortlist in 30 seconds."
+  path="/tools/"
+  crumbs={[
+    { label: 'Home', href: '/' },
+    { label: 'Tools', href: '/tools/' },
+  ]}
+>
+  <section class="container top">
+    <h1>Tools</h1>
+    <div class="lead">
+      <p>Three small tools that answer the questions a gallery cannot.</p>
+      <p>Everything runs in your browser - nothing is sent anywhere.</p>
+    </div>
+  </section>
+
+  <ToolCards />
+
+  <section class="section container">
+    <a class="panel panel-accent quiz" href="/tools/quiz/">
+      <Icon name="timer" size={30} class="ic" />
+      <div>
+        <h2>30-second tattoo quiz</h2>
+        <p class="small muted">
+          Answer a few questions about placement, size and style, get a
+          shortlist you can save.
+        </p>
+      </div>
+      <Icon name="chevron" size={18} class="chev" />
+    </a>
+  </section>
+
+  <section class="section container prose">
+    <h2>Use the tools in this order</h2>
+    <p>
+      Start with placement if you already know the amount of visibility and
+      coverage you want. The picker groups body areas by usable shape rather
+      than presenting every tattoo as if it could be moved anywhere unchanged.
+      A long forearm design, a shoulder cap and a small wrist symbol need
+      different compositions.
+    </p>
+    <p>
+      Open the size guide next and compare the reference images at a normal
+      viewing distance. Three centimetres can hold a simple symbol, but not the
+      same internal detail as a ten centimetre design. Use the measurement as a
+      starting point for your artist, not as a fixed specification.
+    </p>
+
+    <h2>What the quiz does</h2>
+    <p>
+      The quiz is useful when you have not chosen a direction. It links each
+      answer to a real placement, size or style page, so the result remains
+      useful without an account. Save several references and note why each one
+      works. The final shortlist should explain shape, scale and treatment
+      rather than ask an artist to copy one image.
+    </p>
+    <p>
+      Your saved list remains on the device you are using. Export or copy the
+      final description before changing browsers or clearing site data. The
+      tools do not submit a booking request and they do not send your choices to
+      a studio.
+    </p>
+  </section>
+</BaseLayout>
+
+<style>
+  .top { padding-top: 24px; }
+  .top .lead { margin-top: 10px; }
+
+  .quiz {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 14px;
+    padding: 20px;
+  }
+
+  .quiz:hover { color: inherit; }
+  .ic, .chev { color: var(--accent); }
+  h2 { font-size: 19px; margin-bottom: 4px; }
+</style>

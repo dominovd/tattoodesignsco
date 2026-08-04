@@ -1,0 +1,89 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import site from '@data/site.json';
+
+const updated = new Date().toLocaleDateString('en-US', {
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric',
+});
+---
+
+<BaseLayout
+  title={`Terms of use | ${site.name}`}
+  description={`The terms that apply when you use ${site.name}.`}
+  path="/terms/"
+  crumbs={[
+    { label: 'Home', href: '/' },
+    { label: 'Terms of use', href: '/terms/' },
+  ]}
+>
+  <section class="container page-top">
+    <h1>Terms of use</h1>
+    <div class="lead">
+      <p>The short version: use the ideas, do not scrape the site.</p>
+      <p>Last updated {updated}.</p>
+    </div>
+  </section>
+
+  <section class="section container prose">
+    <h2>What you can do</h2>
+    <p>
+      Browse, save ideas, copy a brief and show any of it to your tattoo artist.
+      That is what the site is for.
+    </p>
+
+    <h2>What you cannot do</h2>
+    <ul>
+      <li>Scrape or bulk-download the images or the pages.</li>
+      <li>Republish collections as your own.</li>
+      <li>Use the content to train a model without written permission.</li>
+    </ul>
+
+    <h2>Images and copyright</h2>
+    <p>
+      Images belong to their creators or licensors. How they are sourced and
+      credited is set out on the
+      <a href="/editorial-standards/">editorial standards</a> page. If you hold
+      the rights to something published here and did not agree to it, write to
+      <a href={`mailto:${site.email}`}>{site.email}</a> and it comes down.
+    </p>
+
+    <h2>No professional guidance</h2>
+    <p>
+      Everything here is reference material for a conversation with a tattoo
+      artist. Sizes, session times and prices are typical reports, not quotes.
+      Nothing on this site is medical guidance. Questions about healing, skin
+      reactions, allergies or removal belong with your artist or a doctor.
+    </p>
+
+    <h2>Adults</h2>
+    <p>The site is written for adults and is not intended for anyone under 18.</p>
+
+    <h2>Outbound links</h2>
+    <p>
+      We link to studios, artists and shops we do not control, and we are not
+      responsible for what is on the other end.
+    </p>
+
+    <h2>Availability and accuracy</h2>
+    <p>
+      We try to keep page labels, dimensions and credits accurate, but reference
+      material can contain errors. The site may change or become temporarily
+      unavailable without notice. Verify dimensions, placement and feasibility
+      with the artist who will draw and apply the tattoo.
+    </p>
+
+    <h2>Reporting a problem</h2>
+    <p>
+      Send copyright, consent and factual correction requests to
+      <a href={`mailto:${site.email}`}>{site.email}</a>. Include the page address,
+      the specific image or text and enough information for us to review the
+      request. Removing disputed material while it is checked does not confirm
+      or deny ownership.
+    </p>
+
+    <h2>Changes</h2>
+    <p>These terms can change. The date at the top is when they last did.</p>
+  </section>
+</BaseLayout>

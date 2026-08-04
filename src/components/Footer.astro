@@ -1,0 +1,148 @@
+---
+import site from '@data/site.json';
+import Icon from './Icon.astro';
+---
+
+<footer class="site-footer">
+  <div class="container inner">
+    <div class="cols">
+      {
+        site.footer.map((col) => (
+          <nav aria-label={col.title}>
+            <h2 class="col-title">{col.title}</h2>
+            <ul>
+              {col.links.map((l) => (
+                <li>
+                  <a href={l.href}>{l.label}</a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        ))
+      }
+    </div>
+
+    <div class="brandbox">
+      <span class="brand">{site.brandDisplay ?? site.name}</span>
+      <p class="small muted tagline">{site.footerTagline}</p>
+      <ul class="social">
+        {
+          site.social.map((s) => (
+            <li>
+              <a href={s.href} rel="me noopener" target="_blank" aria-label={s.label}>
+                <Icon name={s.icon} size={20} />
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+
+  <div class="container bottom">
+    <p class="small muted">
+      © {new Date().getFullYear()} {site.name}. All rights reserved.
+    </p>
+    <p class="small muted note">
+      Ideas and reference images only. For anything about healing, skin
+      reactions or removal, ask your artist or a doctor.
+    </p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-top: 64px;
+    border-top: 1px solid var(--line);
+    background: var(--bg-elevated);
+    padding-block: 32px 40px;
+  }
+
+  .inner {
+    display: grid;
+    gap: 32px;
+  }
+
+  .cols {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .col-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cols a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 36px;
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+
+  .cols a:hover { color: var(--text); }
+
+  .brand {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .social {
+    display: flex;
+    gap: 6px;
+    margin-top: 12px;
+  }
+
+  .social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--tap);
+    height: var(--tap);
+    border-radius: var(--radius-sm);
+    color: var(--text-muted);
+  }
+
+  .social a:hover {
+    color: var(--accent);
+    background: var(--card);
+  }
+
+  .tagline { margin-top: 4px; }
+
+  .bottom {
+    display: grid;
+    gap: 6px;
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+  }
+
+  .note { max-width: 76ch; }
+
+  @media (min-width: 720px) {
+    .cols { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+  }
+
+  @media (min-width: 960px) {
+    .inner {
+      grid-template-columns: 240px 1fr;
+      align-items: start;
+      gap: 48px;
+    }
+    .brandbox { order: -1; }
+  }
+</style>

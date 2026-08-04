@@ -1,0 +1,32 @@
+---
+import Icon from './Icon.astro';
+import axes from '@data/axes.json';
+
+/**
+ * Ряд зон отсортирован по объёму оси из PROJECT.md §3, а не по алфавиту и не
+ * на глаз: главная - самая сильная страница сайта, порядок ссылок с неё это
+ * распределение веса.
+ *
+ * Зоны back (47,6K) и foot (15,1K) в списке отсутствуют намеренно: в
+ * tattoo_pagemap.csv все их строки помечены SKIP-high-AIO.
+ */
+const { placements } = axes;
+---
+
+<section class="section container" aria-labelledby="placement-head">
+  <div class="section-head">
+    <h2 id="placement-head">Explore by placement</h2>
+    <a class="more" href="/placement/">All areas</a>
+  </div>
+
+  <nav class="chips" aria-label="Tattoo placements">
+    {
+      placements.map((p) => (
+        <a class="chip" href={`/placement/${p.slug}/`}>
+          {p.label}
+          <Icon name="chevron" size={14} class="chev" />
+        </a>
+      ))
+    }
+  </nav>
+</section>

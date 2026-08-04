@@ -1,0 +1,125 @@
+---
+import BodyDiagram from './BodyDiagram.astro';
+import Picture from './Picture.astro';
+
+/**
+ * Два инструмента из PROJECT.md §9 - то, чего нет у галерей и соцсетей.
+ * Гид по размерам показывает 3/5/10 см на реальном предплечье: абстрактные
+ * кружки не отвечают на вопрос «много это или мало» (DESIGN.md §7).
+ */
+const sizes = [
+  { cm: '3 cm', image: 'tools/size-3cm', alt: 'A 3 cm butterfly tattoo on a forearm' },
+  { cm: '5 cm', image: 'tools/size-5cm', alt: 'A 5 cm butterfly tattoo on a forearm' },
+  { cm: '10 cm', image: 'tools/size-10cm', alt: 'A 10 cm butterfly tattoo on a forearm' },
+];
+---
+
+<section class="section container" aria-label="Tools">
+  <div class="panel tools">
+    <div class="tool placement-tool">
+      <div class="copy">
+        <h2>Find the right placement</h2>
+        <p class="small muted">
+          Compare body areas by size, visibility at work and how the area is
+          usually described.
+        </p>
+        <a class="btn btn-primary" href="/tools/placement-picker/">
+          Open placement picker
+        </a>
+      </div>
+      <BodyDiagram selected={['forearm', 'shoulder']} class="fig" />
+    </div>
+
+    <div class="tool size-tool">
+      <div class="copy">
+        <h2>See how tattoo sizes look</h2>
+        <p class="small muted">
+          Compare sizes on a real forearm so you can choose with confidence.
+        </p>
+        <a class="btn btn-primary" href="/tools/size-guide/">Open size guide</a>
+      </div>
+
+      <ul class="sizes">
+        {
+          sizes.map((s) => (
+            <li>
+              <span class="small muted cm">{s.cm}</span>
+              <Picture
+                src={s.image}
+                alt={s.alt}
+                ratio="2 / 3"
+                sizes="(min-width: 1100px) 72px, 26vw"
+              />
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+  .tools {
+    display: grid;
+    gap: 22px;
+    padding: 22px;
+  }
+
+  .tool {
+    display: grid;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .tool :global(.fig) {
+    width: min(100%, 240px);
+    justify-self: center;
+  }
+
+  .tool + .tool {
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+  }
+
+  .copy { display: grid; gap: 8px; justify-items: start; }
+  .copy .btn { margin-top: 4px; }
+
+  .sizes {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sizes li { display: grid; gap: 4px; }
+  .cm { text-align: center; }
+
+  .sizes :global(.pic) { border-radius: var(--radius-sm); }
+
+  @media (min-width: 620px) {
+    .tool { grid-template-columns: minmax(0, 1fr) 240px; }
+    .tool :global(.fig) { width: 220px; justify-self: center; }
+    .sizes { width: 240px; }
+  }
+
+  @media (min-width: 1100px) {
+    .tools { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+    .tool {
+      grid-template-columns: minmax(0, 1fr) 210px;
+      gap: 18px;
+    }
+
+    .tool + .tool {
+      padding-top: 0;
+      padding-left: 22px;
+      border-top: 0;
+      border-left: 1px solid var(--line);
+    }
+
+    .tool :global(.fig) { width: 200px; }
+    .sizes { width: 210px; gap: 8px; }
+  }
+</style>

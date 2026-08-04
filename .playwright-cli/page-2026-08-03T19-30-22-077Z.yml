@@ -1,0 +1,534 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "TattooDesignsCo home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e12]: Tattoo Designs Co
+      - navigation "Main" [ref=e13]:
+        - link "Ideas" [ref=e14] [cursor=pointer]:
+          - /url: /ideas/
+        - link "Placement" [ref=e15] [cursor=pointer]:
+          - /url: /placement/
+        - link "Subjects" [ref=e16] [cursor=pointer]:
+          - /url: /subject/
+        - link "Styles" [ref=e17] [cursor=pointer]:
+          - /url: /style/
+        - link "Sizes" [ref=e18] [cursor=pointer]:
+          - /url: /size/
+        - link "Tools" [ref=e19] [cursor=pointer]:
+          - /url: /tools/
+      - link "Saved" [ref=e20] [cursor=pointer]:
+        - /url: /saved/
+  - navigation "Breadcrumb" [ref=e21]:
+    - list [ref=e22]:
+      - listitem [ref=e23]:
+        - link "Home" [ref=e24] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=e25]:
+        - text: /
+        - link "Ideas" [ref=e26] [cursor=pointer]:
+          - /url: /ideas/
+      - listitem [ref=e27]: / Fine line tattoo ideas
+  - main [ref=e28]:
+    - generic [ref=e29]:
+      - heading "Fine line tattoo ideas" [level=1] [ref=e30]
+      - generic [ref=e31]:
+        - paragraph [ref=e32]: Single-needle and fine line work - what holds up at small sizes and what closes up over time.
+        - paragraph [ref=e33]: "Line weight matters more than subject: give detail room or simplify it."
+      - paragraph [ref=e34]: Updated August 2026 · 24 ideas
+    - region "Ideas" [ref=e35]:
+      - generic [ref=e36]:
+        - navigation "Narrow these ideas" [ref=e37]:
+          - link "Men" [ref=e38] [cursor=pointer]:
+            - /url: /for/men/
+          - link "Women" [ref=e41] [cursor=pointer]:
+            - /url: /for/women/
+          - link "Couples" [ref=e44] [cursor=pointer]:
+            - /url: /for/couples/
+          - link "Small" [ref=e47] [cursor=pointer]:
+            - /url: /size/small/
+          - link "Forearm" [ref=e50] [cursor=pointer]:
+            - /url: /placement/forearm/
+          - link "Fine line" [ref=e53] [cursor=pointer]:
+            - /url: /style/fine-line/
+          - link "Traditional" [ref=e56] [cursor=pointer]:
+            - /url: /style/traditional/
+        - paragraph [ref=e59]:
+          - generic [ref=e62]: 0 saved
+      - generic [ref=e64]:
+        - heading "24 fine line tattoo ideas" [level=2] [ref=e65]
+        - paragraph [ref=e66]: Tap any idea to view details.
+      - generic [ref=e67]:
+        - figure "Inner forearm · 8 cm · Fine line dotwork · Black" [ref=e68]:
+          - link [ref=e69]:
+            - /url: /ideas/fine-line-tattoo-ideas/fine-line-monarch-forearm/
+            - img "Fine-line butterfly tattoo - An open-wing monarch uses clear cells and restrained dot shading." [ref=e71]
+          - generic [ref=e72]:
+            - 'button "Save: Fine-line butterfly tattoo - An open-wing monarch uses clear cells and restrained dot shading." [ref=e73] [cursor=pointer]'
+            - 'link "Pin: Fine-line butterfly tattoo - An open-wing monarch uses clear cells and restrained dot shading." [ref=e76] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F01-1200.webp&description=Fine-line%20butterfly%20tattoo%20-%20An%20open-wing%20monarch%20uses%20clear%20cells%20and%20restrained%20dot%20shading.
+        - figure "Outer ankle · 7 cm · Botanical fine line · Black" [ref=e81]:
+          - link [ref=e82]:
+            - /url: /ideas/fine-line-tattoo-ideas/lavender-ankle-fine-line/
+            - img "Fine-line lavender tattoo - A single lavender sprig keeps each leaf and flower clearly separated." [ref=e84]
+          - generic [ref=e85]:
+            - 'button "Save: Fine-line lavender tattoo - A single lavender sprig keeps each leaf and flower clearly separated." [ref=e86] [cursor=pointer]'
+            - 'link "Pin: Fine-line lavender tattoo - A single lavender sprig keeps each leaf and flower clearly separated." [ref=e89] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F02-1200.webp&description=Fine-line%20lavender%20tattoo%20-%20A%20single%20lavender%20sprig%20keeps%20each%20leaf%20and%20flower%20clearly%20separated.
+        - figure "Outer collarbone · 9 cm · Celestial fine line · Black" [ref=e94]:
+          - link [ref=e95]:
+            - /url: /ideas/fine-line-tattoo-ideas/crescent-stars-collarbone/
+            - img "Fine-line moon and stars tattoo - A slim crescent and spaced stars follow the collarbone curve." [ref=e97]
+          - generic [ref=e98]:
+            - 'button "Save: Fine-line moon and stars tattoo - A slim crescent and spaced stars follow the collarbone curve." [ref=e99] [cursor=pointer]'
+            - 'link "Pin: Fine-line moon and stars tattoo - A slim crescent and spaced stars follow the collarbone curve." [ref=e102] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F03-1200.webp&description=Fine-line%20moon%20and%20stars%20tattoo%20-%20A%20slim%20crescent%20and%20spaced%20stars%20follow%20the%20collarbone%20curve.
+        - figure "Outer upper arm · 7 cm · Continuous line · Black" [ref=e107]:
+          - link [ref=e108]:
+            - /url: /ideas/fine-line-tattoo-ideas/continuous-line-dog-arm/
+            - img "Fine-line dog tattoo - One clean contour builds a recognizable dog portrait." [ref=e110]
+          - generic [ref=e111]:
+            - 'button "Save: Fine-line dog tattoo - One clean contour builds a recognizable dog portrait." [ref=e112] [cursor=pointer]'
+            - 'link "Pin: Fine-line dog tattoo - One clean contour builds a recognizable dog portrait." [ref=e115] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F04-1200.webp&description=Fine-line%20dog%20tattoo%20-%20One%20clean%20contour%20builds%20a%20recognizable%20dog%20portrait.
+        - figure "Upper spine · 14 cm · Botanical fine line · Black" [ref=e120]:
+          - link [ref=e121]:
+            - /url: /ideas/fine-line-tattoo-ideas/wildflower-spine-fine-line/
+            - img "Fine-line spine flower tattoo - A vertical wildflower stem follows the center of the upper back." [ref=e123]
+          - generic [ref=e124]:
+            - 'button "Save: Fine-line spine flower tattoo - A vertical wildflower stem follows the center of the upper back." [ref=e125] [cursor=pointer]'
+            - 'link "Pin: Fine-line spine flower tattoo - A vertical wildflower stem follows the center of the upper back." [ref=e128] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F05-1200.webp&description=Fine-line%20spine%20flower%20tattoo%20-%20A%20vertical%20wildflower%20stem%20follows%20the%20center%20of%20the%20upper%20back.
+        - figure "Inner wrist · 4 cm · Minimal fine line · Black" [ref=e133]:
+          - link [ref=e134]:
+            - /url: /ideas/fine-line-tattoo-ideas/tiny-nautilus-wrist/
+            - img "Tiny fine-line shell tattoo - A simplified nautilus spiral stays readable at wrist scale." [ref=e136]
+          - generic [ref=e137]:
+            - 'button "Save: Tiny fine-line shell tattoo - A simplified nautilus spiral stays readable at wrist scale." [ref=e138] [cursor=pointer]'
+            - 'link "Pin: Tiny fine-line shell tattoo - A simplified nautilus spiral stays readable at wrist scale." [ref=e141] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F06-1200.webp&description=Tiny%20fine-line%20shell%20tattoo%20-%20A%20simplified%20nautilus%20spiral%20stays%20readable%20at%20wrist%20scale.
+        - figure "Outer calf · 10 cm · Architectural fine line · Black and grey" [ref=e146]:
+          - link [ref=e147]:
+            - /url: /ideas/fine-line-tattoo-ideas/doorway-mountain-calf/
+            - img "Fine-line landscape tattoo - An arched doorway frames a distant mountain view." [ref=e149]
+          - generic [ref=e150]:
+            - 'button "Save: Fine-line landscape tattoo - An arched doorway frames a distant mountain view." [ref=e151] [cursor=pointer]'
+            - 'link "Pin: Fine-line landscape tattoo - An arched doorway frames a distant mountain view." [ref=e154] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F07-1200.webp&description=Fine-line%20landscape%20tattoo%20-%20An%20arched%20doorway%20frames%20a%20distant%20mountain%20view.
+        - figure "Shoulder cap · 9 cm · Fine line · Black and grey" [ref=e159]:
+          - link [ref=e160]:
+            - /url: /ideas/fine-line-tattoo-ideas/hummingbird-flower-shoulder/
+            - img "Fine-line hummingbird tattoo - A hovering hummingbird approaches one open flower." [ref=e162]
+          - generic [ref=e163]:
+            - 'button "Save: Fine-line hummingbird tattoo - A hovering hummingbird approaches one open flower." [ref=e164] [cursor=pointer]'
+            - 'link "Pin: Fine-line hummingbird tattoo - A hovering hummingbird approaches one open flower." [ref=e167] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F08-1200.webp&description=Fine-line%20hummingbird%20tattoo%20-%20A%20hovering%20hummingbird%20approaches%20one%20open%20flower.
+      - complementary "Advertisement" [ref=e172]
+      - generic [ref=e175]:
+        - figure "Outer forearm · 10 cm · Geometric fine line · Black" [ref=e176]:
+          - link [ref=e177]:
+            - /url: /ideas/fine-line-tattoo-ideas/geometric-crane-forearm/
+            - img "Geometric crane tattoo - Simplified angular wings keep a flying crane light and readable." [ref=e179]
+          - generic [ref=e180]:
+            - 'button "Save: Geometric crane tattoo - Simplified angular wings keep a flying crane light and readable." [ref=e181] [cursor=pointer]'
+            - 'link "Pin: Geometric crane tattoo - Simplified angular wings keep a flying crane light and readable." [ref=e184] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F09-1200.webp&description=Geometric%20crane%20tattoo%20-%20Simplified%20angular%20wings%20keep%20a%20flying%20crane%20light%20and%20readable.
+        - figure "Inner ankle · 5 cm · Minimal fine line · Black" [ref=e189]:
+          - link [ref=e190]:
+            - /url: /ideas/fine-line-tattoo-ideas/tiny-mountain-ankle/
+            - img "Tiny mountain tattoo - A small ridge and rising sun leave generous open skin." [ref=e192]
+          - generic [ref=e193]:
+            - 'button "Save: Tiny mountain tattoo - A small ridge and rising sun leave generous open skin." [ref=e194] [cursor=pointer]'
+            - 'link "Pin: Tiny mountain tattoo - A small ridge and rising sun leave generous open skin." [ref=e197] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F10-1200.webp&description=Tiny%20mountain%20tattoo%20-%20A%20small%20ridge%20and%20rising%20sun%20leave%20generous%20open%20skin.
+        - figure "Side ribs · 12 cm · Botanical fine line · Black" [ref=e202]:
+          - link [ref=e203]:
+            - /url: /ideas/fine-line-tattoo-ideas/peony-ribs-fine-line/
+            - img "Fine-line peony tattoo - An open peony and curved stem follow the side torso." [ref=e205]
+          - generic [ref=e206]:
+            - 'button "Save: Fine-line peony tattoo - An open peony and curved stem follow the side torso." [ref=e207] [cursor=pointer]'
+            - 'link "Pin: Fine-line peony tattoo - An open peony and curved stem follow the side torso." [ref=e210] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F11-1200.webp&description=Fine-line%20peony%20tattoo%20-%20An%20open%20peony%20and%20curved%20stem%20follow%20the%20side%20torso.
+        - figure "Outer calf · 8 cm · Fine line · Black and grey" [ref=e215]:
+          - link [ref=e216]:
+            - /url: /ideas/fine-line-tattoo-ideas/humpback-whale-calf/
+            - img "Fine-line whale tattoo - A humpback whale uses a clean contour and a few spaced shading lines." [ref=e218]
+          - generic [ref=e219]:
+            - 'button "Save: Fine-line whale tattoo - A humpback whale uses a clean contour and a few spaced shading lines." [ref=e220] [cursor=pointer]'
+            - 'link "Pin: Fine-line whale tattoo - A humpback whale uses a clean contour and a few spaced shading lines." [ref=e223] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F12-1200.webp&description=Fine-line%20whale%20tattoo%20-%20A%20humpback%20whale%20uses%20a%20clean%20contour%20and%20a%20few%20spaced%20shading%20lines.
+        - figure "Outer upper arm · 8 cm · Ornamental fine line · Black" [ref=e228]:
+          - link [ref=e229]:
+            - /url: /ideas/fine-line-tattoo-ideas/ornamental-sun-arm/
+            - img "Fine-line sun tattoo - A calm sun face sits inside balanced rays and limited dotwork." [ref=e231]
+          - generic [ref=e232]:
+            - 'button "Save: Fine-line sun tattoo - A calm sun face sits inside balanced rays and limited dotwork." [ref=e233] [cursor=pointer]'
+            - 'link "Pin: Fine-line sun tattoo - A calm sun face sits inside balanced rays and limited dotwork." [ref=e236] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F13-1200.webp&description=Fine-line%20sun%20tattoo%20-%20A%20calm%20sun%20face%20sits%20inside%20balanced%20rays%20and%20limited%20dotwork.
+        - figure "Inner forearm · 9 cm · Geometric fine line · Black" [ref=e241]:
+          - link [ref=e242]:
+            - /url: /ideas/fine-line-tattoo-ideas/orbital-arcs-forearm/
+            - img "Abstract orbit tattoo - Three circles connect through clean orbital arcs." [ref=e244]
+          - generic [ref=e245]:
+            - 'button "Save: Abstract orbit tattoo - Three circles connect through clean orbital arcs." [ref=e246] [cursor=pointer]'
+            - 'link "Pin: Abstract orbit tattoo - Three circles connect through clean orbital arcs." [ref=e249] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F14-1200.webp&description=Abstract%20orbit%20tattoo%20-%20Three%20circles%20connect%20through%20clean%20orbital%20arcs.
+        - figure "Collarbone · 10 cm · Botanical fine line · Black" [ref=e254]:
+          - link [ref=e255]:
+            - /url: /ideas/fine-line-tattoo-ideas/olive-branch-collarbone/
+            - img "Fine-line olive branch tattoo - A slender branch follows the collarbone with simple open leaves." [ref=e257]
+          - generic [ref=e258]:
+            - 'button "Save: Fine-line olive branch tattoo - A slender branch follows the collarbone with simple open leaves." [ref=e259] [cursor=pointer]'
+            - 'link "Pin: Fine-line olive branch tattoo - A slender branch follows the collarbone with simple open leaves." [ref=e262] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F15-1200.webp&description=Fine-line%20olive%20branch%20tattoo%20-%20A%20slender%20branch%20follows%20the%20collarbone%20with%20simple%20open%20leaves.
+        - figure "Shoulder blade · 7 cm · Continuous line · Black and grey" [ref=e267]:
+          - link [ref=e268]:
+            - /url: /ideas/fine-line-tattoo-ideas/sleeping-cat-shoulder-blade/
+            - img "Fine-line cat tattoo - A curled sleeping cat uses one main contour and a small shadow." [ref=e270]
+          - generic [ref=e271]:
+            - 'button "Save: Fine-line cat tattoo - A curled sleeping cat uses one main contour and a small shadow." [ref=e272] [cursor=pointer]'
+            - 'link "Pin: Fine-line cat tattoo - A curled sleeping cat uses one main contour and a small shadow." [ref=e275] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F16-1200.webp&description=Fine-line%20cat%20tattoo%20-%20A%20curled%20sleeping%20cat%20uses%20one%20main%20contour%20and%20a%20small%20shadow.
+        - figure "Inner wrist · 6 cm · Fine line dotwork · Black" [ref=e280]:
+          - link [ref=e281]:
+            - /url: /ideas/fine-line-tattoo-ideas/dragonfly-wrist-fine-line/
+            - img "Fine-line dragonfly tattoo - Simplified wings and sparse dots keep the dragonfly clear." [ref=e283]
+          - generic [ref=e284]:
+            - 'button "Save: Fine-line dragonfly tattoo - Simplified wings and sparse dots keep the dragonfly clear." [ref=e285] [cursor=pointer]'
+            - 'link "Pin: Fine-line dragonfly tattoo - Simplified wings and sparse dots keep the dragonfly clear." [ref=e288] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F17-1200.webp&description=Fine-line%20dragonfly%20tattoo%20-%20Simplified%20wings%20and%20sparse%20dots%20keep%20the%20dragonfly%20clear.
+        - figure "Inner forearm · 9 cm · Abstract fine line · Black" [ref=e293]:
+          - link [ref=e294]:
+            - /url: /ideas/fine-line-tattoo-ideas/profile-flower-forearm/
+            - img "Fine-line face and flower tattoo - A side profile merges smoothly into one outlined flower." [ref=e296]
+          - generic [ref=e297]:
+            - 'button "Save: Fine-line face and flower tattoo - A side profile merges smoothly into one outlined flower." [ref=e298] [cursor=pointer]'
+            - 'link "Pin: Fine-line face and flower tattoo - A side profile merges smoothly into one outlined flower." [ref=e301] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F18-1200.webp&description=Fine-line%20face%20and%20flower%20tattoo%20-%20A%20side%20profile%20merges%20smoothly%20into%20one%20outlined%20flower.
+        - figure "Outer calf · 6 cm · Minimal fine line · Black" [ref=e306]:
+          - link [ref=e307]:
+            - /url: /ideas/fine-line-tattoo-ideas/tiny-bicycle-calf/
+            - img "Tiny bicycle tattoo - A simplified bicycle keeps its frame and wheels readable at small scale." [ref=e309]
+          - generic [ref=e310]:
+            - 'button "Save: Tiny bicycle tattoo - A simplified bicycle keeps its frame and wheels readable at small scale." [ref=e311] [cursor=pointer]'
+            - 'link "Pin: Tiny bicycle tattoo - A simplified bicycle keeps its frame and wheels readable at small scale." [ref=e314] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F19-1200.webp&description=Tiny%20bicycle%20tattoo%20-%20A%20simplified%20bicycle%20keeps%20its%20frame%20and%20wheels%20readable%20at%20small%20scale.
+        - figure "Outer upper arm · 10 cm · Fine line dotwork · Black and grey" [ref=e319]:
+          - link [ref=e320]:
+            - /url: /ideas/fine-line-tattoo-ideas/jellyfish-upper-arm-fine-line/
+            - img "Fine-line jellyfish tattoo - Spaced tentacles descend from a lightly shaded bell." [ref=e322]
+          - generic [ref=e323]:
+            - 'button "Save: Fine-line jellyfish tattoo - Spaced tentacles descend from a lightly shaded bell." [ref=e324] [cursor=pointer]'
+            - 'link "Pin: Fine-line jellyfish tattoo - Spaced tentacles descend from a lightly shaded bell." [ref=e327] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F20-1200.webp&description=Fine-line%20jellyfish%20tattoo%20-%20Spaced%20tentacles%20descend%20from%20a%20lightly%20shaded%20bell.
+        - figure "Outer ankle · 8 cm · Botanical fine line · Black" [ref=e332]:
+          - link [ref=e333]:
+            - /url: /ideas/fine-line-tattoo-ideas/poppy-ankle-fine-line/
+            - img "Fine-line poppy tattoo - One open poppy and two leaves form a simple ankle-length stem." [ref=e335]
+          - generic [ref=e336]:
+            - 'button "Save: Fine-line poppy tattoo - One open poppy and two leaves form a simple ankle-length stem." [ref=e337] [cursor=pointer]'
+            - 'link "Pin: Fine-line poppy tattoo - One open poppy and two leaves form a simple ankle-length stem." [ref=e340] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F21-1200.webp&description=Fine-line%20poppy%20tattoo%20-%20One%20open%20poppy%20and%20two%20leaves%20form%20a%20simple%20ankle-length%20stem.
+        - figure "Inner upper arm · 8 cm · Fine line · Black" [ref=e345]:
+          - link [ref=e346]:
+            - /url: /ideas/fine-line-tattoo-ideas/touching-hands-upper-arm/
+            - img "Fine-line hands tattoo - Two simplified hands nearly meet inside a clean open composition." [ref=e348]
+          - generic [ref=e349]:
+            - 'button "Save: Fine-line hands tattoo - Two simplified hands nearly meet inside a clean open composition." [ref=e350] [cursor=pointer]'
+            - 'link "Pin: Fine-line hands tattoo - Two simplified hands nearly meet inside a clean open composition." [ref=e353] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F22-1200.webp&description=Fine-line%20hands%20tattoo%20-%20Two%20simplified%20hands%20nearly%20meet%20inside%20a%20clean%20open%20composition.
+        - figure "Outer thigh · 10 cm · Fine-line engraving · Black and grey" [ref=e358]:
+          - link [ref=e359]:
+            - /url: /ideas/fine-line-tattoo-ideas/framed-lake-thigh/
+            - img "Fine-line mountain lake tattoo - A small rectangular frame contains a mountain and lake scene." [ref=e361]
+          - generic [ref=e362]:
+            - 'button "Save: Fine-line mountain lake tattoo - A small rectangular frame contains a mountain and lake scene." [ref=e363] [cursor=pointer]'
+            - 'link "Pin: Fine-line mountain lake tattoo - A small rectangular frame contains a mountain and lake scene." [ref=e366] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F23-1200.webp&description=Fine-line%20mountain%20lake%20tattoo%20-%20A%20small%20rectangular%20frame%20contains%20a%20mountain%20and%20lake%20scene.
+        - figure "Behind the ear · 4 cm · Minimal fine line · Black" [ref=e371]:
+          - link [ref=e372]:
+            - /url: /ideas/fine-line-tattoo-ideas/tiny-swallow-behind-ear/
+            - img "Tiny swallow tattoo - A side-flight swallow keeps a simple readable wing silhouette." [ref=e374]
+          - generic [ref=e375]:
+            - 'button "Save: Tiny swallow tattoo - A side-flight swallow keeps a simple readable wing silhouette." [ref=e376] [cursor=pointer]'
+            - 'link "Pin: Tiny swallow tattoo - A side-flight swallow keeps a simple readable wing silhouette." [ref=e379] [cursor=pointer]':
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ffine-line-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ffine-line-tattoo-ideas%2F24-1200.webp&description=Tiny%20swallow%20tattoo%20-%20A%20side-flight%20swallow%20keeps%20a%20simple%20readable%20wing%20silhouette.
+      - paragraph [ref=e384]:
+        - generic [ref=e385]: Showing all 24 ideas
+    - region [ref=e386]:
+      - generic [ref=e387]:
+        - heading "Build your shortlist" [level=2] [ref=e388]
+        - paragraph [ref=e389]: Save the ideas you like, then copy one clear description for your artist.
+        - generic [ref=e390]:
+          - list [ref=e391]:
+            - listitem [ref=e392]: Tap the bookmark on any idea to add it here.
+          - paragraph [ref=e393]:
+            - generic [ref=e396]: 0 ideas saved
+        - generic [ref=e397]:
+          - generic [ref=e398]: Description for your artist
+          - textbox "Description for your artist" [ref=e399]: fine line, ~4-14 cm, mixed, black
+        - generic [ref=e403]:
+          - button "Copy description" [ref=e404] [cursor=pointer]
+          - link "View saved ideas" [ref=e406] [cursor=pointer]:
+            - /url: /saved/
+    - region [ref=e407]:
+      - generic [ref=e408]:
+        - heading "Forearm tattoo details" [level=2] [ref=e409]
+        - table [ref=e411]:
+          - rowgroup [ref=e412]:
+            - row [ref=e413]:
+              - columnheader "Pain level" [ref=e414]
+              - columnheader "Typical size" [ref=e415]
+              - columnheader "Session time" [ref=e416]
+              - columnheader "Typical price" [ref=e417]
+              - columnheader "Healing" [ref=e418]
+          - rowgroup [ref=e419]:
+            - row [ref=e420]:
+              - cell "Commonly described as mild" [ref=e421]
+              - cell "3-10 cm" [ref=e422]
+              - cell "45 minutes to 2 hours" [ref=e423]
+              - cell "$120-$450" [ref=e424]
+              - cell "Ask your artist" [ref=e425]
+        - paragraph [ref=e426]: Estimates vary by design, location and artist. Ask your artist or a doctor about anything to do with healing or individual health concerns.
+    - generic [ref=e427]:
+      - generic [ref=e428]:
+        - heading "What to consider before your session" [level=2] [ref=e429]
+        - list [ref=e430]:
+          - listitem [ref=e431]:
+            - generic [ref=e435]: Work visibility - depends on placement.
+          - listitem [ref=e436]:
+            - generic [ref=e439]: Skin movement - the design should follow your anatomy, not fight it.
+          - listitem [ref=e440]:
+            - generic [ref=e444]: Sun exposure - ask your artist about long-term protection for this area.
+          - listitem [ref=e445]:
+            - generic [ref=e449]: Available space - small details need enough room to age clearly.
+      - generic [ref=e450]:
+        - heading "What to ask your artist" [level=2] [ref=e451]
+        - list [ref=e452]:
+          - listitem [ref=e453]:
+            - generic [ref=e454]: Can this level of detail work at my chosen size?
+          - listitem [ref=e455]:
+            - generic [ref=e456]: How should the design follow my forearm?
+          - listitem [ref=e457]:
+            - generic [ref=e458]: Would a different position on the same area suit it better?
+          - listitem [ref=e459]:
+            - generic [ref=e460]: How many sessions should I expect?
+          - listitem [ref=e461]:
+            - generic [ref=e462]: What aftercare do you recommend for me?
+    - region [ref=e463]:
+      - heading "Explore related tattoo ideas" [level=2] [ref=e465]
+      - generic [ref=e466]:
+        - article [ref=e467]:
+          - link "Butterfly tattoo ideas Butterfly tattoo ideas" [ref=e468] [cursor=pointer]:
+            - /url: /ideas/butterfly-tattoo-ideas/
+            - img "Butterfly tattoo ideas" [ref=e470]
+            - generic [ref=e471]: Butterfly tattoo ideas
+          - generic [ref=e472]:
+            - button "Save Butterfly tattoo ideas" [ref=e473] [cursor=pointer]
+            - link "Pin Butterfly tattoo ideas" [ref=e476] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fbutterfly-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fbutterfly-tattoo-ideas%2F01-1200.webp&description=Butterfly%20tattoo%20ideas
+          - generic [ref=e480]:
+            - link "Butterfly tattoo ideas" [ref=e481] [cursor=pointer]:
+              - /url: /ideas/butterfly-tattoo-ideas/
+            - text: · 24 ideas
+        - article [ref=e482]:
+          - link "Flower tattoo ideas Flower tattoo ideas" [ref=e483] [cursor=pointer]:
+            - /url: /ideas/flower-tattoo-ideas/
+            - img "Flower tattoo ideas" [ref=e485]
+            - generic [ref=e486]: Flower tattoo ideas
+          - generic [ref=e487]:
+            - button "Save Flower tattoo ideas" [ref=e488] [cursor=pointer]
+            - link "Pin Flower tattoo ideas" [ref=e491] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fflower-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fflower-tattoo-ideas%2F01-1200.webp&description=Flower%20tattoo%20ideas
+          - generic [ref=e495]:
+            - link "Flower tattoo ideas" [ref=e496] [cursor=pointer]:
+              - /url: /ideas/flower-tattoo-ideas/
+            - text: · 24 ideas
+        - article [ref=e497]:
+          - link "Small tattoos for men Small tattoos for men" [ref=e498] [cursor=pointer]:
+            - /url: /ideas/small-tattoos-for-men/
+            - img "Small tattoos for men" [ref=e500]
+            - generic [ref=e501]: Small tattoos for men
+          - generic [ref=e502]:
+            - button "Save Small tattoos for men" [ref=e503] [cursor=pointer]
+            - link "Pin Small tattoos for men" [ref=e506] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fsmall-tattoos-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fsmall-tattoos-for-men%2F01-1200.webp&description=Small%20tattoos%20for%20men
+          - generic [ref=e510]:
+            - link "Small tattoos for men" [ref=e511] [cursor=pointer]:
+              - /url: /ideas/small-tattoos-for-men/
+            - text: · 24 ideas
+        - article [ref=e512]:
+          - link "Couple tattoo ideas Couple tattoo ideas" [ref=e513] [cursor=pointer]:
+            - /url: /ideas/couple-tattoo-ideas/
+            - img "Couple tattoo ideas" [ref=e515]
+            - generic [ref=e516]: Couple tattoo ideas
+          - generic [ref=e517]:
+            - button "Save Couple tattoo ideas" [ref=e518] [cursor=pointer]
+            - link "Pin Couple tattoo ideas" [ref=e521] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fcouple-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fcouple-tattoo-ideas%2F01-1200.webp&description=Couple%20tattoo%20ideas
+          - generic [ref=e525]:
+            - link "Couple tattoo ideas" [ref=e526] [cursor=pointer]:
+              - /url: /ideas/couple-tattoo-ideas/
+            - text: · 24 ideas
+        - article [ref=e527]:
+          - link "Tattoo ideas for women Tattoo ideas for women" [ref=e528] [cursor=pointer]:
+            - /url: /ideas/tattoo-ideas-for-women/
+            - img "Tattoo ideas for women" [ref=e530]
+            - generic [ref=e531]: Tattoo ideas for women
+          - generic [ref=e532]:
+            - button "Save Tattoo ideas for women" [ref=e533] [cursor=pointer]
+            - link "Pin Tattoo ideas for women" [ref=e536] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Ftattoo-ideas-for-women%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Ftattoo-ideas-for-women%2F01-1200.webp&description=Tattoo%20ideas%20for%20women
+          - generic [ref=e540]:
+            - link "Tattoo ideas for women" [ref=e541] [cursor=pointer]:
+              - /url: /ideas/tattoo-ideas-for-women/
+            - text: · 24 ideas
+        - article [ref=e542]:
+          - link "Forearm tattoo ideas Forearm tattoo ideas" [ref=e543] [cursor=pointer]:
+            - /url: /ideas/forearm-tattoo-ideas/
+            - img "Forearm tattoo ideas" [ref=e545]
+            - generic [ref=e546]: Forearm tattoo ideas
+          - generic [ref=e547]:
+            - button "Save Forearm tattoo ideas" [ref=e548] [cursor=pointer]
+            - link "Pin Forearm tattoo ideas" [ref=e551] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fforearm-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fforearm-tattoo-ideas%2F01-1200.webp&description=Forearm%20tattoo%20ideas
+          - generic [ref=e555]:
+            - link "Forearm tattoo ideas" [ref=e556] [cursor=pointer]:
+              - /url: /ideas/forearm-tattoo-ideas/
+            - text: · 24 ideas
+        - article [ref=e557]:
+          - link "Forearm tattoo ideas for men Forearm tattoo ideas for men" [ref=e558] [cursor=pointer]:
+            - /url: /ideas/forearm-tattoo-ideas-for-men/
+            - img "Forearm tattoo ideas for men" [ref=e560]
+            - generic [ref=e561]: Forearm tattoo ideas for men
+          - generic [ref=e562]:
+            - button "Save Forearm tattoo ideas for men" [ref=e563] [cursor=pointer]
+            - link "Pin Forearm tattoo ideas for men" [ref=e566] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fforearm-tattoo-ideas-for-men%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fforearm-tattoo-ideas-for-men%2F01-1200.webp&description=Forearm%20tattoo%20ideas%20for%20men
+          - generic [ref=e570]:
+            - link "Forearm tattoo ideas for men" [ref=e571] [cursor=pointer]:
+              - /url: /ideas/forearm-tattoo-ideas-for-men/
+            - text: · 16 ideas
+        - article [ref=e572]:
+          - link "Hand tattoo ideas Hand tattoo ideas" [ref=e573] [cursor=pointer]:
+            - /url: /ideas/hand-tattoo-ideas/
+            - img "Hand tattoo ideas" [ref=e575]
+            - generic [ref=e576]: Hand tattoo ideas
+          - generic [ref=e577]:
+            - button "Save Hand tattoo ideas" [ref=e578] [cursor=pointer]
+            - link "Pin Hand tattoo ideas" [ref=e581] [cursor=pointer]:
+              - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Ftattoodesignsco.com%2Fideas%2Fhand-tattoo-ideas%2F&media=https%3A%2F%2Ftattoodesignsco.com%2Fimages%2Fideas%2Fhand-tattoo-ideas%2F01-1200.webp&description=Hand%20tattoo%20ideas
+          - generic [ref=e585]:
+            - link "Hand tattoo ideas" [ref=e586] [cursor=pointer]:
+              - /url: /ideas/hand-tattoo-ideas/
+            - text: · 24 ideas
+    - region [ref=e587]:
+      - heading "Fine line tattoo ideas FAQ" [level=2] [ref=e589]
+      - generic [ref=e590]:
+        - group [ref=e591]:
+          - generic "How painful is a forearm tattoo?" [ref=e592] [cursor=pointer]
+        - group [ref=e595]:
+          - generic "What size works best on the forearm?" [ref=e596] [cursor=pointer]
+        - group [ref=e599]:
+          - generic "Can a forearm tattoo be covered for work?" [ref=e600] [cursor=pointer]
+        - group [ref=e603]:
+          - generic "How long does a forearm tattoo take?" [ref=e604] [cursor=pointer]
+        - group [ref=e607]:
+          - generic "How do I save these ideas?" [ref=e608] [cursor=pointer]
+    - region [ref=e611]:
+      - heading "Related searches" [level=2] [ref=e613]
+      - navigation "Related searches" [ref=e614]:
+        - link "butterfly tattoo ideas" [ref=e615] [cursor=pointer]:
+          - /url: /ideas/butterfly-tattoo-ideas/
+        - link "flower tattoo ideas" [ref=e619] [cursor=pointer]:
+          - /url: /ideas/flower-tattoo-ideas/
+        - link "small tattoos for men" [ref=e623] [cursor=pointer]:
+          - /url: /ideas/small-tattoos-for-men/
+        - link "couple tattoo ideas" [ref=e627] [cursor=pointer]:
+          - /url: /ideas/couple-tattoo-ideas/
+        - link "tattoo ideas for women" [ref=e631] [cursor=pointer]:
+          - /url: /ideas/tattoo-ideas-for-women/
+        - link "forearm tattoo ideas" [ref=e635] [cursor=pointer]:
+          - /url: /ideas/forearm-tattoo-ideas/
+        - link "forearm tattoo ideas for men" [ref=e639] [cursor=pointer]:
+          - /url: /ideas/forearm-tattoo-ideas-for-men/
+        - link "hand tattoo ideas" [ref=e643] [cursor=pointer]:
+          - /url: /ideas/hand-tattoo-ideas/
+  - contentinfo [ref=e647]:
+    - generic [ref=e648]:
+      - generic [ref=e649]:
+        - navigation "Explore" [ref=e650]:
+          - heading "Explore" [level=2] [ref=e651]
+          - list [ref=e652]:
+            - listitem [ref=e653]:
+              - link "Ideas" [ref=e654] [cursor=pointer]:
+                - /url: /ideas/
+            - listitem [ref=e655]:
+              - link "Placement" [ref=e656] [cursor=pointer]:
+                - /url: /placement/
+            - listitem [ref=e657]:
+              - link "Subjects" [ref=e658] [cursor=pointer]:
+                - /url: /subject/
+            - listitem [ref=e659]:
+              - link "Styles" [ref=e660] [cursor=pointer]:
+                - /url: /style/
+            - listitem [ref=e661]:
+              - link "Sizes" [ref=e662] [cursor=pointer]:
+                - /url: /size/
+        - navigation "Resources" [ref=e663]:
+          - heading "Resources" [level=2] [ref=e664]
+          - list [ref=e665]:
+            - listitem [ref=e666]:
+              - link "Tattoo size guide" [ref=e667] [cursor=pointer]:
+                - /url: /tools/size-guide/
+            - listitem [ref=e668]:
+              - link "Placement picker" [ref=e669] [cursor=pointer]:
+                - /url: /tools/placement-picker/
+            - listitem [ref=e670]:
+              - link "30-second quiz" [ref=e671] [cursor=pointer]:
+                - /url: /tools/quiz/
+            - listitem [ref=e672]:
+              - link "Cover up ideas" [ref=e673] [cursor=pointer]:
+                - /url: /ideas/cover-up-tattoo-ideas/
+        - navigation "Company" [ref=e674]:
+          - heading "Company" [level=2] [ref=e675]
+          - list [ref=e676]:
+            - listitem [ref=e677]:
+              - link "About us" [ref=e678] [cursor=pointer]:
+                - /url: /about/
+            - listitem [ref=e679]:
+              - link "Contact" [ref=e680] [cursor=pointer]:
+                - /url: /contact/
+            - listitem [ref=e681]:
+              - link "Editorial standards" [ref=e682] [cursor=pointer]:
+                - /url: /editorial-standards/
+            - listitem [ref=e683]:
+              - link "Privacy policy" [ref=e684] [cursor=pointer]:
+                - /url: /privacy/
+            - listitem [ref=e685]:
+              - link "Terms of use" [ref=e686] [cursor=pointer]:
+                - /url: /terms/
+            - listitem [ref=e687]:
+              - link "Sitemap" [ref=e688] [cursor=pointer]:
+                - /url: /sitemap/
+      - generic [ref=e689]:
+        - text: Tattoo Designs Co
+        - paragraph [ref=e690]: Real ideas. Real ink. Real you.
+        - list [ref=e691]:
+          - listitem [ref=e692]:
+            - link "Instagram" [ref=e693] [cursor=pointer]:
+              - /url: https://instagram.com/
+          - listitem [ref=e698]:
+            - link "Pinterest" [ref=e699] [cursor=pointer]:
+              - /url: https://pinterest.com/
+          - listitem [ref=e703]:
+            - link "TikTok" [ref=e704] [cursor=pointer]:
+              - /url: https://tiktok.com/
+          - listitem [ref=e708]:
+            - link "YouTube" [ref=e709] [cursor=pointer]:
+              - /url: https://youtube.com/
+    - generic [ref=e713]:
+      - paragraph [ref=e714]: © 2026 TattooDesignsCo. All rights reserved.
+      - paragraph [ref=e715]: Ideas and reference images only. For anything about healing, skin reactions or removal, ask your artist or a doctor.

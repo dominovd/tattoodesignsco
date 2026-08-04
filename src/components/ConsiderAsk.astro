@@ -1,0 +1,85 @@
+---
+import Icon from './Icon.astro';
+
+/** Блоки 7 и 8 шаблона страницы - PROJECT.md §6. */
+interface Props {
+  considerations: { icon: string; text: string }[];
+  questions: string[];
+}
+
+const { considerations, questions } = Astro.props;
+---
+
+<section class="section container two-col">
+  <div class="panel box">
+    <h2>What to consider before your session</h2>
+    <ul class="consider">
+      {
+        considerations.map((c) => (
+          <li>
+            <Icon name={c.icon} size={22} class="ic" />
+            <span>{c.text}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+
+  <div class="panel box">
+    <h2>What to ask your artist</h2>
+    <ol class="ask">
+      {questions.map((q) => <li><span>{q}</span></li>)}
+    </ol>
+  </div>
+</section>
+
+<style>
+  .two-col { display: grid; gap: 12px; }
+
+  .box { padding: 20px; }
+  h2 { font-size: 19px; margin-bottom: 12px; }
+
+  ul, ol { list-style: none; margin: 0; padding: 0; }
+
+  .consider li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 0;
+    font-size: 15px;
+    color: var(--text-muted);
+  }
+
+  .consider li + li { border-top: 1px solid var(--line); }
+  .ic { color: var(--accent); margin-top: 1px; }
+
+  .ask { counter-reset: q; display: grid; gap: 10px; }
+
+  .ask li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: var(--text-muted);
+  }
+
+  .ask li::before {
+    counter-increment: q;
+    content: counter(q);
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border: 1px solid var(--accent);
+    border-radius: 50%;
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  @media (min-width: 860px) {
+    .two-col { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+</style>

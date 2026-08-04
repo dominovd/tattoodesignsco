@@ -1,0 +1,46 @@
+---
+import AxisLeaf from '@components/AxisLeaf.astro';
+import axes from '@data/axes.json';
+import { placementGalleries } from '@data/placement-galleries';
+
+export function getStaticPaths() {
+  return axes.placements.map((p) => ({ params: { slug: p.slug }, props: { p } }));
+}
+
+const { p } = Astro.props;
+const path = `/placement/${p.slug}/`;
+const galleryItems = placementGalleries[p.slug];
+
+const siblings = axes.placements
+  .filter((s) => s.slug !== p.slug)
+  .slice(0, 8)
+  .map((s) => ({ label: s.label, href: `/placement/${s.slug}/` }));
+---
+
+<AxisLeaf
+  h1={`${p.label} tattoo ideas`}
+  title={`${p.label} tattoo ideas - designs and sizes | TattooDesignsCo`}
+  description={`${p.label} tattoo ideas with size, style and colour on every image. Save what you like and copy a brief for your artist.`}
+  path={path}
+  contentKey={`placement/${p.slug}`}
+  crumbs={[
+    { label: 'Home', href: '/' },
+    { label: 'Placement', href: '/placement/' },
+    { label: p.label, href: path },
+  ]}
+  answer={[
+    `Designs that suit the ${p.label.toLowerCase()}, with size, style and colour listed on every image.`,
+    'Save what you like, then copy one clear description for your artist.',
+  ]}
+  gallerySlug={`placement-${p.slug}`}
+  galleryDefaults={{
+    placement: p.label,
+    size: '5-15 cm',
+    style: 'Mixed',
+    color: 'Black',
+    altPattern: `${p.label} tattoo idea, reference {n}`,
+    items: galleryItems,
+  }}
+  siblings={siblings}
+  brief={`fine line design, ~8 cm, ${p.label.toLowerCase()}, black only`}
+/>

@@ -1,0 +1,135 @@
+{
+  "name": "TattooDesignsCo",
+  "email": "info@tattoodesignsco.com",
+  "brandDisplay": "Tattoo Designs Co",
+  "url": "https://tattoodesignsco.com",
+  "tagline": "Find a tattoo idea that fits you",
+  "description": "Browse tattoo ideas by placement, style, subject and size. Save favourites and copy a clear brief for your artist.",
+  "nav": [
+    {
+      "label": "Ideas",
+      "href": "/ideas/"
+    },
+    {
+      "label": "Placement",
+      "href": "/placement/"
+    },
+    {
+      "label": "Subjects",
+      "href": "/subject/"
+    },
+    {
+      "label": "Styles",
+      "href": "/style/"
+    },
+    {
+      "label": "Sizes",
+      "href": "/size/"
+    },
+    {
+      "label": "Tools",
+      "href": "/tools/"
+    }
+  ],
+  "footerTagline": "Real ideas. Real ink. Real you.",
+  "footer": [
+    {
+      "title": "Explore",
+      "links": [
+        {
+          "label": "Ideas",
+          "href": "/ideas/"
+        },
+        {
+          "label": "Placement",
+          "href": "/placement/"
+        },
+        {
+          "label": "Subjects",
+          "href": "/subject/"
+        },
+        {
+          "label": "Styles",
+          "href": "/style/"
+        },
+        {
+          "label": "Sizes",
+          "href": "/size/"
+        }
+      ]
+    },
+    {
+      "title": "Resources",
+      "links": [
+        {
+          "label": "Tattoo size guide",
+          "href": "/tools/size-guide/"
+        },
+        {
+          "label": "Placement picker",
+          "href": "/tools/placement-picker/"
+        },
+        {
+          "label": "30-second quiz",
+          "href": "/tools/quiz/"
+        },
+        {
+          "label": "Cover up ideas",
+          "href": "/ideas/cover-up-tattoo-ideas/"
+        }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        {
+          "label": "About us",
+          "href": "/about/"
+        },
+        {
+          "label": "Contact",
+          "href": "/contact/"
+        },
+        {
+          "label": "Editorial standards",
+          "href": "/editorial-standards/"
+        },
+        {
+          "label": "Privacy policy",
+          "href": "/privacy/"
+        },
+        {
+          "label": "Terms of use",
+          "href": "/terms/"
+        },
+        {
+          "label": "Sitemap",
+          "href": "/sitemap/"
+        }
+      ]
+    }
+  ],
+  "social": [
+    {
+      "label": "Instagram",
+      "href": "https://instagram.com/",
+      "icon": "instagram"
+    },
+    {
+      "label": "Pinterest",
+      "href": "https://pinterest.com/",
+      "icon": "pinterest"
+    },
+    {
+      "label": "TikTok",
+      "href": "https://tiktok.com/",
+      "icon": "tiktok"
+    },
+    {
+      "label": "YouTube",
+      "href": "https://youtube.com/",
+      "icon": "youtube"
+    }
+  ],
+  "_footer_note": "Колонка «For artists» из макета убрана до появления /artists/join/ и /artists/. Все её ссылки дублировали Company. Вернуть вместе с самими страницами: партнёрства с мастерами это канал из PROJECT.md §8."
+}
