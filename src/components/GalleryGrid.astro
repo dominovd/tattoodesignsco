@@ -46,16 +46,43 @@ const pageUrl = new URL(pagePath, site.url).href;
 const pin = (item: GalleryItem) =>
   `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(new URL(imageUrl(item.image, 1200), site.url).href)}&description=${encodeURIComponent(item.alt)}`;
 
+/**
+ * Разметка изображений.
+ *
+ * Раньше каждый ImageObject нёс собственный вложенный объект
+ * `isPartOf: { '@type': 'WebPage', ... }`, и на одном URL получалось двадцать
+ * четыре сущности WebPage. Валидатор такое проглатывает, но страница как
+ * сущность размывается, а ImageObject теряет привязку к ней — при том что
+ * разметка ставилась именно ради image pack, который по PROJECT.md §1
+ * присутствует в 97-98% выдач ниши.
+ *
+ * Стало: одна WebPage с собственным @id, изображения ссылаются на неё по
+ * этому @id, первое помечено representativeOfPage.
+ */
+const schemaSource = schemaItems ?? items;
+
 const imagesLd = {
   '@context': 'https://schema.org',
-  '@graph': (schemaItems ?? items).map((item) => ({
-    '@type': 'ImageObject',
-    contentUrl: new URL(imageUrl(item.image, 1200), site.url).href,
-    thumbnailUrl: new URL(imageUrl(item.image, 400), site.url).href,
-    caption: item.alt,
-    representativeOfPage: false,
-    isPartOf: { '@type': 'WebPage', url: pageUrl, name: pageTitle },
-  })),
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': pageUrl,
+      url: pageUrl,
+      name: pageTitle,
+      ...(schemaSource.length
+        ? { primaryImageOfPage: { '@id': `${pageUrl}#image-1` } }
+        : {}),
+    },
+    ...schemaSource.map((item, i) => ({
+      '@type': 'ImageObject',
+      '@id': `${pageUrl}#image-${i + 1}`,
+      contentUrl: new URL(imageUrl(item.image, 1200), site.url).href,
+      thumbnailUrl: new URL(imageUrl(item.image, 400), site.url).href,
+      caption: item.alt,
+      representativeOfPage: i === 0,
+      isPartOf: { '@id': pageUrl },
+    })),
+  ],
 };
 ---
 
