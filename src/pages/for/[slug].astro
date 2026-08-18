@@ -26,8 +26,8 @@ const siblings = [
 ---
 
 <AxisLeaf
-  h1={`Tattoo ideas for ${a.label.toLowerCase()}`}
-  title={`Tattoo ideas for ${a.label.toLowerCase()} - designs by area and size | TattooDesignsCo`}
+  h1={`Tattoos for ${a.label.toLowerCase()}`}
+  title={`Tattoos for ${a.label.toLowerCase()} - ideas by area and size | TattooDesignsCo`}
   description={`Tattoo ideas for ${a.label.toLowerCase()} with size, area, style and colour on every image.`}
   path={path}
   contentKey={`for/${a.slug}`}
@@ -48,6 +48,9 @@ const siblings = [
     altPattern: `Tattoo idea for ${a.label.toLowerCase()}, reference {n}`,
     items: galleryItems,
   }}
+  axisType="audience"
+  axisSlug={a.slug}
+  ideasLabel={`Tattoo ideas for ${a.label.toLowerCase()}`}
   siblings={siblings}
   brief="fine line design, ~8 cm, inner forearm, black only"
 />

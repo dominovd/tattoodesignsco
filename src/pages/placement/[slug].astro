@@ -18,8 +18,8 @@ const siblings = axes.placements
 ---
 
 <AxisLeaf
-  h1={`${p.label} tattoo ideas`}
-  title={`${p.label} tattoo ideas - designs and sizes | TattooDesignsCo`}
+  h1={`${p.label} tattoos`}
+  title={`${p.label} tattoos - ideas and sizes | TattooDesignsCo`}
   description={`${p.label} tattoo ideas with size, style and colour on every image. Save what you like and copy a brief for your artist.`}
   path={path}
   contentKey={`placement/${p.slug}`}
@@ -41,6 +41,9 @@ const siblings = axes.placements
     altPattern: `${p.label} tattoo idea, reference {n}`,
     items: galleryItems,
   }}
+  axisType="placement"
+  axisSlug={p.slug}
+  ideasLabel={`${p.label} tattoo ideas`}
   siblings={siblings}
   brief={`fine line design, ~8 cm, ${p.label.toLowerCase()}, black only`}
 />

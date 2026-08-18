@@ -60,7 +60,6 @@ const guide = hubCopy[hubKey];
     </div>
   </section>
 
-  <div class="container"><AdSlot id={`${base.replaceAll('/', '')}-hub`} height={100} /></div>
 
   <section class="section container guide">
     <h2>{guide.title}</h2>
@@ -68,6 +67,11 @@ const guide = hubCopy[hubKey];
   </section>
 
   <PopularSearches items={popular.searches} title="Popular searches" />
+
+  {/* Индекс оси — короткая навигационная страница. Блок стоял сразу после
+      списка ссылок, примерно после 250 знаков текста. Перенесён под
+      содержимое: инвентарь сохраняется, DESIGN.md §10 не нарушается. */}
+  <div class="container"><AdSlot id={`${base.replaceAll('/', '')}-hub`} height={100} /></div>
 </BaseLayout>
 
 <style>

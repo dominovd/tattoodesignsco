@@ -4,18 +4,31 @@ import Chips from './Chips.astro';
 import GalleryGrid from './GalleryGrid.astro';
 import AdSlot from './AdSlot.astro';
 import CopyBrief from './CopyBrief.astro';
+import IdeaCard from './IdeaCard.astro';
 import Faq from './Faq.astro';
 import PopularSearches from './PopularSearches.astro';
 import popular from '@data/popular.json';
+import combos from '@data/combos.json';
 import faq from '@data/faq.json';
 import axisCopy from '@data/axis-copy.json';
-import { buildGallery } from '@lib/gallery';
+import { buildGallery, ideaCount } from '@lib/gallery';
 import { imageUrl } from '@lib/images';
 
 /**
- * Страница-лист оси (например /placement/forearm/).
- * Тот же порядок первого экрана, что и у комбинаций: H1 → ответ → галерея.
+ * Хаб оси — например /placement/forearm/.
+ *
+ * Роль страницы навигационная, а не денежная. Денежная — это страница
+ * комбинации (/ideas/forearm-tattoo-ideas/). Пока оба шаблона применяли
+ * правило «H1 = точный ключ», они выдавали дословно одинаковый заголовок и
+ * сайт конкурировал сам с собой на шести парах страниц. Правило разведено:
+ * хаб носит короткое имя сущности, точный ключ остаётся за комбинацией.
+ * См. rule-hub-vs-combination.md.
+ *
+ * Отсюда и устройство: галерея короткая — она визуальный якорь, а не
+ * содержимое, и основную площадь занимают карточки-ссылки на комбинации.
  */
+const HUB_GALLERY = 6;
+
 interface Props {
   h1: string;
   title: string;
@@ -34,6 +47,12 @@ interface Props {
   siblings: { label: string; href: string }[];
   brief: string;
   contentKey: keyof typeof axisCopy;
+  /** Ключ в поле axes у комбинации: placement | subject | style | size | audience */
+  axisType: 'placement' | 'subject' | 'style' | 'size' | 'audience';
+  /** Значение этого ключа, по которому подбираются комбинации */
+  axisSlug: string;
+  /** Как назвать блок с карточками комбинаций */
+  ideasLabel: string;
 }
 
 const {
@@ -48,13 +67,23 @@ const {
   siblings,
   brief,
   contentKey,
+  axisType,
+  axisSlug,
+  ideasLabel,
 } = Astro.props;
 
 const editorial = axisCopy[contentKey];
+/* .slice обязателен: если в galleryDefaults передан готовый items,
+   buildGallery возвращает его целиком и запрошенное количество игнорирует. */
+const gallery = buildGallery(gallerySlug, HUB_GALLERY, galleryDefaults).slice(
+  0,
+  HUB_GALLERY,
+);
 
-const gallery = buildGallery(gallerySlug, 16, galleryDefaults);
-const first = gallery.slice(0, 8);
-const rest = gallery.slice(8);
+/* Комбинации этой оси. Привязка явная — поле axes в combos.json. */
+const related = combos.items.filter(
+  (c) => (c.axes as Record<string, string> | undefined)?.[axisType] === axisSlug,
+);
 ---
 
 <BaseLayout
@@ -62,30 +91,43 @@ const rest = gallery.slice(8);
   description={description}
   path={path}
   crumbs={crumbs}
-  preloadImage={imageUrl(gallery[0].image, 800)}
+  preloadImage={gallery[0] ? imageUrl(gallery[0].image, 800) : undefined}
 >
   <section class="container top">
     <h1>{h1}</h1>
     <div class="lead">{answer.map((line) => <p>{line}</p>)}</div>
   </section>
 
-  <section class="section container" aria-label="Ideas">
-    <Chips items={siblings} label="Related pages" />
+  {
+    gallery.length > 0 && (
+      <section class="section container" aria-label="Examples">
+        <Chips items={siblings} label="Related pages" />
+        <GalleryGrid items={gallery} pageTitle={h1} pagePath={path} />
+      </section>
+    )
+  }
 
-    <GalleryGrid items={first} schemaItems={gallery} pageTitle={h1} pagePath={path} />
-
-    <AdSlot id={`${gallerySlug}-inline`} height={100} />
-
-    <div class="after-ad">
-      <GalleryGrid
-        items={rest}
-        pageTitle={h1}
-        pagePath={path}
-        firstIsPriority={false}
-        emitSchema={false}
-      />
-    </div>
-  </section>
+  {
+    related.length > 0 && (
+      <section class="section container" aria-labelledby="hub-ideas">
+        <div class="section-head">
+          <h2 id="hub-ideas">{ideasLabel}</h2>
+          <a class="more" href="/ideas/">All ideas</a>
+        </div>
+        <div class="grid grid-gallery">
+          {related.map((c) => (
+            <IdeaCard
+              href={`/ideas/${c.slug}/`}
+              title={c.h1}
+              image={`ideas/${c.slug}/01`}
+              alt={c.h1}
+              ideas={ideaCount(c)}
+            />
+          ))}
+        </div>
+      </section>
+    )
+  }
 
   <CopyBrief value={brief} />
 
@@ -93,6 +135,9 @@ const rest = gallery.slice(8);
     <h2>{editorial.title}</h2>
     {editorial.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
   </section>
+
+  {/* Реклама ниже основного содержимого — DESIGN.md §10 в редакции для страниц без полной галереи */}
+  <div class="container"><AdSlot id={`${gallerySlug}-lower`} height={100} /></div>
 
   <Faq items={faq} title={`${h1}: FAQ`} />
 
@@ -102,7 +147,6 @@ const rest = gallery.slice(8);
 <style>
   .top { padding-top: 24px; }
   .top .lead { margin-top: 10px; }
-  .after-ad { margin-top: 24px; }
   .editorial { max-width: 76ch; display: grid; gap: 10px; }
   .editorial p { color: var(--text-muted); }
 </style>

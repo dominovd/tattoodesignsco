@@ -17,8 +17,8 @@ const siblings = axes.sizes
 ---
 
 <AxisLeaf
-  h1={`${s.label} tattoo ideas`}
-  title={`${s.label} tattoo ideas - ${s.hint} | TattooDesignsCo`}
+  h1={`${s.label} tattoos - ${s.hint}`}
+  title={`${s.label} tattoos - ideas and sizes | TattooDesignsCo`}
   description={`${s.label} tattoo ideas (${s.hint}) with area, style and colour on every image.`}
   path={path}
   contentKey={`size/${s.slug}`}
@@ -40,6 +40,9 @@ const siblings = axes.sizes
     altPattern: `${s.label} tattoo idea, reference {n}`,
     items: galleryItems,
   }}
+  axisType="size"
+  axisSlug={s.slug}
+  ideasLabel={`${s.label} tattoo ideas`}
   siblings={siblings}
   brief={`fine line design, ${s.hint}, inner forearm, black only`}
 />

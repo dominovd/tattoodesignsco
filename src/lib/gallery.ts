@@ -75,7 +75,11 @@ export function ideaRecords(
 ): IdeaRecord[] {
   if (defaults.items?.length) return defaults.items;
 
-  const n = Math.min(Math.max(count, 16), 24);
+  // Нижняя граница снята намеренно: требование «16–24 изображения» из
+  // DESIGN.md §4 относится к страницам комбинаций и теперь проверяется
+  // линтером. Хабам осей нужна короткая галерея, а помощник не должен
+  // молча дорисовывать слоты под картинки, которых никто не снимал.
+  const n = Math.min(Math.max(count, 1), 24);
 
   return Array.from({ length: n }, (_, i) => ({
     slug: `idea-${String(i + 1).padStart(2, '0')}`,
